@@ -21,6 +21,18 @@ When you first open up the MadMachine IDE, it appears like this:
 
  It's time to start your first project in the IDE 🥳 . 
 
+First of all, create a project. 
+
+![](.gitbook/assets/create.jpg)
+
+We called Blink. Just try to choose a descriptive name as you like. 
+
+Then click **Create**.
+
+![](.gitbook/assets/blink.jpg)
+
+
+
 Some read-only sample codes are offered in the IDE. You can copy them into a new project and see what's going on. 
 
 Here is an simple example for your reference:
