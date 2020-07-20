@@ -41,7 +41,7 @@ The RGB LED will show you the current status of the USB communication:
 * Green: USB connection
 * Blue: SD card detection
 
-## \*\*\*\*🔸 **Step 4: Build your code and download it to board**
+\*\*\*\*🔸 **Step 4: Build your code and download it to board**
 
 Press the Download button to mount the device into your computer. 
 
