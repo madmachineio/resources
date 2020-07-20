@@ -2,7 +2,7 @@
 
 Get your SwiftIO board? 🤣 Follow us step-by-step to realize your first project.
 
-## \*\*\*\*🔸 **Step 1: Download and install the MadMachine IDE**
+## **Step 1: Download and install the MadMachine IDE**
 
 The MadMachine IDE provides you with an easy way to code. It is available on Windows and Mac now. 
 
@@ -17,7 +17,7 @@ When you first open up the MadMachine IDE, it appears like this:
 
 ![](.gitbook/assets/ide.jpg)
 
-## \*\*\*\*🔸 **Step 2: Write code in the IDE**
+## **Step 2: Write code in the IDE**
 
  It's time to start your first project in the IDE 🥳 . 
 
@@ -27,7 +27,7 @@ Here is an simple example for your reference:
 
 ![Blink](.gitbook/assets/code.jpg)
 
-## \*\*\*\*🔸 **Step 3: Prepare SD card and confirm USB connection**
+## **Step 3: Prepare SD card and confirm USB connection**
 
 Make sure that you have inserted a SD card into the slot. 
 
@@ -41,7 +41,7 @@ The RGB LED will show you the current status of the USB communication:
 * Green: USB connection
 * Blue: SD card detection
 
-\*\*\*\*🔸 **Step 4: Build your code and download it to board**
+## **Step 4: Build your code and download it to board**
 
 Press the Download button to mount the device into your computer. 
 
