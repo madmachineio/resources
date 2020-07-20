@@ -29,29 +29,27 @@ Here is an simple example for your reference:
 
 ## **Step 3: Prepare SD card and confirm USB connection**
 
-Make sure that you have inserted a SD card into the slot. 
+**Make sure** that you have inserted a SD card into the slot. 
 
-Connect your SwiftIO board to your computer through the Download port using a Micro-USB cable. 
+Connect your SwiftIO board to your computer through the **Download port** using a Micro-USB cable. 
 
 Press the **DOWNLOAD** button, SwiftIO will mount the SD card as a USB Flash Drive on your computer. 
 
-The RGB LED will show you the current status of the USB connection: 
+The onboard RGB LED will show you the current status of the USB connection: 
 
 |  | RED | GREEN | BLUE |
 | :--- | :--- | :--- | :--- |
-| On | USB communication failed | Usb connection established | - |
+| On | USB communication failed | USB connection established | - |
 | Slow blink | Verify file\(swiftio.bin\) failed | - | - |
 | Fast blink | Open file\(swiftio.bin\) failed | Detecting USB connection | Detecting SD card |
 
-## **Step 4: Build your code and download it to board**
+## **Step 4: Build your code and download it to the board**
 
-Press the Download button to mount the device into your computer. 
+Once the SD card has been mounted successfully, an icon will appear in the status bar of  the IDE.
 
-An icon will appear in the status bar of  the IDE.
+ __📌 _**Please note** any bad quality USB cable or some third-party USB hub would cause connection failure._
 
- __📌 _**Please note** any bad quality USB cable or some third-party USB hub will lead to connection failure._
-
-Click the Download icon.
+Click the Download button.
 
 ![](.gitbook/assets/code.png)
 
@@ -63,7 +61,7 @@ The IDE begins to build your code and then download it to the board if there is 
 
 
 
-Wait a few seconds, you will see the USB flash drive is automatically removed.
+Wait a few seconds, you will see the USB flash drive is removed automatically.
 
 And then, the onboard LED will blink✨ .  
 
