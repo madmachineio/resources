@@ -35,7 +35,7 @@ Connect your SwiftIO board to your computer through the **Download port** using 
 
 Press the **DOWNLOAD** button, SwiftIO will mount the SD card as a USB Flash Drive on your computer. 
 
-_**Please note** any bad quality USB cable or some third-party USB hub would cause connection failure._
+_**Note:** any bad quality USB cable or some third-party USB hub would cause connection failure._
 
 The onboard RGB LED will show you the current status of the USB connection: 
 
