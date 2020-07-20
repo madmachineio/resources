@@ -40,8 +40,8 @@ The onboard RGB LED will show you the current status of the USB connection:
 |  | RED | GREEN | BLUE |
 | :--- | :--- | :--- | :--- |
 | On | USB communication failed | USB connection established | - |
-| Slow blink | Verify file\(swiftio.bin\) failed | - | - |
-| Fast blink | Open file\(swiftio.bin\) failed | Detecting USB connection | Detecting SD card |
+| Slow flashing | Verify file\(swiftio.bin\) failed | - | - |
+| Fast flashing | Open file\(swiftio.bin\) failed | Detecting USB connection | Detecting SD card |
 
 ## **Step 4: Build your code and download it to the board**
 
