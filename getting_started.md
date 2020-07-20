@@ -37,9 +37,11 @@ SwiftIO will simulate the device as a USB Flash Drive on your computer.
 
 The RGB LED will show you the current status of the USB communication: 
 
-* Red: error
-* Green: USB connection
-* Blue: SD card detection
+|  | RED | GREEN | BLUE |
+| :--- | :--- | :--- | :--- |
+| On | USB communication failed | Usb connection established | - |
+| Slow blink | Verify file\(swiftio.bin\) failed | - | - |
+| Fast blink | Open file\(swiftio.bin\) failed | Detecting USB connection | Detecting SD card |
 
 ## **Step 4: Build your code and download it to board**
 
