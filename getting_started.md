@@ -55,7 +55,7 @@ Click the Download button.
 
 
 
-The IDE begins to build your code and then download it to the board if there is no error.
+The IDE begins to build your project and then download it to the board if there is no error.
 
 ![](.gitbook/assets/download.png)
 
