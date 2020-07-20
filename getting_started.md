@@ -25,7 +25,7 @@ Some read-only sample codes are offered in the IDE. You can copy them into a new
 
 Here is an simple example for your reference:
 
-![Blink](.gitbook/assets/code.jpg)
+![](.gitbook/assets/code.jpg)
 
 ## **Step 3: Prepare SD card and confirm USB connection**
 
