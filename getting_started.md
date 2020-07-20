@@ -17,7 +17,7 @@ When you first open up the MadMachine IDE, it appears like this:
 
 ![](.gitbook/assets/ide.jpg)
 
-## **Step 2: Write code in the IDE**
+## **Step 2: Coding in the IDE**
 
  It's time to start your first project in the IDE 🥳 . 
 
