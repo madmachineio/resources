@@ -33,9 +33,9 @@ Make sure that you have inserted a SD card into the slot.
 
 Connect your SwiftIO board to your computer through the Download port using a Micro-USB cable. 
 
-Press the **DOWNLOAD** button, SwiftIO will simulate the SD card as a USB Flash Drive on your computer. 
+Press the **DOWNLOAD** button, SwiftIO will mount the SD card as a USB Flash Drive on your computer. 
 
-The RGB LED will show you the current status of the USB communication: 
+The RGB LED will show you the current status of the USB connection: 
 
 |  | RED | GREEN | BLUE |
 | :--- | :--- | :--- | :--- |
