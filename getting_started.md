@@ -13,7 +13,7 @@ So first of all, you need to download and install the MadMachine Software \(IDE\
 
 Select the appropriate version according to your operating system. 
 
-If you meet with any problem, please refer to [FAQ](tutorial/faq.md).
+If you meet with any problem, please refer to [FAQ]().
 
 When you first open up the MadMachine IDE, it appears like this:
 
