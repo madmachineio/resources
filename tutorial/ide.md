@@ -1,27 +1,24 @@
 # IDE
 
-## Getting Super Powers
+Now I will show you a brief introduction to MadMachine IDE. Here we can edit, build the code and download it to your board. 
 
-Becoming a super hero is a fairly straight forward process:
+It simplified the whole process, and thus everyone can get started easily.
+
+When we first open the IDE, it will appear like this:
+
+![](../.gitbook/assets/create.jpg)
+
+We should click on **Create a new MadMachine project** to create a new project.
+
+Then we need to choose a **Project name** and **Location**. 
+
+Click **Create**.
+
+![](../.gitbook/assets/blink.jpg)
+
+ and then you will enter the main interface:
 
 
-
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
 
 
 

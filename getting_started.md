@@ -21,7 +21,7 @@ When you first open up the MadMachine IDE, it appears like this:
 
  It's time to start your first project in the IDE 🥳 . 
 
-First of all, create a project. 
+First of all, create a new project. 
 
 ![](.gitbook/assets/create.jpg)
 
@@ -33,7 +33,7 @@ Then click **Create**.
 
 
 
-Some read-only sample codes are offered in the IDE. You can copy them into a new project and see what's going on. 
+Some read-only sample codes are offered in the IDE. You can copy them into the project and see what's going on. 
 
 Here is an simple example for your reference:
 
@@ -75,6 +75,5 @@ The IDE begins to build your project and then download it to the board if there 
 
 Wait a few seconds, you will see the USB flash drive is removed automatically.
 
-And then, the onboard LED will blink✨ .  
-
+And then, the onboard LED will blink✨ .
 
