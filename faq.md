@@ -1,6 +1,6 @@
 # FAQ
 
-## Why can't **I** install the IDE on Win10
+## Can't install the IDE on Win10
 
 Windows may not recognize the IDE and there might be some problems when you install it. Windows Defender will pop up with a warning message. 
 
@@ -10,7 +10,7 @@ First, click on the "**More info"**.
 
 Then more info will appear. Click "**Run anyway**".
 
-## Why the USB driver can't be mounted after I press download button
+## USB driver can't be mounted
 
 This is due to the security feature of macOs. You need to enable **Full Disk Access** for IDE.
 
