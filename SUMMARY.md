@@ -4,7 +4,7 @@
 * [Getting Started](getting_started.md)
 * [Tutorial](tutorial/README.md)
   * [What is SwiftIO](tutorial/what-is-swiftio.md)
-  * [IDE](tutorial/ide.md)
+  * [How to use IDE](tutorial/how-to-use-ide.md)
   * [Libraries](tutorial/libraries.md)
 * [Built-In Examples](examples/README.md)
   * [GetStarted](examples/getstarted.md)
