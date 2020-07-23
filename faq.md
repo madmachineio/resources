@@ -12,12 +12,6 @@ Then more info will appear. Click "**Run anyway**".
 
 ## USB driver can't be mounted
 
-Maybe you use a bad quality microUSB cable or third-party USB hub.
-
-Just change it to a better one, and try again.
-
-## Can't access the USB drive
-
 This is due to the security feature of macOs. You need to enable **Full Disk Access** for IDE.
 
 * select **System Preferences** in ![](https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/en_GB/e043ddf1a45711e13f0b30612db65e21.png)Apple menu
@@ -48,22 +42,4 @@ This is due to the security feature of macOs. You need to enable **Full Disk Acc
 ![](.gitbook/assets/xnip2020-07-21_17-49-14.jpg)
 
 Now you can try to download your project again.
-
-## SwiftIO board reset repeatedly
-
-There is a maximum power limit for the USB port of your devices.
-
-While some modules which is connected to the board may require a stronger one. 
-
-Thus, the voltage change will cause the board to reset automatically
-
-You can try these ways:
-
-1 connect the board to another port that can allows stronger power.
-
-2 connect both two ports on the board to the power
-
-3 use a power bank to supply the board
-
-
 
