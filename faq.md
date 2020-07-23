@@ -10,7 +10,7 @@ First, click on the "**More info"**.
 
 Then more info will appear. Click "**Run anyway**".
 
-## USB driver can't be mounted
+## IDE can't find the USB drive
 
 This is due to the security feature of macOs. You need to enable **Full Disk Access** for IDE.
 
