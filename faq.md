@@ -78,23 +78,23 @@ Now you can try to download your project again.
 
 ## **USB driver can't be mounted**
 
-Maybe you use a bad quality microUSB cable or third-party USB hub.
+Bad quality microUSB cable or third-party USB hub may cause this problem.
 
 Just change it to a better one, and try again.
 
 ## **SwiftIO board reset repeatedly**
 
-There is a maximum power limit for the USB port of your devices.
+There is a maximum current limit for the USB port of your devices.
 
-While some modules which is connected to the board may require a stronger one.
+While some modules which is connected to the board may require a larger one.
 
-Thus, the voltage change will cause the board to reset automatically
+Thus the board reset over and over again.
 
 You can try these ways:
 
-1 ****connect the board to another port that can allows stronger power.‌
+1 ****connect the board to USB port that can output larger power.‌
 
-2 connect both two ports on the board to the power
+2 connect both download port and serial port on the board to USB ports
 
 3 use a power bank to supply the board
 
