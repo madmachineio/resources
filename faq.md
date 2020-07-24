@@ -2,13 +2,46 @@
 
 ## Can't install the IDE on Win10
 
-Windows may not recognize the IDE and there might be some problems when you install it. Windows Defender will pop up with a warning message. 
+Windows may not recognize the IDE and there might be some problems when you install it. Windows Defender will pop up with a warning message.
 
 ![](.gitbook/assets/windows-protected-your-pc-2.png)
 
-First, click on the "**More info"**. 
+First, click on the "**More info"**.
 
 Then more info will appear. Click "**Run anyway**".
+
+## Can't open IDE on Mac
+
+When you want to open the IDE, a new window appears:
+
+![](.gitbook/assets/xnip2020-07-24_15-02-58.jpg)
+
+👇 Here comes the solution:
+
+* click **OK**.
+* select ![](https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/en_GB/e043ddf1a45711e13f0b30612db65e21.png) &gt; **System Preferences**
+* open the **Security & Privacy** Preferences pane
+* select the **General** tab
+
+![](.gitbook/assets/xnip2020-07-24_15-05-19.jpg)
+
+* click the 🔒 icon
+* enter your **Password**
+* click **Unlock**
+
+![](.gitbook/assets/xnip2020-07-24_15-05-35.jpg)
+
+* click **Open Anyway**
+
+![](.gitbook/assets/xnip2020-07-24_15-06-09.jpg)
+
+* click **Open**
+
+![](.gitbook/assets/xnip2020-07-24_15-06-19.jpg)
+
+Now the IDE can run normally.
+
+![](.gitbook/assets/xnip2020-07-24_15-07-20.jpg)
 
 ## IDE can't find the USB drive
 
