@@ -35,7 +35,20 @@ Then click **Create**.
 
 Some read-only sample codes are offered in the IDE. You can copy them into the project and see what's going on.
 
-Here is an simple example for your reference:
+Here is a simple example for your reference:
+
+```swift
+import SwiftIO
+
+let green = DigitalOut(Id.GREEN)
+​
+while true {
+    green.write(true)
+    sleep(ms: 1000)
+    green.write(false)
+    sleep(ms: 1000)
+}
+```
 
 ![](.gitbook/assets/code.jpg)
 
