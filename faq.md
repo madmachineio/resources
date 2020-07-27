@@ -45,7 +45,11 @@ Now the IDE can run normally.
 
 ## IDE can't find the USB drive
 
-This is due to the security feature of macOS. You need to enable **Full Disk Access** for IDE.
+This is due to the security feature of macOS. 
+
+The latest versions of macOS introduce new security control. There are more requirements for application security. 
+
+While our board needs to manage the files on the USB driver. So you need to enable **Full Disk Access** for IDE.
 
 * select **System Preferences** in ![](https://help.apple.com/assets/5EF110D6680CE23B38350954/5EF110E3680CE23B3835095C/en_GB/e043ddf1a45711e13f0b30612db65e21.png)Apple menu
 * open the **Security & Privacy** Preferences pane
