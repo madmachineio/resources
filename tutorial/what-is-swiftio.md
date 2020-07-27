@@ -20,7 +20,7 @@ A small computer processor is mounted on the board with a bunch of other compone
 
 ## **What is SwiftIO?**
 
-MadMachine is the project name, it is also a company that designs and makes circuit boards that run swift source code on microcontrollers. Currently, there is only one type of board, SwiftIO board. You can use it to control motors, lighting, cameras, or even build a simple robot.
+MadMachine is the project name, it is also the team that designs and makes circuit boards that run swift source code on microcontrollers. Currently, there is only one type of board, SwiftIO board. You can use it to control motors, lighting, cameras, or even build a simple robot.
 
 ![](https://static.wixstatic.com/media/ccab1c_247c008846064e94ba0c4a5e63845e39~mv2_d_2336_1558_s_2.png/v1/fit/w_300,h_300,al_c,q_5/file.png)
 
