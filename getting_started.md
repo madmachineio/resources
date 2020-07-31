@@ -86,3 +86,5 @@ Wait a few seconds, you will see the USB flash drive is removed automatically.
 
 And then, the onboard LED will blink✨ .
 
+You can also watch this tutorial [video](https://www.youtube.com/watch?v=frVKQXU12LQ) to get more info.
+
