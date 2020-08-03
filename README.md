@@ -12,10 +12,10 @@ Follow us step-by-step to begin your adventure.
 
 Some links are below for more info:
 
-* ![](.gitbook/assets/iconfinder_discord_3069758.png) [Discord](https://discord.gg/zZ9bFHK) – come here and grow together
+* ![](.gitbook/assets/iconfinder_discord_3069758%20%281%29.png) [Discord](https://discord.gg/zZ9bFHK) – come here and grow together
 * ![](.gitbook/assets/github-mark-64px.png) [Github page](https://github.com/madmachineio/Examples) – find SwiftIO source code
 * ![](.gitbook/assets/youtube_social_circle_red.png) [Youtube channel](https://www.youtube.com/channel/UCFsoLnjIb0UXJYSz2X4nAVQ) – learn with us step-by-step
-* ![](.gitbook/assets/twitter_social_icon_circle_color.png)[Twitter](https://twitter.com/madmachineio) – know who we are
+* ![](.gitbook/assets/twitter_social_icon_circle_color%20%281%29.png)[Twitter](https://twitter.com/madmachineio) – know who we are
 
 This is a brand new platform and there is a lot to explore and create. 
 
