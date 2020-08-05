@@ -1,12 +1,12 @@
 # MM SDK
 
-The mm-sdk contains eveything you need to compile a MadMachine project, either a library or an executable.
+The mm-sdk contains eveything you need to build a MadMachine project, either a library or an executable.
 
 A MadMachine project is structured like a SPM package. A Python script is used to build the project now and it would be replaced by Swift Package Manager in the futrue.
 
-All the latest features would be added to this SDK first and then integrated into the MadMachine IDE.
+The latest features would be added to this SDK first and then integrated into the MadMachine IDE.
 
-Download the latest version [here]() depends on your operating system.
+Download the latest version [here]() depending on your operating system.
 
 # What is inside the SDK
 
@@ -18,7 +18,7 @@ Download the latest version [here]() depends on your operating system.
 
 2. scripts:
 
-   * Python scripts which are used like [Swift Package Manager](https://swift.org/package-manager) temporarily
+   * Python scripts which used to build the project
 
 3. hal:
 
@@ -28,15 +28,15 @@ Download the latest version [here]() depends on your operating system.
 
    * Latest examples and libraries
 
-# Usage(Take macOS for example)
+# Usage (Take macOS for example)
 
 Download and unzip the sdk to the directory `~`
 
 Run `~/mm-sdk/tools_mac/scripts/dist/mm/mm -h` command for quick help.
 
-Run `~/mm-sdk/tools_mac/scripts/dist/mm/mm init -h` command for initializing quick help.
+Run `~/mm-sdk/tools_mac/scripts/dist/mm/mm init -h` command for quick help about initializing a project.
 
-Run `~/mm-sdk/tools_mac/scripts/dist/mm/mm build -h` command for building quick help.
+Run `~/mm-sdk/tools_mac/scripts/dist/mm/mm build -h` command for quick help about building a project.
 
 ## Initialize a library `DemoLibrary`
 
@@ -56,7 +56,7 @@ cd DemoProgram
 ~/mm-sdk/tools_mac/scripts/dist/mm/mm init
 ```
 
-## Add the `DemoLibrary` as a dependency for `DemoProgram`
+## Add the `DemoLibrary` as a dependency to `DemoProgram`
 
 1. Open the `DemoProgram.mmswift` by any text editor
 2. Add `"DemoLibrary"` in the `dependecies`
@@ -73,12 +73,12 @@ cd ~/mm-sdk/Library/DemoLibrary
 
 ## Build an executable
 
-When building an project(either library or executable), the Python script would try to find the dependent libraries in the speicified directory.
+When building a project (either library or executable), the Python script would try to find the dependent libraries in the speicified directory.
 
-If the dependent library is not builded yet, it would build the library at first. Use `--rebuild` to force rebuild all dependent libries.
+If the dependent library is not builded yet, the Python script would build the library first. Use `--rebuild` to force rebuild all dependent libraries.
 
 ```shell
-cd ~/RgbBlink
+cd ~/DemoProgram
 ~/mm-sdk/tools_mac/scripts/dist/mm/mm build --sdk ~/mm-sdk --module ~/mm-sdk/Library
 ```
 
