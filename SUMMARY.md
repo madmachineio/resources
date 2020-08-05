@@ -6,6 +6,7 @@
   * [What is SwiftIO](tutorial/what-is-swiftio.md)
   * [How to use IDE](tutorial/how-to-use-ide.md)
   * [Libraries](tutorial/libraries.md)
+  * [MM CLI SDK](tutorial/mm-cli-sdk.md)
 * [Built-In Examples](examples/README.md)
   * [GetStarted](examples/getstarted/README.md)
     * [Blink](examples/getstarted/blink.md)
