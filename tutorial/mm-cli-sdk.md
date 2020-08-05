@@ -6,8 +6,8 @@ It contains:
 
 1. tools\_linux/tools\_mac/tools\_win:
 
-* Swift compilier and standard libary for ARM-Cortex M7
-* ARM-GCC compiler and binutils
+   * Swift compilier and standard libary for ARM-Cortex M7
+   * ARM-GCC compiler and binutils
 
 2. 
 
