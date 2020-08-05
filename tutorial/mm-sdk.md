@@ -22,7 +22,7 @@ Download the latest version [here]() depending on your operating system.
 
 3. hal:
 
-   * Board abstraction library based on [Zephyr]
+   * Board abstraction library based on [Zephyr](https://github.com/zephyrproject-rtos/zephyr)
 
 4. Examples & Library:
 
