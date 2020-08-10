@@ -1,8 +1,8 @@
 # PWMBrightnessControl
 
-In this project, we will try to control the brightness of LED - light gradually on and off LED.
+In this project, let's try to control the brightness of LED - light gradually on and off LED.
 
-We will use PWM to set on-off ratio of output signal to get different voltage. The pins marked with “~“ can be used for this.
+You will use PWM to set on-off ratio of output signal to get different voltage. The pins marked with “~“ can be used for this.
 
 ## What you need 
 
