@@ -10,6 +10,7 @@
 * [Built-In Examples](examples/README.md)
   * [GettingStarted](examples/getstarted/README.md)
     * [Blink](examples/getstarted/blink.md)
+    * [PWMBrightnessControl](examples/getstarted/pwmbrightnesscontrol.md)
   * [SimpleIO](examples/simpleio.md)
   * [AdvancedIO](examples/advancedio.md)
 * [Library Reference](library.md)
