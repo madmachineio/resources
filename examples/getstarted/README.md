@@ -1,4 +1,4 @@
-# GetStarted
+# GettingStarted
 
 👏 Well, this part is to get you know some basic knowledge and operations. 
 

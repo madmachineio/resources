@@ -8,7 +8,7 @@
   * [Libraries](tutorial/libraries.md)
   * [MM SDK](tutorial/mm-sdk.md)
 * [Built-In Examples](examples/README.md)
-  * [GetStarted](examples/getstarted/README.md)
+  * [GettingStarted](examples/getstarted/README.md)
     * [Blink](examples/getstarted/blink.md)
   * [SimpleIO](examples/simpleio.md)
   * [AdvancedIO](examples/advancedio.md)

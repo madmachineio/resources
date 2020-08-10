@@ -8,7 +8,7 @@ These examples covers the basic operation about input and output, as well as com
 
 After all these, you will certainly be able to create something interesting by yourself. ✌ 
 
-* [GetStarted](getstarted/)
+* [GettingStarted](getstarted/)
 * [SimpleIO](simpleio.md)
 * [AdvancedIO](advancedio.md)
 
