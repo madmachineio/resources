@@ -28,7 +28,7 @@ Build the circuit as shown above.
 
 // Import the library to enable everything in it, like relevant classes and methods. 
 // This is first step for your coding process.
- import SwiftIO
+import SwiftIO
 
 // Initialize the pin PWM0A as output.
 let led = PWMOut(Id.PWM0A)
