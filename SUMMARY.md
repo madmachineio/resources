@@ -11,6 +11,7 @@
   * [GettingStarted](examples/getstarted/README.md)
     * [Blink](examples/getstarted/blink.md)
     * [PWMBrightnessControl](examples/getstarted/pwmbrightnesscontrol.md)
+    * [ReadAnalogInput](examples/getstarted/readanaloginput.md)
   * [SimpleIO](examples/simpleio.md)
   * [AdvancedIO](examples/advancedio.md)
 * [Library Reference](library.md)

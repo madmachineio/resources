@@ -24,9 +24,9 @@ MadMachine is the project name, it is also the team that designs and makes circu
 
 ![](https://static.wixstatic.com/media/ccab1c_247c008846064e94ba0c4a5e63845e39~mv2_d_2336_1558_s_2.png/v1/fit/w_300,h_300,al_c,q_5/file.png)
 
-However, the magic of SwiftIO board is not just in the language or its ability to run on microcontrollers, but the fact that the merging of Swift and hardware has just potentially taken IoT projects to a new level. SwiftIO board has huge potential to make microcontroller projects easier than ever before.
+However, the magic of SwiftIO board is not just in the language or its ability to run on microcontrollers, but the fact that the combination of Swift and hardware has just potentially taken IoT projects to a new level. SwiftIO board has huge potential to make microcontroller projects easier than ever before.
 
-There’s also the MadMachine IDE, which makes SwiftIO good for beginners. The MadMachine software works on Windows, Mac, and Linux, which makes downloading your swift code as simple as connecting a USB cable and clicking a button. Without it, if you want to program microcontrollers, you’d have to type out a lot of binary and memorize a lot of hard to remember registers and instructions. Then you’d have to use special programming hardware with custom made cables to download your program onto your microcontroller.
+There’s also the MadMachine IDE, which makes SwiftIO good for beginners. The MadMachine software works on Windows and Mac, which makes downloading your swift code as simple as connecting a USB cable and clicking a button. Without it, if you want to program microcontrollers, you’d have to type out a lot of binary and memorize a lot of hard to remember registers and instructions. Then you’d have to use special programming hardware with custom made cables to download your program onto your microcontroller.
 
 This is the comparison between Arduino, MicroPython, and MadMachine.  
   

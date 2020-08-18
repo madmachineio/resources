@@ -44,7 +44,7 @@ Click **Create**.
 
 * ![](../.gitbook/assets/xnip2020-07-22_15-59-13.jpg) : create a new file for the current project.
 * ![](../.gitbook/assets/xnip2020-07-22_15-59-50.jpg) : save all files in the current project.
-* ![](../.gitbook/assets/xnip2020-07-22_16-00-21.jpg): save the file and compile the code you have written.
+* ![](../.gitbook/assets/xnip2020-07-22_16-00-21.jpg): save the file and build the code you have written.
 * ![](../.gitbook/assets/xnip2020-07-22_16-00-42.jpg): build the code we have written and then download it to your board.
 
 
