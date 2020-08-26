@@ -6,10 +6,7 @@ Get your SwiftIO board? 🤣 Follow us step-by-step to realize your first projec
 
 The MadMachine IDE provides you with an easy way to code. It is available on Windows and Mac now.
 
-So first of all, you need to download and install the MadMachine Software \(IDE\) to program your SwiftIO board. You'll find the latest software package here.
-
-* For Windows10 x64
-* For macOs
+So first of all, you need to download and install the MadMachine IDE to program your SwiftIO board. You'll find the latest software package [here](https://github.com/madmachineio/MadMachineIDERelease/releases).
 
 Select the appropriate version according to your operating system.
 
