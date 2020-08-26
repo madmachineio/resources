@@ -1,6 +1,6 @@
-# Install a library
+Libraries make your coding process more easily. With different libraries, you can control many modules using some simple methods.
 
-Libraries make your coding process more easily. With different libraries, you can control many modules using some simple methods. ‌ ‌
+# Install a library
 
 Now let's learn how to install a library.
 
@@ -32,5 +32,5 @@ Now let's learn how to install a library.
 
 # Explore the examples in the library
 
-
+TO-DO
 
