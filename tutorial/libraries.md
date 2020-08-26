@@ -1,6 +1,6 @@
 # Libraries
 
-## Install a library
+# Install a library
 
 Libraries make your coding process more easily. With different libraries, you can control many modules using some simple methods. ‌ ‌
 
