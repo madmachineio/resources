@@ -43,6 +43,12 @@ Now the IDE can run normally.
 
 ![](.gitbook/assets/xnip2020-07-24_15-07-20.jpg)
 
+## Can't create new project on Windows
+
+**Reason:** The IDE need to copy `MadMachine\Examples` and `MadMachine\Library` to your \`Documents\` directory when running for the first time.
+
+**Solve:** Please make sure run the IDE as \*\*Administrator\*\* for the first time!
+
 ## IDE can't find the USB drive
 
 This is due to the security feature of macOS. 
@@ -80,12 +86,6 @@ While our board needs to manage the files on the USB driver. So you need to enab
 
 Now you can try to download your project again.
 
-## **USB driver can't be mounted**
-
-Bad quality microUSB cable or third-party USB hub may cause this problem.
-
-Just change it to a better one, and try again.
-
 ## **SwiftIO board reset repeatedly**
 
 There is a maximum current limit for the USB port of your devices.
@@ -101,4 +101,10 @@ You can try these ways:
 2 connect both download port and serial port on the board to USB ports
 
 3 use a power bank to supply the board
+
+## **USB driver can't be mounted**
+
+Bad quality microUSB cable or third-party USB hub may cause this problem.
+
+Just change it to a better one, and try again.
 
