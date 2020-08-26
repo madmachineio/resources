@@ -30,3 +30,7 @@ Now let's learn how to install a library.
 
 ‌ Now you can use everything in the library to create your project.
 
+# Explore the examples in the library
+
+
+
