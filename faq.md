@@ -45,7 +45,7 @@ Now the IDE can run normally.
 
 ## Can't create new project on Windows
 
-**Reason:** The IDE need to copy `MadMachine\Examples` and `MadMachine\Library` to your \`Documents\` directory when running for the first time.
+**Reason:** The IDE need to copy `MadMachine\Examples` and `MadMachine\Library` to your `Documents` directory when running for the first time.
 
 **Solve:** Please make sure run the IDE as \*\*Administrator\*\* for the first time!
 
