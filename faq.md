@@ -47,7 +47,7 @@ Now the IDE can run normally.
 
 **Reason:** The IDE need to copy `MadMachine\Examples` and `MadMachine\Library` to your `Documents` directory when running for the first time.
 
-**Solve:** Please make sure run the IDE as \*\*Administrator\*\* for the first time!
+**Solve:** Please make sure run the IDE as **Administrator** for the first time!
 
 ## IDE can't find the USB drive
 
