@@ -22,7 +22,7 @@ Click **Create**.
 
 ![](../.gitbook/assets/xnip2020-07-21_14-17-23.jpg)
 
-## IDE structure
+## Get familiar with IDE
 
 ### Menu bar
 

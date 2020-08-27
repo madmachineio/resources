@@ -1,6 +1,8 @@
+# Libraries
+
 Libraries make your coding process more easily. With different libraries, you can control many modules using some simple methods.
 
-# Install a library
+## Install a library
 
 Now let's learn how to install a library.
 
@@ -12,25 +14,45 @@ Now let's learn how to install a library.
 
 ![](../.gitbook/assets/1.jpg)
 
-3.Unzip the package and move the folder to **Documents** &gt; **MadMachine** &gt; **Library**.
+3.Unzip the package and move the folder to **Documents** &gt; **MadMachine** &gt; **Library**. 
 
 ![](../.gitbook/assets/2.jpg)
 
-4.Open the IDE. Create a new project.
+## Explore the examples in the library
+
+There will be some examples in the library files downloaded from Github. Let's use it first before learning its usage.
+
+1.Open the IDE. If you have opened it, please make sure close it and open it again. Then create a new project.
+
+![](../.gitbook/assets/1%20%281%29.jpg)
+
+2.Click the ![](../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) button on the bottom. You would notice the example MadSHT3x appears in the **Library** folder if you have successfully installed the library.
+
+![](../.gitbook/assets/3%20%281%29.jpg)
+
+3.Double click the file **ReadTempAndHumidity**. A new window will pop up.
+
+![](../.gitbook/assets/3%20%282%29.jpg)
+
+4.Build the files.
+
+![](../.gitbook/assets/4%20%281%29.jpg)
+
+## Use library in your project
+
+Now you are going to know how to apply new libraries in your own project.
+
+1.Open the IDE. Create a new project.
 
 ![](../.gitbook/assets/3.jpg)
 
-5.In the file **xxx.mmp**, add the library MadSHT3x in dependencies. ‌
+2.In the file **.mmp**, add the library MadSHT3x in **dependencies**. ‌
 
 ![](../.gitbook/assets/4.jpg)
 
-6.Import the two libraries in your project.
+3.Import the two libraries in **main.swift** file. 
 
 ![](../.gitbook/assets/5.jpg)
 
 ‌ Now you can use everything in the library to create your project.
-
-# Explore the examples in the library
-
-TO-DO
 
