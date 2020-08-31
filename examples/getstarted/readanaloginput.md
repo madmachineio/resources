@@ -1,6 +1,6 @@
 # ReadAnalogInput
 
-In this new example, we are going to read analog input. We'll use a potentiometer.
+In this new example, you are going to read analog input. We'll use a potentiometer.
 
 The potentiometer can provide a certain range of resistance. When you twist the knob, the resistance will change, thus the input voltage will change with it.
 
@@ -52,6 +52,8 @@ while true {
     sleep(ms: 1000)
 }
 ```
+
+You can find the example code at the bottom left corner of IDE: ![](../../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) &gt; GettingStarted &gt; ReadAnalogInput.
 
 Well, you may try to read from to other modules, like sensors. It's quite interesting.
 
