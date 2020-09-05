@@ -9,6 +9,7 @@ Let's first come to an easy beginner project - blink the onboard LED. This examp
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
 ![](../../.gitbook/assets/untitled-sketch_bb.png)
+
 <em>image developed using Fritzing. For more circuit examples, see the Fritzing project page</em>
 
 For this project, we only need the SwiftIO board.
@@ -55,6 +56,8 @@ while true {
 ## <span style="color:#EA5823;font-weight:700">Video</span>
 
 ![](../../.gitbook/assets/gif01.gif)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DKYpSNS2rM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 
