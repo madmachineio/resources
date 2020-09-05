@@ -10,10 +10,7 @@ After all these, you will certainly be able to create something interesting by y
 
 * [GettingStarted](getstarted/)
 * [SimpleIO](simpleio/)
-* [AdvancedIO](buttoncontrolled.md)
-* [AdvancedIO](BlinkAnalogIn.md)
-* [AdvancedIO](BlinkTimer.md)
-* [AdvancedIO](BrightnessAnalogIn.md)
+* [AdvancedIO](advancedio/)
 * [FormatTemplePage](FormatTemplePage.md) - All build-in example illustration should begin follow this format style
 
 
