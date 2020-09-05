@@ -11,7 +11,6 @@ After all these, you will certainly be able to create something interesting by y
 * [GettingStarted](getstarted/)
 * [SimpleIO](simpleio/)
 * [AdvancedIO](advancedio/)
-* [FormatTemplePage](FormatTemplePage.md) - All build-in example illustration should begin follow this format style
 
 
 
