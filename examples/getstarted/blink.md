@@ -22,8 +22,6 @@ Just plug the board to your computer through a USB cable after you finished code
 
 ## <span style="color:#EA5823;font-weight:700">Schematic</span>
 
-###### click the image to enlarge
-
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
 
@@ -56,8 +54,6 @@ while true {
 ## <span style="color:#EA5823;font-weight:700">Video</span>
 
 ![](../../.gitbook/assets/gif01.gif)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DKYpSNS2rM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 
