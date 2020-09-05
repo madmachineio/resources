@@ -1,15 +1,15 @@
-# <font color=#EA5823><big>Blink</big></font>
+# <span style="color:#EA5823;font-weight:800">Blink</span>
 
 Let's first come to an easy beginner project - blink the onboard LED. This example shows the simplest thing you can do with just a SwiftIO board to see physical output: it blinks the on-board REG LED.
 
-## <font color=#EA5823>What you need</font>
+## <span style="color:#EA5823;font-weight:700">What you need</span>
 
 - SwiftIO board
 
-## <font color=#EA5823>Circuit</font>
+## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
 ![](../../.gitbook/assets/untitled-sketch_bb.png)
-image developed using Fritzing. For more circuit examples, see the Fritzing project page
+<em>image developed using Fritzing. For more circuit examples, see the Fritzing project page</em>
 
 For this project, we only need the SwiftIO board.
 
@@ -19,12 +19,12 @@ _**Note**: the onboard LED will be turned on when you apply a **low** voltage._
 
 Just plug the board to your computer through a USB cable after you finished code.
 
-## <font color=#EA5823>Schematic</font>
+## <span style="color:#EA5823;font-weight:700">Schematic</span>
 
 ###### click the image to enlarge
 
 
-## <font color=#EA5823>Code</font>
+## <span style="color:#EA5823;font-weight:700">Code</span>
 
 It's time for the code. Let's see how it works.You can find the example code at the bottom left corner of IDE: ![](../../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) &gt; GettingStarted &gt; Blink.
 
@@ -52,14 +52,17 @@ while true {
     sleep(ms: 1000)
 }
 ```
-## <font color=#EA5823>Video</font>
+## <span style="color:#EA5823;font-weight:700">Video</span>
 
 ![](../../.gitbook/assets/gif01.gif)
 
-## <font color=#EA5823>See Also</font>
+## <span style="color:#EA5823;font-weight:700">See Also</span>
 
-- sleep()
-- DigitalOut()
+- Id - Enumerations, public enum Id : UInt32
+- sleep(ms:) - function suspend the processor’s work in a given time period (in millisecond).
+- DigitalOut() - DigitalOut class is used to set a High or Low voltage output to a digital output pin
+
+## <span style="color:#EA5823;font-weight:700">References</span>
 
 ---
 Last revision 2020/09/04 by Johnson
