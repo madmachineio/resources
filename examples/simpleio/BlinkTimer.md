@@ -50,7 +50,7 @@ while true {
 
 
 ## <span style="color:#EA5823;font-weight:700">Video</span>
-
+![](../../.gitbook/assets/BlinkTimer01.gif)
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 - Timer() - The Timer class is used to set the occasion to raise the interrupt.

@@ -56,7 +56,7 @@ while true {
 
 ## <span style="color:#EA5823;font-weight:700">Video</span>
 
-
+![](../../.gitbook/assets/BlinkAnalogIn01.gif)
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 

@@ -49,7 +49,7 @@ while true {
 
 
 ## <span style="color:#EA5823;font-weight:700">Video</span>
-
+![](../../.gitbook/assets/BrightnessAnalogIn01.gif)
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 - PWMOut - The PWMOut class is used to vary the output voltage
