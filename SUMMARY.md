@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [About our project](about-our-project.md)
 * [Getting Started](getting_started.md)
 * [Tutorial](tutorial/README.md)
   * [What is SwiftIO](tutorial/what-is-swiftio.md)
