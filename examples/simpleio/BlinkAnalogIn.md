@@ -12,6 +12,12 @@ In this example we use a variable resistor (a potentiometer or a photoresistor),
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
+![](../../.gitbook/assets/BlinkAnalogIn/01.png)
+![](../../.gitbook/assets/BlinkAnalogIn/02.png)
+![](../../.gitbook/assets/BlinkAnalogIn/03.png)
+
+## <span style="color:#EA5823;font-weight:700">Tips</span>
+
 Connect three wires to the Arduino or Genuino board. The first goes to ground from one of the outer pins of the potentiometer. The second goes from 3.3V volts to the other outer pin of the potentiometer. The third goes from analog input A6 to the middle pin of the potentiometer. 
 
 For this example, it is possible to use the board's built in LED attached to pin RGBLED. To use an additional LED, attach its longer leg (the positive leg, or anode), to digital pin 10 in series with the 220 ohm resistor, and it's shorter leg (the negative leg, or cathode) to the ground (GND) pin next to pin 10.
@@ -21,9 +27,6 @@ The circuit based on a photoresistor uses a resistor divider to allow the high i
 Vout=Vin*(R2/(R1+R2))
 
 12-bit analog to digital converter, which means the analog Read Resolution is 12-bit. The function <code>readRawValue()</code> will read and return the current raw value from the specified analog pin, Data type: <code>int</code>.
-
-## <span style="color:#EA5823;font-weight:700">Schematic</span>
-
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
 
@@ -60,12 +63,13 @@ while true {
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 
-- Id - Enumerations, public enum Id : UInt32
-- AnalogIn.readRawValue() - Read the current raw value from the specified analog pin.
+- [Id](https://swiftioapi.madmachine.io/Enums/Id.html) - Enumerations, public enum Id : UInt32
+- [AnalogIn.readRawValue()](https://swiftioapi.madmachine.io/Classes/AnalogIn.html#/s:7SwiftIO8AnalogInC12readRawValueSiyF) - Read the current raw value from the specified analog pin.
 
 ## <span style="color:#EA5823;font-weight:700">References</span>
 
-- 维基百科 Potentiometer
+- [Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)
+- [Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)
 
 ---
 Last revision 2020/09/04 by Johnson

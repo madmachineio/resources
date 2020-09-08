@@ -17,7 +17,7 @@
     * [ButtoncontrolLED](examples/simpleio/buttoncontrolled.md)
     * [BlinkAnalogIn](examples/simpleio/BlinkAnalogIn.md)
     * [BlinkTimer](examples/simpleio/BlinkTimer.md)
-    * [BrihtnessAnalogIn](examples/simpleio/BrightnessAnalogIn.md)
+    * [BrightnessAnalogIn](examples/simpleio/BrightnessAnalogIn.md)
   * [AdvancedIO](examples/advancedio.md)
 * [Library Reference](library.md)
 * [FAQ](faq.md)

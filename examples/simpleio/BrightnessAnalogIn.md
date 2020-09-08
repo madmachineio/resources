@@ -10,18 +10,20 @@
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. Digital control is used to create a square wave, a signal switched between on and off. This on-off pattern can simulate voltages in between full on (5 Volts) and off (0 Volts) by changing the portion of the time the signal spends on versus the time that the signal spends off. The duration of "on time" is called the pulse width. To get varying analog values, you change, or modulate, that pulse width. If you repeat this on-off pattern fast enough with an LED for example, the result is as if the signal is a steady voltage between 0 and 5v controlling the brightness of the LED.
+![](../../.gitbook/assets/BlinkAnalogIn/01.png)
+![](../../.gitbook/assets/BlinkAnalogIn/02.png)
+![](../../.gitbook/assets/BlinkAnalogIn/03.png)
 
-In the graphic below, the green lines represent a regular time period. This duration or period is the inverse of the PWM frequency. In other words, with Arduino's PWM frequency at about 500Hz, the green lines would measure 2 milliseconds each. A call to analogWrite() is on a scale of 0 - 255, such that analogWrite(255) requests a 100% duty cycle (always on), and analogWrite(127) is a 50% duty cycle (on half the time) for example.
-
-![picture 1](../../../images/33d6df264fa3a85e75772d6e11b29c13fd909aa975790fa870aab74e27fcd17e.png)  
 
 
 Once you get this example running, grab your arduino and shake it back and forth. What you are doing here is essentially mapping time across the space. To our eyes, the movement blurs each LED blink into a line. As the LED fades in and out, those little lines will grow and shrink in length. Now you are seeing the pulse width.
 
 
-## <span style="color:#EA5823;font-weight:700">Schematic</span>
+## <span style="color:#EA5823;font-weight:700">Tips</span>
 
+Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. Digital control is used to create a square wave, a signal switched between on and off. This on-off pattern can simulate voltages in between full on (5 Volts) and off (0 Volts) by changing the portion of the time the signal spends on versus the time that the signal spends off. The duration of "on time" is called the pulse width. To get varying analog values, you change, or modulate, that pulse width. If you repeat this on-off pattern fast enough with an LED for example, the result is as if the signal is a steady voltage between 0 and 5v controlling the brightness of the LED.
+
+In the graphic below, the green lines represent a regular time period. This duration or period is the inverse of the PWM frequency. In other words, with Arduino's PWM frequency at about 500Hz, the green lines would measure 2 milliseconds each. A call to analogWrite() is on a scale of 0 - 255, such that analogWrite(255) requests a 100% duty cycle (always on), and analogWrite(127) is a 50% duty cycle (on half the time) for example.
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
 
@@ -56,7 +58,10 @@ while true {
 
 ## <span style="color:#EA5823;font-weight:700">References</span>
 
-- 維基百科 PWM 
+- [Pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
+- [Duty cycle](https://en.wikipedia.org/wiki/Duty_cycle)
+- [Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)
+- [Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)
 
 ---
 Last revision 2020/09/04 by Johnson
