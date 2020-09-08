@@ -2,7 +2,7 @@
 
 ## A big thank you!
 
-Hi guys! It’s Andy Liu. We started to sell the SwiftIO board in July. Till today \(8-Sep\), we have received nearly 100 orders from different countries. You guys are awesome! You are not only customers but angels for us. I want to express the depth of my gratitude to all of you!
+Hi guys! It’s [Andy Liu](https://twitter.com/madmachineio). We started to sell the SwiftIO board in July. Till today \(8-Sep\), we have received nearly 100 orders from different countries. You guys are awesome! You are not only customers but angels for us. I want to express the depth of my gratitude to all of you!
 
 Our original plan was to hold a Kickstarter campaign. So we could raise enough money in a very short time to support this project. Some of you might be familiar with this crowdfunding platform, me too. Actually I had a project named [EVB ](https://www.kickstarter.com/projects/fatcatlab/evb-replace-the-brain-of-your-lego-ev3-with-beagle?ref=discovery&term=evb)on Kickstarter a few years ago. In my experience, these kinds of hardware projects usually encounter problems even if they raise a lot of money. Because there’s such a huge gap between a prototype and a mature product. It’s so hard for a small team to face so many problems at the very beginning, those problems might kill the founding team. Sadly, I’ve seen a lot of cases already 😱 
 
