@@ -12,7 +12,7 @@ In this example we use a variable resistor (a potentiometer or a photoresistor),
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-![](../../.gitbook/assets/BlinkAnalogIn/01.png)
+![](../../.gitbook/assets/BlinkAnalogIn/01.png#width-full)
 ![](../../.gitbook/assets/BlinkAnalogIn/02.png)
 ![](../../.gitbook/assets/BlinkAnalogIn/03.png)
 
