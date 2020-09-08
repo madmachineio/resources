@@ -93,11 +93,11 @@ In my opinion, Arduino is the most successful attempt to simplify the API of har
 
 As we can see, Python has become so popular in recent years. Compared to C/C++, it is very easy-to-learn. As an interpreted language, users could see the results immediately without finishing all the code and compiling it. To realize MicroPython, [Damien George](https://micropython.org/) created an efficient interpreter using C. This could run in the extremely limited microcontroller environment. In this way, developers are able to use Python in the embedded world.
 
-However, Python needs to be interpreted. This leads to low efficiency when running it. So most complicated projects based on MicroPython implement their core algorithm in C, just provide some simple Python API to the users, such as OpenMV and CircuitPython.
+However, Python needs to be interpreted. This leads to low efficiency when running it. So most complicated projects based on MicroPython implement their core algorithm in C, just provide some simple Python API to the users, such as [OpenMV](https://openmv.io/) and [CircuitPython](https://circuitpython.org/).
 
 ### Raspberry Pi
 
-Raspberry Pi, in fact, is totally different from what we talk about here. However, many guys couldn't tell it from microcontrollers. So I would like to explain a little.
+[Raspberry Pi](https://www.raspberrypi.org/), in fact, is totally different from what we talk about here. However, many guys couldn't tell it from microcontrollers. So I would like to explain a little.
 
 Raspberry Pi is actually a well-equipped computer, but small in size. It runs a full Linux operating system, you can connect keyboard, mouse, hard disk and display to it. The only similarity with microcontrollers may be some commonly used on-chip devices, like GPIO, I2C, SPI, which can be controlled by [Swift ](https://github.com/uraimo/SwiftyGPIO)\(Linux version\) as well.
 
