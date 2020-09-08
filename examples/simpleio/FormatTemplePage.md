@@ -7,7 +7,7 @@
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
 
-## <span style="color:#EA5823;font-weight:700">Schematic</span>
+## <span style="color:#EA5823;font-weight:700">Tips</span>
 
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
@@ -29,4 +29,4 @@ import SwiftIO
 ## <span style="color:#EA5823;font-weight:700">References</span>
 
 ---
-Last revision 2020/09/04 by Johnson
+Last revision 2020/09/10 by Johnson

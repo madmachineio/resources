@@ -33,7 +33,7 @@
     * [LCDFamily](examples/Challenge/LCDFamily.md)
     * [RobotArm](examples/Challenge/RobotArm.md)
     * [Tetris](examples/Challenge/Tetris.md)
-  * [MakerKit]
+  * [MakerKit](examples/MakerKit/README.md)
     * [Mission 01 Blink](examples/MakerKit/Mission01Blink.md)
     * [Mission 02 RGB LED](examples/MakerKit/Mission02RGB_LED.md)
     * [Mission 03 Push Button](examples/MakerKit/Mission03Push_Button.md)
