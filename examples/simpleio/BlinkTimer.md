@@ -2,6 +2,8 @@
 
 ![](../../.gitbook/assets/BlinkTimer01.gif)
 
+This example shows how to use the timer and interrupt mechanism of the SwiftIO Board to display the on-board Red LED blinking at a constant period.
+
 ## <span style="color:#EA5823;font-weight:700">What you need</span>
 
 - SwiftIO board
@@ -12,23 +14,7 @@
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 ![](../../.gitbook/assets/BlinkTimer/01.png)
 
-## <span style="color:#EA5823;font-weight:700">Tips</span>
-
-
-What is a timer?
-A timer or to be more precise a timer / counter is a piece of hardware builtin the SwiftIO Board  (other controllers have timer hardware, too). It is like a clock, and can be used to measure time events.
-The timer can be programmed by some special registers. You can configure the prescaler for the timer, or the mode of operation and many other things.
-
-What is a Interrupt?
-An Interrupt's job is to make sure that the processor responds quickly to important events. When a certain signal is detected, an Interrupt (as the name suggests) interrupts whatever the processor is doing, and executes some code designed to react to whatever external stimulus is being fed to the SwiftIO Board.
-
-
 ## <span style="color:#EA5823;font-weight:700">Code</span>
-
-
-
-
-
 
 ```swift
 /// Change the LED state every second by setting the interrupt.
@@ -50,6 +36,17 @@ while true {
 }
 ```
 
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
+
+What is a timer?
+A timer or more precisely a timer/counter is a piece of hardware built into the SwiftIO board. It is like an alarm clock, and the timer can be programmed through some special registers. You can preset parameters for the timer, which can be triggered by a fixed time interval.
+
+What is an interrupt?
+The job of the interrupt is to ensure that the processor responds quickly to important events. When a certain signal is detected, the interrupt will interrupt any operation being performed by the processor and execute some code to respond to any external stimuli fed into the SwiftIO board.
+
+In this example, the timer is set as the internal interrupt source. This is the setInterrupt(ms:1000) method of the Timer() object. The parameter passed in indicates that the timer triggers an interrupt every 1000ms, which is 1s. The toggle() (as the name implies) method of DigitalOut means that the output level is inverted.
+
+The advantage of using this method to achieve timed repetitive events (turning on and off the LED) is that it does not need to use the sleep(ms:) method, and will not occupy the SwiftIO controller, during which it can do other things.
 
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>

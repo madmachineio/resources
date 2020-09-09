@@ -1,32 +1,25 @@
 # <span style="color:#EA5823;font-weight:800">BrightnessAnalogIn</span>
 
+![](../../.gitbook/assets/BrightnessAnalogIn01.gif)
+
+This example demonstrates how to use an analog output (pulse width modulation (PWM)) to adjust the brightness of an LED based on the position of the potentiometer. PWM is a technology that obtains a very similar behavior from a digital output, which can be turned off and on very quickly, and the ratio between on and off time is different.
 
 ## <span style="color:#EA5823;font-weight:700">What you need</span>
 
 - SwiftIO board
+- Jumper wires
+- Potentiometer or Module
+- LED Module (LED and 10k ohm resistor)
+- SwiftIO shield(optional)
 
 #### Kits that meet the experimental conditions: 
 - [Maker Kit for SwiftIO](https://www.madmachine.io/product-page/maker-kit-for-swiftio)
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-![](../../.gitbook/assets/BlinkAnalogIn/01.png)
-![](../../.gitbook/assets/BlinkAnalogIn/02.png)
-![](../../.gitbook/assets/BlinkAnalogIn/03.png)
-
-
-
-Once you get this example running, grab your arduino and shake it back and forth. What you are doing here is essentially mapping time across the space. To our eyes, the movement blurs each LED blink into a line. As the LED fades in and out, those little lines will grow and shrink in length. Now you are seeing the pulse width.
-
-
-## <span style="color:#EA5823;font-weight:700">Tips</span>
-
-Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. Digital control is used to create a square wave, a signal switched between on and off. This on-off pattern can simulate voltages in between full on (5 Volts) and off (0 Volts) by changing the portion of the time the signal spends on versus the time that the signal spends off. The duration of "on time" is called the pulse width. To get varying analog values, you change, or modulate, that pulse width. If you repeat this on-off pattern fast enough with an LED for example, the result is as if the signal is a steady voltage between 0 and 5v controlling the brightness of the LED.
-
-In the graphic below, the green lines represent a regular time period. This duration or period is the inverse of the PWM frequency. In other words, with Arduino's PWM frequency at about 500Hz, the green lines would measure 2 milliseconds each. A call to analogWrite() is on a scale of 0 - 255, such that analogWrite(255) requests a 100% duty cycle (always on), and analogWrite(127) is a 50% duty cycle (on half the time) for example.
+![](../../.gitbook/assets/BrightnessAnalogIn/03.png)
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
-
 
 ```swift
 /// Read the analog input value and use it to set the PWM output in order to change the LED brightness.
@@ -50,11 +43,21 @@ while true {
 ```
 
 
-## <span style="color:#EA5823;font-weight:700">Video</span>
-![](../../.gitbook/assets/BrightnessAnalogIn01.gif)
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
+
+Pulse Width Modulation (PWM) is a technique for obtaining analog results digitally. Digital control is used to create a square wave, a signal that switches between on and off. By changing the ratio of the signal on time to the signal off time, this switch mode can simulate the voltage between fully open (3.3 volts) and off (0 volts). The duration of the "on time" is called the pulse width. To obtain a varying analog value, you can change or modulate the pulse width. For example, if you repeat this switching pattern with LEDs fast enough, the result is as if the signal is a stable voltage between 0 and 3.3v that controls the brightness of the LED.
+
+In the figure below, the red line represents a fixed time period. The duration or period is the inverse of the PWM frequency. In other words, when the PWM frequency is about 500 Hz, the red lines are measured for 2 milliseconds each. The range of calling setDutycycle(value) is 0-1, so setDutycycle(1) requests a 100% duty cycle (always on), and setDutycycle(0.5) is a 50% duty cycle (half the time).
+
+![](../../.gitbook/assets/BrightnessAnalogIn/Duty_Cycle_Examples.png)
+
+Correspondingly, analogIn's readRawValue() is not called this time, but the corresponding return value range of readPercent() is 0 to 1.
+
+Once you get the example running, grab your SwiftIO board and shake it back and forth. What you are doing here is actually mapping time across the entire space. In our opinion, motion blurs each LED flashing into a line. As the LED fades in and out, the length of these thin lines will increase and decrease. Now you will see the pulse width.
+
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
-- PWMOut - The PWMOut class is used to vary the output voltage
+- [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to vary the output voltage
 
 ## <span style="color:#EA5823;font-weight:700">References</span>
 
@@ -62,6 +65,12 @@ while true {
 - [Duty cycle](https://en.wikipedia.org/wiki/Duty_cycle)
 - [Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)
 - [Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)
+
+## Tips
+
+![](../../.gitbook/assets/BrightnessAnalogIn/01.png)
+
+![](../../.gitbook/assets/BrightnessAnalogIn/02.png)
 
 ---
 Last revision 2020/09/04 by Johnson

@@ -10,7 +10,7 @@ In this example we use a variable resistor (aka potentiometer) to control the fl
 - SwiftIO board
 - Jumper wires
 - Potentiometer or Module
-- LED Module
+- LED Module (LED and 10k ohm resistor)
 - SwiftIO shield(optional)
   
 #### Kits that meet the experimental conditions: 
@@ -20,8 +20,6 @@ In this example we use a variable resistor (aka potentiometer) to control the fl
 
 
 ![](../../.gitbook/assets/BlinkAnalogIn/03.png)
-
-## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
 Prepare the jumper wire cables, notice the female and male ends. Connect the male ends to the SwiftIO board at ports GND，3.3V and P20/A6 ports. 
 
@@ -57,7 +55,9 @@ while true {
 
 
 ```
-## <span style="color:#EA5823;font-weight:700">A Brief Explanation</span>
+
+
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
 By Ohm's law, in a single resistor circuit, the voltage measured across a resistor connected to 3.3V power is always 3.3V, regardless of the resistor's value. To get a voltage proportional to the resistor's value, a resistor divider is added. This circuit uses a variable resistor with 3 legs. By measuring the SIG pin we get the voltage drop values. The voltage measured (Vout) follows this formula:
 
