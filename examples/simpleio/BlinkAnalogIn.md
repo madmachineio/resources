@@ -81,6 +81,9 @@ SwiftIO has several 12-bit analog to digital converters(ADC), which means the an
 If you have the optional modules, you can also setup the circuit as shown belown.
 
 ![](../../.gitbook/assets/BlinkAnalogIn/01.png)
+
 ![](../../.gitbook/assets/BlinkAnalogIn/02.png)
+
+
 ---
 Last revision 2020/09/04 by Johnson
