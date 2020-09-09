@@ -1,32 +1,33 @@
 # <span style="color:#EA5823;font-weight:800">BlinkAnalogIn</span>
 
-In this example we use a variable resistor (a potentiometer or a photoresistor), we read its value using one analog input of SwiftIO board and we change the blink period of the LED accordingly. The resistor's analog value is read as a voltage because this is how the analog inputs work.
+![](../../.gitbook/assets/BlinkAnalogIn01.gif)
+In this example we use a variable resistor (aka potentiometer) to control the flashing speed of an LED
+
+ We first read its value using an analog input of the SwiftIO board, then using the code below we can change the blink speed accordingly. The resistor's analog value is read as a voltage change, a key character of the analog circuit.
 
 ## <span style="color:#EA5823;font-weight:700">What you need</span>
 - SwiftIO board
-- SwiftIO shield(optional)
+- Jumper wires
 - Potentiometer or Module
-- LED or Module(optional)
+- LED Module
+- SwiftIO shield(optional)
+  
 #### Kits that meet the experimental conditions: 
 - [Maker Kit for SwiftIO](https://www.madmachine.io/product-page/maker-kit-for-swiftio)
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-![](../../.gitbook/assets/BlinkAnalogIn/01.png)
-![](../../.gitbook/assets/BlinkAnalogIn/02.png)
+
 ![](../../.gitbook/assets/BlinkAnalogIn/03.png)
 
-## <span style="color:#EA5823;font-weight:700">Tips</span>
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
-Connect three wires to the Arduino or Genuino board. The first goes to ground from one of the outer pins of the potentiometer. The second goes from 3.3V volts to the other outer pin of the potentiometer. The third goes from analog input A6 to the middle pin of the potentiometer. 
+Prepare the jumper wire cables, notice the female and male ends. Connect the male ends to the SwiftIO board at ports GND，3.3V and P20/A6 ports. 
 
-For this example, it is possible to use the board's built in LED attached to pin RGBLED. To use an additional LED, attach its longer leg (the positive leg, or anode), to digital pin 10 in series with the 220 ohm resistor, and it's shorter leg (the negative leg, or cathode) to the ground (GND) pin next to pin 10.
+Connect the P20/A6 wire to the middle pin of the potentiometer. Connect the GND wire to the outer pins of the potentiometer, and the 3.3V wire to the other outer pin of the potentiometer. 
 
-The circuit based on a photoresistor uses a resistor divider to allow the high impedence Analog input to measure the voltage. These inputs do not draw almost any current, therefore by Ohm's law the voltage measured on the other end of a resistor connected to 3.3V is always 3.3V, regardless the resistor's value. To get a voltage proportional to the photoresistor value, a resistor divider is necessary. This circuit uses a variable resistor, a fixed resistor and the measurement point is in the middle of the resistors. The voltage measured (Vout) follows this formula:
+On the LED module, connect jumper wires to GND and SIG ports. Connect the GND wire to the GND port of SwiftIO, and connect the SIG wire to the P10/D10 port.
 
-Vout=Vin*(R2/(R1+R2))
-
-12-bit analog to digital converter, which means the analog Read Resolution is 12-bit. The function <code>readRawValue()</code> will read and return the current raw value from the specified analog pin, Data type: <code>int</code>.
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
 
@@ -55,11 +56,15 @@ while true {
 
 
 ```
+## <span style="color:#EA5823;font-weight:700">A Brief Explanation</span>
+
+By Ohm's law, in a single resistor circuit, the voltage measured across a resistor connected to 3.3V power is always 3.3V, regardless of the resistor's value. To get a voltage proportional to the resistor's value, a resistor divider is added. This circuit uses a variable resistor with 3 legs. By measuring the SIG pin we get the voltage drop values. The voltage measured (Vout) follows this formula:
+
+Vout=Vin*(R2/(R1+R2))
+
+SwiftIO has several 12-bit analog to digital converters(ADC), which means the analog resolution is 12-bit. The function <code>readRawValue()</code> will read and return the current raw value from the specified analog pin, in data type: <code>int</code>.
 
 
-## <span style="color:#EA5823;font-weight:700">Video</span>
-
-![](../../.gitbook/assets/BlinkAnalogIn01.gif)
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 
@@ -71,5 +76,11 @@ while true {
 - [Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)
 - [Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)
 
+## <span style="color:#EA5823;font-weight:700">Tips</span>
+
+If you have the optional modules, you can also setup the circuit as shown belown.
+
+![](../../.gitbook/assets/BlinkAnalogIn/01.png)
+![](../../.gitbook/assets/BlinkAnalogIn/02.png)
 ---
 Last revision 2020/09/04 by Johnson
