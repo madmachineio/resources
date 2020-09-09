@@ -1,6 +1,7 @@
 # <span style="color:#EA5823;font-weight:800">BlinkAnalogIn</span>
 
 ![](../../.gitbook/assets/BlinkAnalogIn01.gif)
+
 In this example we use a variable resistor (aka potentiometer) to control the flashing speed of an LED
 
  We first read its value using an analog input of the SwiftIO board, then using the code below we can change the blink speed accordingly. The resistor's analog value is read as a voltage change, a key character of the analog circuit.
