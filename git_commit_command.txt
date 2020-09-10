@@ -1,0 +1,13 @@
+git help
+
+git add *
+
+git commit -m "commit_info"
+
+git status
+
+git log
+
+git push origin master
+
+
