@@ -1,14 +1,16 @@
-# <span style="color:#EA5823;font-weight:800">Example Name</span>
+# <span style="color:#EA5823;font-weight:800">Debounce</span>
 
+![](../../.gitbook/assets/Debounce/Debounce.gif)
 
 ## <span style="color:#EA5823;font-weight:700">What you need</span>
 
+- SwiftIO board
+- button
+- wires
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-
-## <span style="color:#EA5823;font-weight:700">Tips</span>
-
+![](../../.gitbook/assets/Debounce/../ButtoncontrolLED/ButtoncontrolLED_bb.png)
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
 
@@ -56,14 +58,17 @@ while true {
 }
 ```
 
-
-## <span style="color:#EA5823;font-weight:700">Video</span>
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 
 
 ## <span style="color:#EA5823;font-weight:700">References</span>
+
+
+## <span style="color:#EA5823;font-weight:700">Tips</span>
+
 
 ---
 Last revision 2020/09/10 by Johnson

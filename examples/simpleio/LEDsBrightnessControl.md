@@ -1,11 +1,19 @@
-# <span style="color:#EA5823;font-weight:800">Example Name</span>
+# <span style="color:#EA5823;font-weight:800">LEDsBrightnessControl</span>
+
+![](../../.gitbook/assets/LEDsBrightnessControl/)
 
 
 ## <span style="color:#EA5823;font-weight:700">What you need</span>
 
+- SwiftIO board
+- Jumper wires
+- Potentiometer or Module
+- 3 color LED Modules (3*color LEDs and 3*10k ohm resistors)
+- SwiftIO shield(optional)
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
+![](../../.gitbook/assets/LEDsBrightnessControl/LEDsBrightness_bb.png)
 
 ## <span style="color:#EA5823;font-weight:700">Tips</span>
 

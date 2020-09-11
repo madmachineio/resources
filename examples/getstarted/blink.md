@@ -1,5 +1,7 @@
 # <span style="color:#EA5823;font-weight:800">Blink</span>
 
+![](../../_book/.gitbook/assets/Blink/)
+
 Let's first come to an easy beginner project - blink the onboard LED. This example shows the simplest thing you can do with just a SwiftIO board to see physical output: it blinks the on-board REG LED.
 
 ## <span style="color:#EA5823;font-weight:700">What you need</span>
@@ -22,6 +24,7 @@ Just plug the board to your computer through a USB cable after you finished code
 
 ## <span style="color:#EA5823;font-weight:700">Schematic</span>
 
+![](../../_book/.gitbook/assets/../../../.gitbook/assets/Blink/RGBLEDSCH.png)
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
 
@@ -51,9 +54,14 @@ while true {
     sleep(ms: 1000)
 }
 ```
-## <span style="color:#EA5823;font-weight:700">Video</span>
 
-![](../../.gitbook/assets/gif01.gif)
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
+`import SwiftIO`是引用此名称库，在本教程中，所有案例程序须先引用此库
+let是Swift语言声明常量的关键字，我们以后将会经常使用它来给每个端口指定名称，便于引用。`Id`是一个枚举，枚举Id的所有类型可以在See Also查看，其成员包含了所有的的IO端口。由于pinMap上并没有标识RED, GREEN, BLUE你可能会感到困惑。因为在SwiftIO板上已经默认搭载了RGB三色LED并且串联了电阻，这三个端口内部连接LED相应引脚如电路图所示。
+`while`循环设置为`true`表示此循环检验永远为真，除非硬件掉电或者重启，此循环进入后往复不尽。循环体是循环代码的部分，由大括号对`{}`括起并且需要缩印以便阅读。
+`.write()`方法属于`DigitalOut`对象其传入的值有`true`和`false`,分别代表输出高电平(3.3V)和低电平（0V or GND)。
+`sleep(ms:)`函数属于内置函数，表示延迟时间，以毫秒为单位计算，必须加上参数外部名`ms`才能传入参数。
+
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 

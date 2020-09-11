@@ -1,14 +1,16 @@
 # ButtoncontrolLED
 
+![](../../.gitbook/assets/ButtoncontrolLED/buttoncontrolLED.gif)
+
 In this example, you will use a pushbutton to control the LED. 
 
 The input signal will change as you press the button. Thus, you can set LED status according to different input states.
 
 ## What you need
 
-* SwiftIO board
-* button
-* wires
+- SwiftIO board
+- button
+- wires
 
 ## Circuit
 
@@ -18,8 +20,8 @@ There is an onboard RGB LED. Please apply **low** voltage to light it.
 
 The button has four legs. The two legs on same side are interconnected. 
 
-* Connect the leg on left side to 3.3 pin. 
-* Connect the leg on right side to digital pin D0.
+- Connect the leg on left side to 3.3 pin. 
+- Connect the leg on right side to digital pin D0.
 
 In default mode, the digital pin reads `false`. When you press the button, the two points on the button will be connected. And the value of pin will be `true`.
 
@@ -27,7 +29,7 @@ So please be sure you connected the button in a right way.
 
 ## Code
 
-Here comes the code:
+You can find the example code at the bottom left corner of IDE: ![](../../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) &gt; SimpleIO &gt; ButtoncontrolLED.
 
 ```swift
 // Read the input signal controlled by a button to turn on and off the LED.
@@ -58,5 +60,5 @@ while true {
 
 ```
 
-You can find the example code at the bottom left corner of IDE: ![](../../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) &gt; SimpleIO &gt; ButtoncontrolLED.
+
 

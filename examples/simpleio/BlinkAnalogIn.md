@@ -59,12 +59,7 @@ while true {
 
 ## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
-By Ohm's law, in a single resistor circuit, the voltage measured across a resistor connected to 3.3V power is always 3.3V, regardless of the resistor's value. To get a voltage proportional to the resistor's value, a resistor divider is added. This circuit uses a variable resistor with 3 legs. By measuring the SIG pin we get the voltage drop values. The voltage measured (Vout) follows this formula:
-
-Vout=Vin*(R2/(R1+R2))
-
-SwiftIO has several 12-bit analog to digital converters(ADC), which means the analog resolution is 12-bit. The function <code>readRawValue()</code> will read and return the current raw value from the specified analog pin, in data type: <code>int</code>.
-
+`.readRawValue()` Read the current raw value from the specified analog pin. 由于SwiftIO Board的模拟数字转换器是12bit分辨率的ADC，所以对应电压0-3.3V，将返回相应的数值是0-4095. 这个数值将作为D10端口高低电平`toggle()`的间隔时间。 The toggle() (as the name implies) method of DigitalOut means that the output level is inverted.
 
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
