@@ -2,6 +2,8 @@
 
 ![](../../.gitbook/assets/PWMSoundOutput/PWM.gif)
 
+This example shows how to use the `PWMOut` to generate notes. It plays three tones repeatly.
+
 ## <span style="color:#EA5823;font-weight:700">What you need</span>
 
 - SwiftIO board

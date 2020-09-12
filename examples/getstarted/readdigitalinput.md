@@ -1,6 +1,8 @@
 # <span style="color:#EA5823;font-weight:800">ReadDigitalInput</span>
 
 ![](../../.gitbook/assets/ReadDigitalInput/ReadDigtalnput.gif)
+
+
 ![](../../.gitbook/assets/ReadDigitalInput/003.gif)
 
 In this example, let's try to read digital signal using a pushbutton. Here you will use serial monitor to show the input value.

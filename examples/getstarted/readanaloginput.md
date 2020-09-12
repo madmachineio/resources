@@ -1,6 +1,8 @@
 # <span style="color:#EA5823;font-weight:800">ReadAnalogInput</span>
 
 ![](../../.gitbook/assets/ReadAnalogInput/ReadAnaloginput.gif)
+
+
 ![](../../.gitbook/assets/ReadAnalogInput/screen.gif)
 
 In this new example, you are going to read analog input. We'll use a potentiometer.
