@@ -2,6 +2,8 @@
 
 ![](../../.gitbook/assets/Debounce/Debounce.gif)
 
+When we use Pushbutton as toggle switch, it often generate spurious open/close transitions when pressed, due to mechanical and physical issues. This example demonstrates how to debounce an input, which means checking twice in a short period of time to make sure the pushbutton is definitely pressed.
+
 ## <span style="color:#EA5823;font-weight:700">What you need</span>
 
 - SwiftIO board
@@ -60,12 +62,22 @@ while true {
 
 ## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
+Swift has a basic Boolean type, called Bool. Boolean values are referred to as logical, because they can only ever be true or false. Swift provides two Boolean constant values, true and false. `var triggered` is define as Bool to store whether the DigitalInput is change.
+
+The `DigitalOut` class has `Mode` enumerate includes the available output modes. The default output mode in most cases is `pushPull`. The `pushPull` mode enables the digital pin to output high and low voltage levels while the open-drain output cannot truly output a high level.
+
+Due to mechanical and physical issues, pushbuttons often generate spurious open/close transitions when pressed, these transitions may be read as multiple presses in a very short time fooling the program. This example demonstrates how to debounce an input, which means checking twice in a short period of time to make sure the pushbutton is definitely pressed. Without debouncing, pressing the button once may cause unpredictable results. This code uses the `sleep(ms: 1)` 50 times to keep track of the time passed since the button was pressed.
+
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 
+- [DigitalOut](https://swiftioapi.madmachine.io/Classes/DigitalOut.html) - The DigitalOut class is used to set a High or Low voltage output to a digital output pin. 
+- [DigitalOut Mode](https://swiftioapi.madmachine.io/Classes/DigitalOut/Mode.html) - The Mode enumerate includes the available output modes.
 
 ## <span style="color:#EA5823;font-weight:700">References</span>
 
+- [Boolean type](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+- [Push–pull output](https://en.wikipedia.org/wiki/Push%E2%80%93pull_output)
 
 ## <span style="color:#EA5823;font-weight:700">Tips</span>
 

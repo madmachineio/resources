@@ -1,5 +1,7 @@
 # <span style="color:#EA5823;font-weight:800">PWMBrightnessControl</span>
 
+![](../../.gitbook/assets/PWMBrightnessControl/PWMBrightnessControl.gif)
+
 In this project, let's try to control the brightness of LED - light gradually on and off LED.
 
 You will use PWM to set on-off ratio of output signal to get different voltage. The pins marked with “~“ can be used for this.
@@ -17,7 +19,7 @@ You will use PWM to set on-off ratio of output signal to get different voltage. 
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-![](../../.gitbook/assets/)
+![](../../.gitbook/assets/PWMBrightnessControl)
 
 Build the circuit as shown above.
 
@@ -25,6 +27,8 @@ Build the circuit as shown above.
 * The cathode \(negative leg\) of LED connects to ground.
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
+
+You can find the example code at the bottom left corner of IDE: ![](../../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) &gt; GettingStarted &gt; PWMBrightnessControl.
 
 ```swift
 // Brighten or dimming the LED by changing the duty cycle of PWM signal.
@@ -87,7 +91,6 @@ The `PWMOut` class is used to vary the output voltage by controlling the duratio
 - [Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)
 - [Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)
 
-You can find the example code at the bottom left corner of IDE: ![](../../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) &gt; GettingStarted &gt; PWMBrightnessControl.
 
 
 ---

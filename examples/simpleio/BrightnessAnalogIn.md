@@ -42,7 +42,6 @@ while true {
 }
 ```
 
-
 ## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
 Pulse Width Modulation (PWM) is a technique for obtaining analog results digitally. Digital control is used to create a square wave, a signal that switches between on and off. By changing the ratio of the signal on time to the signal off time, this switch mode can simulate the voltage between fully open (3.3 volts) and off (0 volts). The duration of the "on time" is called the pulse width. To obtain a varying analog value, you can change or modulate the pulse width. For example, if you repeat this switching pattern with LEDs fast enough, the result is as if the signal is a stable voltage between 0 and 3.3v that controls the brightness of the LED.
@@ -73,4 +72,4 @@ Once you get the example running, grab your SwiftIO board and shake it back and 
 ![](../../.gitbook/assets/BrightnessAnalogIn/02.png)
 
 ---
-Last revision 2020/09/04 by Johnson
+Last revision 2020/09/12 by Johnson

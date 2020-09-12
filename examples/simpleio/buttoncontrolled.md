@@ -59,6 +59,18 @@ while true {
 }
 
 ```
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
+`DigitalIn` class is intended to detect the state of a digital input pin. The input value is either true(1) or false(0).`.read()` Read the value from a digital input pin.
+
+## <span style="color:#EA5823;font-weight:700">See Also</span>
+- [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to vary the output voltage
+
+## <span style="color:#EA5823;font-weight:700">References</span>
+
+- [Pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
+
+---
+Last revision 2020/09/12 by Johnson
 
 
