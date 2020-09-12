@@ -1,6 +1,6 @@
 # <span style="color:#EA5823;font-weight:800">Blink</span>
 
-![](../../_book/.gitbook/assets/Blink/Blink.gif)
+![](../../.gitbook/assets/Blink/Blink.gif)
 
 Let's first come to an easy beginner project - blink the onboard LED. This example shows the simplest thing you can do with just a SwiftIO board to see physical output: it blinks the on-board REG LED.
 
