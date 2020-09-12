@@ -2,6 +2,7 @@
 
 ![](../../.gitbook/assets/ReadDigitalInput/ReadDigtalnput.gif)
 
+---
 
 ![](../../.gitbook/assets/ReadDigitalInput/003.gif)
 
