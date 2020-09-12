@@ -63,7 +63,9 @@ while true {
 ```
 ## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
-对象`AnalogIn`传入的参数必须是枚举`Id`中可用于模拟输入的端口(A0-A11)，该对象中返回模拟值的方法有三个，`.readVoltage()`返回的是电压值，其返回值是介于0V-3.3V之间的浮点数。`print()`函数是直接向串口打印结果的参数，可以方便的使用计算机连接SwiftIO Board的串口后查看结果，并调试。请注意，SwiftIO Board有两个USB连接口，其中用于载入程序的接口并不能作为监听串口使用，所以需要进行换线操作，具体请查看下面Tips种的操作。这两个USB接口均可作为SwiftIO Board的供电接口。
+The parameter passed by the object `AnalogIn` must be the port (A0-A11) that can be used for analog input in the enumeration `Id`. There are three methods for returning the analog value in this object. `.readVoltage()` returns the voltage value , The return value is a floating point number between 0V-3.3V. The `print()` function is a parameter to print the result directly to the serial port. You can conveniently use a computer to connect to the serial port of the SwiftIO Board to view the results and debug. Please note that the SwiftIO Board has two USB ports. The port used to load programs cannot be used as a monitor serial port, so you need to change the line. For details, please see the Tips operations below. Both USB ports can be used as power supply ports for SwiftIO Board.
+
+<!-- 对象`AnalogIn`传入的参数必须是枚举`Id`中可用于模拟输入的端口(A0-A11)，该对象中返回模拟值的方法有三个，`.readVoltage()`返回的是电压值，其返回值是介于0V-3.3V之间的浮点数。`print()`函数是直接向串口打印结果的参数，可以方便的使用计算机连接SwiftIO Board的串口后查看结果，并调试。请注意，SwiftIO Board有两个USB连接口，其中用于载入程序的接口并不能作为监听串口使用，所以需要进行换线操作，具体请查看下面Tips种的操作。这两个USB接口均可作为SwiftIO Board的供电接口。 -->
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 

@@ -56,11 +56,12 @@ while true {
 ```
 
 ## <span style="color:#EA5823;font-weight:700">Instruction</span>
-`import SwiftIO`是引用此名称库，在本教程中，所有案例程序须先引用此库
-let是Swift语言声明常量的关键字，我们以后将会经常使用它来给每个端口指定名称，便于引用。`Id`是一个枚举，枚举Id的所有类型可以在See Also查看，其成员包含了所有的的IO端口。由于pinMap上并没有标识RED, GREEN, BLUE你可能会感到困惑。因为在SwiftIO板上已经默认搭载了RGB三色LED并且串联了电阻，这三个端口内部连接LED相应引脚如电路图所示。
-`while`循环设置为`true`表示此循环检验永远为真，除非硬件掉电或者重启，此循环进入后往复不尽。循环体是循环代码的部分，由大括号对`{}`括起并且需要缩印以便阅读。
-`.write()`方法属于`DigitalOut`对象其传入的值有`true`和`false`,分别代表输出高电平(3.3V)和低电平（0V or GND)。
-`sleep(ms:)`函数属于内置函数，表示延迟时间，以毫秒为单位计算，必须加上参数外部名`ms`才能传入参数。
+`import SwiftIO` refers to this name library. In this tutorial, all case programs must first reference this library
+let is a keyword for Swift language to declare constants. We will often use it to assign names to each port for easy reference in the future. `Id` is an enumeration. All types of enumeration Id can be viewed in See Also. Its members include all IO ports. You may be confused because RED, GREEN, and BLUE are not marked on pinMap. Because the SwiftIO board is equipped with RGB three-color LEDs by default and connected in series with resistors, the corresponding pins of the LEDs connected to the three ports are shown in the circuit diagram.
+Setting the `while` loop to `true` means that the loop check will always be true, unless the hardware is powered off or restarted, the loop will not stop after entering. The loop body is the part of the loop code, enclosed by a pair of braces `{}` and needs to be indented for reading.
+The `.write()` method belongs to the `DigitalOut` object and its incoming values ​​are `true` and `false`, which represent output high level (3.3V) and low level (0V or GND) respectively.
+The `sleep(ms:)` function is a built-in function, which means the delay time, calculated in milliseconds, and the external name of the parameter `ms` must be added to pass in the parameter.
+
 
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>

@@ -60,9 +60,16 @@ while true {
 ```
 
 ## <span style="color:#EA5823;font-weight:700">Instruction</span>
+
+`let leds = [red, green, blue]`Swift provides three primary collection types, known as arrays, arrays are ordered collections of values. You access and modify an array through its methods and properties, or by using subscript syntax. such as leds.red, leds.green, leds.blue.
+`var value: Float = 0.0` explicitly declares that the type of value is a floating-point number type, not an integer type. Explicitly declaring the type is very important for scenarios where the type is easy to be confused. The subsequent use shows that the variable must be a floating-point real number .
+You can iterate over the entire set of values in an array with the for-in loop: `for led in leds` This is the reason why we want to create the array `leds`. With the for-in loop syntax structure, the elements are It becomes very convenient and concise when traversing and iterating.
+
+<!--
 `let leds = [red, green, blue]`Swift provides three primary collection types, known as arrays, arrays are ordered collections of values. You access and modify an array through its methods and properties, or by using subscript syntax. such as leds.red, leds.green, leds.blue.
 `var value: Float = 0.0`显式声明了value的类型是浮点数类型，而不是整数类型，显式声明类型对于容易混淆类型的场景非常重要，后续使用说明了这个变量必须是浮点型实数。
 You can iterate over the entire set of values in an array with the for-in loop: `for led in leds` 这就是我们要创建数组`leds`的原因，配合for-in loop语法结构，在对其元素进行遍历和迭代时会变得非常方便和简洁。
+-->
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 

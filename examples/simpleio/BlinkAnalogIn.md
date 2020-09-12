@@ -59,8 +59,11 @@ while true {
 
 ## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
-`.readRawValue()` Read the current raw value from the specified analog pin. 由于SwiftIO Board的模拟数字转换器是12bit分辨率的ADC，所以对应电压0-3.3V，将返回相应的数值是0-4095. 这个数值将作为D10端口高低电平`toggle()`的间隔时间。 The toggle() (as the name implies) method of DigitalOut means that the output level is inverted.
+`.readRawValue()` Read the current raw value from the specified analog pin. Since the analog-to-digital converter of the SwiftIO Board is a 12-bit resolution ADC, the corresponding voltage is 0-3.3V, and the corresponding value is 0-4095. This value will be used as the interval time between the high and low levels of `toggle()` of D10 port. The toggle() (as the name implies) method of DigitalOut means that the output level is inverted.
 
+<!--
+`.readRawValue()` Read the current raw value from the specified analog pin. 由于SwiftIO Board的模拟数字转换器是12bit分辨率的ADC，所以对应电压0-3.3V，将返回相应的数值是0-4095. 这个数值将作为D10端口高低电平`toggle()`的间隔时间。 The toggle() (as the name implies) method of DigitalOut means that the output level is inverted.
+-->
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 
