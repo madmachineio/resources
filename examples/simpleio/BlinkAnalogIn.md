@@ -83,7 +83,7 @@ Between each `.toggle()`, a `sleep(ms: )` function with a parameter `value` is u
 
 ## <span style="color:#EA5823;font-weight:700">Tips</span>
 
-If you have the optional modules, you can also setup the circuit as shown belown.
+If you have the optional modules, you can also setup the circuit as shown below.
 
 ![](../../.gitbook/assets/BlinkAnalogIn/01.png)
 
@@ -94,5 +94,7 @@ If you have the optional modules, you can also setup the circuit as shown belown
 Last Edit 2020/09/13 by Martin
 
 > Language fixes.
+>
+> Spelling correction
 
 Last revision 2020/09/04 by Johnson

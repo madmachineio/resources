@@ -42,7 +42,7 @@ while true {
 
 ### What is a timer?
 
-Timer is percisely a part of the hardware on the SwiftIO board. It works just like an alarm clock, and it can be programmed by manipulation of some registers. You can set some parameters for the timer, which makes it trigger every so often.
+Timer is precisely a part of the hardware on the SwiftIO board. It works just like an alarm clock, and it can be programmed by manipulation of some registers. You can set some parameters for the timer, which makes it trigger every so often.
 
 <!--
 什么是计时器？
@@ -64,7 +64,7 @@ In this case, the timer is set to be the internal interrupt source, which is don
 
 The `.toggle()` (as the name implies) method of DigitalOut class means that the output level of the specific pin is inverted. In this case, the red LED light will be switch on or off when the interruption happens.
 
-You can also use the `sleep(ms: )` function to achive the same effect. But this function will make the processor unresponsive during this period of time, making it not do anything. Therefore, the advantage of using `interrupt` is that the processor can still do other things between two toggles. 
+You can also use the `sleep(ms: )` function to achieve the same effect. But this function will make the processor unresponsive during this period of time, making it not do anything. Therefore, the advantage of using `interrupt` is that the processor can still do other things between two toggles. 
 
 <!--
 这个例子中，将定时器设置为内部的中断源，这就是Timer()对象的 setInterrupt（ms:1000）方法，传入的参数表示这个定时器每隔1000ms即1s触发中断。DigitalOut的toggle()（顾名思义）方法表示输出电平进行翻转。
@@ -76,7 +76,7 @@ You can also use the `sleep(ms: )` function to achive the same effect. But this 
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 - [Timer()](https://swiftioapi.madmachine.io/Classes/Timer.html) - The Timer class is used to set the occasion to raise the interrupt.
-- [toggle()](https://swiftioapi.madmachine.io/Classes/DigitalOut.html#/s:7SwiftIO10DigitalOutC6toggleyyF) - To alternate between two voltagle level.
+- [toggle()](https://swiftioapi.madmachine.io/Classes/DigitalOut.html#/s:7SwiftIO10DigitalOutC6toggleyyF) - To alternate between two voltage level.
 
 ## <span style="color:#EA5823;font-weight:700">References</span>
 
@@ -89,5 +89,7 @@ You can also use the `sleep(ms: )` function to achive the same effect. But this 
 Last Edit 2020/09/13 by Martin
 
 > Changes on instructions. 
+>
+> Spelling corrections
 
 Last revision 2020/09/04 by Johnson
