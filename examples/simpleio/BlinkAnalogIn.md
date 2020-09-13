@@ -92,4 +92,7 @@ If you have the optional modules, you can also setup the circuit as shown belown
 
 ---
 Last Edit 2020/09/13 by Martin
+
+> Language fixes.
+
 Last revision 2020/09/04 by Johnson
