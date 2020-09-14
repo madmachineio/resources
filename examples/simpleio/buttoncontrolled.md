@@ -63,7 +63,7 @@ while true {
 
 `DigitalIn` class is intended to detect the state of a digital input pin. The input value is either true(1) or false(0). The `.read()` function reads the value from a digital input pin.
 
-If you have the experience with Arduino, you may notice there's no pull-down resistor on the button. That's because there's on-board pull-down function. Reference the `DigitalIn` class for more information.
+If you have the experience with Arduino, you may notice there's no pull-down resistor on the button. That's because the SwiftIO Board already provides a pull-down function. Reference the `DigitalIn` class for more information.
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>
 - [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to vary the output voltage
