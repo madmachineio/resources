@@ -14,7 +14,7 @@ The input signal will change as you press the button. Thus, you can set LED stat
 
 ## Circuit
 
-![](../../.gitbook/assets/button.png)
+![](../../.gitbook/assets/ButtoncontrolLED/ButtoncontrolLED.png)
 
 There is an onboard RGB LED. Please apply **low** voltage to light it.
 
@@ -44,7 +44,7 @@ import SwiftIO
 let red = DigitalOut(Id.RED)
 
 // Initialize a digital input pin D0 the button is connected to.
-let button = DigitalIn(Id.D0)
+let button = DigitalIn(Id.D10)
 
 // Allow the button to control the LED all the time.
 while true {

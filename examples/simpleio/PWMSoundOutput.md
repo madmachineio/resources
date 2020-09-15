@@ -25,7 +25,7 @@ This example shows how to use the `PWMOut` to generate notes. It plays three ton
 import SwiftIO
 
 /// Initialize a PWM output pin the speaker is connected to.
-let speaker = PWMOut(Id.PWM2B)
+let speaker = PWMOut(Id.PWM2B)  //P10 D10 pin
 
 /// Specify several frequencies to produce different sound.
 let fre = [262, 294, 330]

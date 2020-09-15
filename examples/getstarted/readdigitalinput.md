@@ -16,7 +16,7 @@ In this example, let's try to read digital signal using a pushbutton. Here you w
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-![](../../.gitbook/assets/button.png)
+![](../../.gitbook/assets/ReadDigitalInput/ReadDigitalInput.png)
 
 The button has four legs. The two legs on same side are interconnected. 
 
@@ -39,7 +39,7 @@ You can find the example code at the bottom left corner of IDE: ![](../../.gitbo
 import SwiftIO
 
 // Initialize the pin D0 as a digital input pin.
-let pin = DigitalIn(Id.D0)
+let pin = DigitalIn(Id.D10)
 
 // read the input every second.
 while true {

@@ -19,7 +19,7 @@ You will use PWM to set on-off ratio of output signal to get different voltage. 
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-![](../../.gitbook/assets/PWMBrightnessControl)
+![](../../.gitbook/assets/PWMBrightnessControl/PWMBrightnessControl.png)
 
 Build the circuit as shown above.
 
@@ -38,7 +38,7 @@ You can find the example code at the bottom left corner of IDE: ![](../../.gitbo
 import SwiftIO
 
 // Initialize the pin PWM0A as output.
-let led = PWMOut(Id.PWM2B)
+let led = PWMOut(Id.PWM2B) //P10 D10 pin
 
 // Initialize a variable to store the value of duty cycle. 
 // It should be a float between 0.0 and 1.0.

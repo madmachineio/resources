@@ -17,7 +17,7 @@ This example demonstrates how to use an analog output (pulse width modulation (P
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-![](../../.gitbook/assets/BrightnessAnalogIn/03.png)
+![](../../.gitbook/assets/BrightnessAnalogIn/BrightnessAnalogIn.png)
 
 ## <span style="color:#EA5823;font-weight:700">Code</span>
 
@@ -53,6 +53,12 @@ In the figure below, the red line represents a fixed time period. The duration o
 Correspondingly, analogIn's readRawValue() is not called this time, but the corresponding return value range of readPercent() is 0 to 1.
 
 Once you get the example running, grab your SwiftIO board and shake it back and forth. What you are doing here is actually mapping time across the entire space. In our opinion, motion blurs each LED flashing into a line. As the LED fades in and out, the length of these thin lines will increase and decrease. Now you will see the pulse width.
+
+<!--
+相应地，这次没有调用AnalogIn的readRawValue（），但相应的readPercent（）返回值范围是0到1。
+
+一旦示例开始运行，请抓住您的SwiftIO板并来回摇动它。 您在这里所做的实际上是在整个空间上映射时间。 我们认为，运动会使每个LED闪烁成一条线而模糊。 随着LED淡入和淡出，这些细线的长度将增加和减少。 现在您将看到脉冲宽度。
+-->
 
 
 ## <span style="color:#EA5823;font-weight:700">See Also</span>

@@ -20,7 +20,7 @@ When SwiftIO board reads from the pin, it will get a number between 0 and 4095. 
 
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-![](../../.gitbook/assets/ReadAnalogInput/)
+![](../../.gitbook/assets/ReadAnalogInput/ReadAnalogInput.png)
 
 Let's build the circuit now. 
 
@@ -48,7 +48,7 @@ For the code, we will use the `AnalogIn` class.
 import SwiftIO
 
 // Initialize the pin A0 as a analog input.
-let pin = AnalogIn(Id.A0)
+let pin = AnalogIn(Id.A6)
 
 // Read the input voltage every second.
 while true {

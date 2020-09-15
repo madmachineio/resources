@@ -19,7 +19,7 @@ In this example we use a variable resistor (aka potentiometer) to control the fl
 ## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
 
-![](../../.gitbook/assets/BlinkAnalogIn/03.png)
+![](../../.gitbook/assets/BlinkAnalogIn/BlinkAnalogIn.png)
 
 Prepare the jumper wire cables, notice the female and male ends. Connect the male ends to the SwiftIO board at ports GND，3.3V and P20/A6 ports. 
 
