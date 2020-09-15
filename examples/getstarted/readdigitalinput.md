@@ -63,6 +63,11 @@ Please note that the SwiftIO Board has two USB ports. The port used to load prog
 * ​[Id](https://swiftioapi.madmachine.io/Enums/Id.html) - Enumerations of all pins on the board.
 * ​[DigitalIn.read\(\)](https://swiftioapi.madmachine.io/Classes/DigitalIn.html#/s:7SwiftIO9DigitalInC4readSbyF) - Detect the state of a digital input pin. The input value is either true \(1\) or false \(0\).
 
+## References <a id="Reference"></a>
+
+- [Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)
+- [Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)
+
 ## Tips <a id="tips"></a>
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2Fe4d8c917db768afd4b8a62cd2dae310db00e818f.gif?alt=media)

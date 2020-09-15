@@ -1,4 +1,4 @@
-# ButtoncontrolLED
+# Button-controled LED
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F7a31caa67b4783d87958a9eccb7d36f763b7b287.gif?alt=media)
 
@@ -18,14 +18,14 @@ The input signal will change as you press the button. Thus, you can set LED stat
 
 ## Circuit
 
-![](../../.gitbook/assets/button.png)
+![](../../.gitbook/assets/ButtoncontrolLED/ButtoncontrolLED.png)
 
 There is an onboard RGB LED. Please apply **low** voltage to light it.
 
 The button has four legs. The two legs on same side are interconnected. 
 
-* Connect the leg on left side to 3.3 pin. 
-* Connect the leg on right side to digital pin D0.
+- Connect the leg on left side to 3.3V pin. 
+- Connect the leg on right side to digital pin D0.
 
 In default mode, the digital pin reads `false`. When you press the button, the two points on the button will be connected. And the value of pin will be `true`.
 
@@ -63,6 +63,35 @@ while true {
 }
 
 ```
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
+
+`DigitalIn` class is intended to detect the state of a digital input pin. The input value is either true(1) or false(0). The `.read()` function reads the value from a digital input pin.
+
+If you have the experience with Arduino, you may notice there's no pull-down resistor on the button. That's because the SwiftIO Board already provides a pull-down function. Reference the `DigitalIn` class for more information.
+
+## <span style="color:#EA5823;font-weight:700">See Also</span>
+- [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to vary the output voltage
+
+## <span style="color:#EA5823;font-weight:700">References</span>
+
+- [Pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
+
+## <span style="color:#EA5823;font-weight:700">Challenge</span>
+
+Try to make the button a switch for the LED light?
+
+---
+Last Edit 2020/09/15 by Martin
+
+> Conflict resolved, picture changed on circuit
+
+Last Edit 2020/09/13 by Martin
+
+> Language fixes
+>
+> Added more instructions
+
+Last revision 2020/09/12 by Johnson
 
 ## Instruction
 

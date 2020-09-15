@@ -10,7 +10,7 @@ After all these, you will certainly be able to create something interesting by y
 
 * [GettingStarted](getstarted/)
 * [SimpleIO](simpleio/)
-* [AdvancedIO](advancedio.md)
+* [AdvancedIO](advancedio/)
 
 
 
