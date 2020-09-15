@@ -2,16 +2,17 @@
 
 ![](../../.gitbook/assets/BlinkAnalogIn01.gif)
 
-In this example we use a variable resistor (aka potentiometer) to control the flashing speed of an LED
+In this example, we use a variable resistor (aka potentiometer) to control the flashing speed of an LED light.
 
- We first read its value using an analog input of the SwiftIO board, then using the code below we can change the blink speed accordingly. The resistor's analog value is read as a voltage change, a key character of the analog circuit.
+In order to do this, we read the value of the resistor first, by using the analog input function on the SwiftIO board. Then, we can use the code below to link the value of the resistor to the blinking speed of the LED light. The resistor's analog value is read as a voltage change, a key character of the analog circuit.
+
 
 ## <span style="color:#EA5823;font-weight:700">What you need</span>
 - SwiftIO board
 - Jumper wires
 - Potentiometer or Module
 - LED Module (LED and 10k ohm resistor)
-- SwiftIO shield(optional)
+- SwiftIO shield (optional)
   
 #### Kits that meet the experimental conditions: 
 - [Maker Kit for SwiftIO](https://www.madmachine.io/product-page/maker-kit-for-swiftio)
@@ -21,7 +22,7 @@ In this example we use a variable resistor (aka potentiometer) to control the fl
 
 ![](../../.gitbook/assets/BlinkAnalogIn/BlinkAnalogIn.png)
 
-Prepare the jumper wire cables, notice the female and male ends. Connect the male ends to the SwiftIO board at ports GND，3.3V and P20/A6 ports. 
+Prepare the jumper wire cables, be aware of the female and male ends. Connect the male ends to the SwiftIO board at ports GND，3.3V and P20/A6 ports. 
 
 Connect the P20/A6 wire to the middle pin of the potentiometer. Connect the GND wire to the outer pins of the potentiometer, and the 3.3V wire to the other outer pin of the potentiometer. 
 
@@ -49,7 +50,7 @@ while true {
     print(value)
     // Change the current LED state.
     led.toggle()
-    // Keep the led on or off for a certain period determined by the value you get.
+    // Keep the led on or off for a certain amount of time determined by the value you get.
     sleep(ms: value)
 }
 
@@ -59,7 +60,12 @@ while true {
 
 ## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
-`.readRawValue()` Read the current raw value from the specified analog pin. Since the analog-to-digital converter of the SwiftIO Board is a 12-bit resolution ADC, the corresponding voltage is 0-3.3V, and the corresponding value is 0-4095. This value will be used as the interval time between the high and low levels of `toggle()` of D10 port. The toggle() (as the name implies) method of DigitalOut means that the output level is inverted.
+The `.readRawValue()` function reads the current raw value from the specified analog pin. Since the analog-to-digital converter on the SwiftIO Board has a resolution of 12-bit, the corresponding voltage is 0-3.3V. Therefore, the corresponding value would be 0-4095. 
+
+The `.toggle()` function, as the name suggests, inverts the output level on a specific digital pin. 
+
+Between each `.toggle()`, a `sleep(ms: )` function with a parameter `value` is used. This makes sure that there's a certain amount of time between each toggle, and the time is under control.
+
 
 <!--
 `.readRawValue()` Read the current raw value from the specified analog pin. 由于SwiftIO Board的模拟数字转换器是12bit分辨率的ADC，所以对应电压0-3.3V，将返回相应的数值是0-4095. 这个数值将作为D10端口高低电平`toggle()`的间隔时间。 The toggle() (as the name implies) method of DigitalOut means that the output level is inverted.
@@ -77,7 +83,7 @@ while true {
 
 ## <span style="color:#EA5823;font-weight:700">Tips</span>
 
-If you have the optional modules, you can also setup the circuit as shown belown.
+If you have the optional modules, you can also setup the circuit as shown below.
 
 ![](../../.gitbook/assets/BlinkAnalogIn/01.png)
 
@@ -85,4 +91,14 @@ If you have the optional modules, you can also setup the circuit as shown belown
 
 
 ---
+Last Edit 2020/09/15 by Martin
+
+> Conflict resolve, mainly the picture on Circuit
+
+Last Edit 2020/09/13 by Martin
+
+> Language fixes.
+>
+> Spelling correction
+
 Last revision 2020/09/04 by Johnson
