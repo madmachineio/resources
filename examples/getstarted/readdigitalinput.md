@@ -1,24 +1,22 @@
-# <span style="color:#EA5823;font-weight:800">ReadDigitalInput</span>
+# ReadDigitalInput
 
-![](../../.gitbook/assets/ReadDigitalInput/ReadDigtalnput.gif)
+![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F28482b5134f9b71ba3d12d3b6f5d82d9732d680f.gif?alt=media)
 
----
+![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F248974b7412722c96a260a31c8c1dd91cb365749.gif?alt=media)
 
-![](../../.gitbook/assets/ReadDigitalInput/003.gif)
+In this example, let's try to read digital signal using a pushbutton. The input value is true or false. Here you will use serial monitor to show the it.
 
-In this example, let's try to read digital signal using a pushbutton. Here you will use serial monitor to show the input value.
-
-## <span style="color:#EA5823;font-weight:700">What you need</span>
+## What you need
 
 * SwiftIO board
-* button
-* wires
+* Button
+* Jumper wires
 
-## <span style="color:#EA5823;font-weight:700">Circuit</span>
+## Circuit
 
-![](../../.gitbook/assets/ReadDigitalInput/ReadDigitalInput.png)
+![](../../.gitbook/assets/button.png)
 
-The button has four legs. The two legs on same side are interconnected. 
+The button has four legs. The two legs on same side are shorted. 
 
 Connect one leg on the left side to 3.3 pin. And connect the leg on right side to digital pin D0.
 
@@ -26,7 +24,7 @@ In default mode, the digital pin reads `false`. When you press the button, the t
 
 So please be sure you connected the button in a right way. 
 
-## <span style="color:#EA5823;font-weight:700">Code</span>
+## Code
 
 You can find the example code at the bottom left corner of IDE: ![](../../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) &gt; GettingStarted &gt; ReadDigitalInput.
 
@@ -39,7 +37,7 @@ You can find the example code at the bottom left corner of IDE: ![](../../.gitbo
 import SwiftIO
 
 // Initialize the pin D0 as a digital input pin.
-let pin = DigitalIn(Id.D10)
+let pin = DigitalIn(Id.D0)
 
 // read the input every second.
 while true {
@@ -52,30 +50,25 @@ while true {
 }
 ```
 
-## <span style="color:#EA5823;font-weight:700">Instruction</span>
+## Instruction <a id="instruction"></a>
 
-The parameter passed by the object `DigitalIn` must be the ports (D0-D45) that can be used for digital input in the enumeration `Id`, and the return value is `true` or `false`, representing high level and low level respectively. The `print()` function is a parameter to print the result directly to the serial port. You can conveniently use a computer to connect to the serial port of the SwiftIO Board to view the results and debug. Please note that the SwiftIO Board has two USB ports. The port used to load programs cannot be used as a monitor serial port, so you need to change the line. For details, please see the Tips operations below. Both USB ports can be used as power supply ports for SwiftIO Board.
+The parameter passed by the object `DigitalIn` must be the ports \(D0-D45\) that can be used for digital input in the enumeration `Id`. The return value is `true` or `false`, representing high level and low level respectively. 
 
-<!--
-对象`DigitalIn`传入的参数必须是枚举`Id`中可用于数字输入的端口(D0-D45)，其返回值是`true`或`false`，分别代表高电平和低电平。`print()`函数是直接向串口打印结果的参数，可以方便的使用计算机连接SwiftIO Board的串口后查看结果，并调试。请注意，SwiftIO Board有两个USB连接口，其中用于载入程序的接口并不能作为监听串口使用，所以需要进行换线操作，具体请查看下面Tips种的操作。这两个USB接口均可作为SwiftIO Board的供电接口。
--->
+The `print()` function is to print the result directly to the serial port. You can conveniently use a computer to connect to the serial port of the SwiftIO Board to view the results and debug. 
 
+Please note that the SwiftIO Board has two USB ports. The port used to load programs cannot be used as a monitor serial port, so you need to change the line. For details, please see the [Tips](readdigitalinput.md#tips) operations below. Both USB ports can be used as power supply ports for SwiftIO Board.
 
-## <span style="color:#EA5823;font-weight:700">See Also</span>
+## See Also <a id="see-also"></a>
 
-- [Id](https://swiftioapi.madmachine.io/Enums/Id.html) - Enumerations, public enum Id : UInt32
-- [AnalogIn.readRawValue()](https://swiftioapi.madmachine.io/Classes/AnalogIn.html#/s:7SwiftIO8AnalogInC12readRawValueSiyF) - Read the current raw value from the specified analog pin.
+* ​[Id](https://swiftioapi.madmachine.io/Enums/Id.html) - Enumerations of all pins on the board.
+* ​[DigitalIn.read\(\)](https://swiftioapi.madmachine.io/Classes/DigitalIn.html#/s:7SwiftIO9DigitalInC4readSbyF) - Detect the state of a digital input pin. The input value is either true \(1\) or false \(0\).
 
-## <span style="color:#EA5823;font-weight:700">References</span>
+## References <a id="Reference"></a>
 
 - [Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)
 - [Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)
 
-## <span style="color:#EA5823;font-weight:700"> Tips</span>
+## Tips <a id="tips"></a>
 
-![](../../.gitbook/assets/ReadDigitalInput/changeWire.gif)
-
----
-Last revision 2020/09/04 by Johnson
-
+![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2Fe4d8c917db768afd4b8a62cd2dae310db00e818f.gif?alt=media)
 
