@@ -1,23 +1,21 @@
-# PWMMelody
+# <span style="color:#EA5823;font-weight:800">PWMMelody</span>
 
+![](../../.gitbook/assets/PWMSoundOutput/PWM.gif)
 
+This example shows how to use the `PWMOut` to generate notes. It plays a little melody which you may have heard before.
 
-![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2Ff7e2e1f92f1adcd02176d07c8516d839562c1e42.gif?alt=media)
+## <span style="color:#EA5823;font-weight:700">What you need</span>
 
-This example shows how to use the `PWMOut` to generate notes. It plays a little melody you may have heard before.
+- SwiftIO board
+- Jumper wires
+- Piezo buzzer or a speaker
+- SwiftIO shield(optional)
 
-## What you need <a id="what-you-need"></a>
+## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-* SwiftIO board
-* Jumper wires
-* Piezo buzzer or a speaker
-* SwiftIO shield \(optional\)
+![](../../.gitbook/assets/PWMSoundOutput/PWMSoundOutput.png)
 
-## Circuit <a id="circuit"></a>
-
-![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F0bac2c11aa75def028e3b4e68dcd2d9219d83ba7.png?alt=media)
-
-## Code <a id="code"></a>
+## <span style="color:#EA5823;font-weight:700">Code</span>
 
 ```swift
 // Enable the speaker to play a simple melody by changing the frequency of PWM output.
@@ -36,7 +34,7 @@ let fre = [
     350,330,330
 ]
 
-// Allow the speaker to repeat the melody again and again.
+/// Allow the speaker to repeat the melody again and again.
 while true {
     for f in fre {
         // Change the frequency and the duty cycle of output to produce each note.
@@ -44,21 +42,26 @@ while true {
         sleep(ms: 250)
     }
 }
+
 ```
 
-## Instruction <a id="instruction"></a>
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
-The code above uses a Frequency as musical pitches. For example, NOTE\_C4 is middle C which frequency is 262. Latter example MidiPlayer we will markdown all this musical note in a file. This file contains all the pitch values for typical notes. You may find it useful whenever you want to make musical notes.
+The code above uses a Frequency as musical pitches. For example, NOTE_C4 is middle C, whose frequency is 262 Hz. Latter example MidiPlayer we will markdown all this musical note in a file. This file contains all the pitch values for typical notes. You may find it useful whenever you want to make musical notes.
 
-## See Also <a id="see-also"></a>
+## <span style="color:#EA5823;font-weight:700">See Also</span>
 
-* ​[PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to change the time of high voltage during one period to simulate different output. 
+- [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to vary the output voltage
 
-## References <a id="references"></a>
+## <span style="color:#EA5823;font-weight:700">References</span>
 
-* ​[Frequency and Pitch](http://www.vias.org/crowhurstba/crowhurst_basic_audio_vol1_006.html)​
-* ​[Online Tone Generator](https://www.szynalski.com/tone-generator/)​
-* [Pitch \(music\)](https://en.wikipedia.org/wiki/Pitch_%28music%29)
+- [Frequency and Pitch](http://www.vias.org/crowhurstba/crowhurst_basic_audio_vol1_006.html)
+- [Online Tone Generator](https://www.szynalski.com/tone-generator/)
+- [wiki: Pitch (music)](https://en.wikipedia.org/wiki/Pitch_(music))
 
+---
+Last Edit 2020/09/14 by Martin
 
+> Language Fixes
 
+Last revision 2020/09/10 by Johnson

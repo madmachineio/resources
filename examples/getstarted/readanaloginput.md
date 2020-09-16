@@ -18,7 +18,7 @@ When SwiftIO board reads from the pin, it will get a number between 0 and 4095. 
 
 ## Circuit
 
-![](../../.gitbook/assets/digitalinput.png)
+![](../../.gitbook/assets/ReadAnalogInput/ReadAnalogInput.png)
 
 Let's build the circuit now. 
 

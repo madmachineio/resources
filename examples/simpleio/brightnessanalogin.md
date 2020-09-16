@@ -1,28 +1,27 @@
-# BrightnessAnalogIn
+# <span style="color:#EA5823;font-weight:800">BrightnessAnalogIn</span>
 
-![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F134d7c3b3ca6c6870503907c7fed84bcfe0e9334.gif?alt=media)
+![](../../.gitbook/assets/BrightnessAnalogIn01.gif)
 
-In this example, we use an analog output \(pulse width modulation, PWM\) to adjust the brightness of an LED based on the position of the potentiometer.
+In this example, we use an analog output (pulse width modulation, PWM) to adjust the brightness of an LED based on the position of the potentiometer. 
 
 PWM is a technology that obtains a very similar behavior from a digital output, which can be turned off and on very quickly, and the ratio between on and off time is different.
 
-## What you need <a id="what-you-need"></a>
+## <span style="color:#EA5823;font-weight:700">What you need</span>
 
-* SwiftIO board
-* Jumper wires
-* Potentiometer or Module
-* LED and 330 ohm resistor or LED Module
-* SwiftIO shield \(optional\)
+- SwiftIO board
+- Jumper wires
+- Potentiometer or Module
+- LED Module (or a LED light and a 10k ohm resistor)
+- SwiftIO shield(optional)
 
-#### Kits that meet the experimental conditions: <a id="kits-that-meet-the-experimental-conditions"></a>
+#### Kits that meet the experimental conditions: 
+- [Maker Kit for SwiftIO](https://www.madmachine.io/product-page/maker-kit-for-swiftio)
 
-* ​[Maker Kit for SwiftIO](https://www.madmachine.io/product-page/maker-kit-for-swiftio)​
+## <span style="color:#EA5823;font-weight:700">Circuit</span>
 
-## Circuit <a id="circuit"></a>
+![](../../.gitbook/assets/BrightnessAnalogIn/BrightnessAnalogIn.png)
 
-![](../../.gitbook/assets/image%20%283%29.png)
-
-## Code <a id="code"></a>
+## <span style="color:#EA5823;font-weight:700">Code</span>
 
 ```swift
 // Read the analog input value and use it to set the PWM output in order to change the LED brightness.
@@ -45,41 +44,57 @@ while true {
 }
 ```
 
-## Instruction <a id="instruction"></a>
+## <span style="color:#EA5823;font-weight:700">Instruction</span>
 
+### What is Pulse Width Modulation (PWM)?
 
+Pulse Width Modulation (PWM) is a technique for obtaining analog results digitally. Digital control is used to create a square wave, a signal that switches between on and off. By changing the ratio of the signal on time to the signal off time, this switch mode can simulate the voltage between fully open (3.3 volts) and off (0 volts). The duration of the "on time" is called the pulse width. To obtain a varying analog value, you can change or modulate the pulse width. For example, if you repeat this switching pattern with LEDs fast enough, the result is as if the signal is a stable voltage between 0 and 3.3v that controls the brightness of the LED.
 
-Correspondingly, analogIn's `readRawValue()` is not called this time, but the corresponding return value range of `readPercent()` is 0 to 1.
+In the figure below, the red line represents a fixed time period. The duration or period is the inverse of the PWM frequency. In other words, when the PWM frequency is about 500 Hz, the red lines are measured for 2 milliseconds each. The range of calling `setDutycycle(value)` is 0-1, so `setDutycycle(1)` requests a 100% duty cycle (always on), and `setDutycycle(0.5)` is a 50% duty cycle (half the time).
 
-### Why would choose PWM instead of traditional analog signal? <a id="why-would-pwm-instead-of-traditional-analog-signal"></a>
+![](../../.gitbook/assets/BrightnessAnalogIn/Duty_Cycle_Examples.png)
 
-Unlike incandescent light bulbs, LEDs \(and also some other devices\) can only operate under certain voltage. Lowering the voltage on LEDs wouldn't result in a lower brightness, the LED will simply turn off if the voltage isn't high enough.
+Correspondingly, analogIn's `readRawValue()` is not called this time, but the corresponding return value range of readPercent() is 0 to 1.
+
+### Experiment more
+Once you get the example running, grab your SwiftIO board and shake it back and forth. What you are doing here is actually mapping time across the entire space. In our opinion, motion blurs each LED flashing into a line. As the LED fades in and out, the length of these thin lines will increase and decrease. Now you will see the pulse width.
+
+### Why would PWM instead of traditional analog signal?
+
+Unlike incandescent light bulbs, LEDs (and also some other devices) can only operate under certain voltage. Lowering the voltage on LEDs wouldn't result in a lower brightness, the LED will simply turn off if the voltage isn't high enough. 
 
 However, we can use PWM to control the overall power output of the LEDs. Indeed is the LED flashing, but our eyes cannot react quick enough for it. So it efficiently trick our brain into thinking this LED is darker.
 
-> Side note: most of the mobile phones use the same method to control the brightness of the screen. However, if the frequency of the flashing is too low \(the screen is very dark\), it may be harmful to your eyes.
-
-### Experiment more <a id="experiment-more"></a>
-
-Once you get the example running, grab your SwiftIO board and shake it back and forth. What you are doing here is actually mapping time across the entire space. In our opinion, motion blurs each LED flashing into a line. As the LED fades in and out, the length of these thin lines will increase and decrease. Now you will see the pulse width.
-
-## See Also <a id="see-also"></a>
-
-* ​[PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to change the time of high voltage during one period to simulate different output. 
-
-## References <a id="references"></a>
-
-* ​[wiki: Pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)​
-* ​[wiki: Duty cycle](https://en.wikipedia.org/wiki/Duty_cycle)​
-* ​[wiki: Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)​
-* ​[wiki: Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)​
-
-## Tips <a id="tips"></a>
-
-![](../../.gitbook/assets/image%20%289%29.png)
-
-  
+>Side note: most of the mobile phones use the same method to control the brightness of the screen. However, if the frequency of the flashing is too low (the screen is very dark), it may be harmful to your eyes. 
 
 
-![](../../.gitbook/assets/image%20%282%29.png)
+## <span style="color:#EA5823;font-weight:700">See Also</span>
+- [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to vary the output voltage
 
+## <span style="color:#EA5823;font-weight:700">References</span>
+
+- [wiki: Pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
+- [wiki: Duty cycle](https://en.wikipedia.org/wiki/Duty_cycle)
+- [wiki: Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)
+- [wiki: Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)
+
+## Tips
+
+![](../../.gitbook/assets/BrightnessAnalogIn/01.png)
+
+![](../../.gitbook/assets/BrightnessAnalogIn/02.png)
+
+---
+## Version History
+Last Edit 2020/09/15 by Martin
+> Conflict resolved, change link to picture
+
+Last Edit 2020/09/13 by Martin
+
+> edits on Instruction
+>
+> add why we need pwm
+>
+> edit link tags
+
+Last revision 2020/09/12 by Johnson
