@@ -12,7 +12,7 @@ The Swift programming language absorbs many other languages’ features without 
 
 ## What is microcontroller?
 
-A Microcontroller is a circuit board with a chip on it that can be programmed to do many different things. They can run small, simple software programs. 
+A Microcontroller is a circuit board with a chip on it that can be programmed to do many different things. They can run small, simple software programs.
 
 A small computer processor is mounted on the board with a bunch of other components that handle the input and the output. You can read information from sensors, for instance, if you want the board to read temperature in your room, you can use a temperature sensor to know that.
 
@@ -28,14 +28,11 @@ However, the magic of SwiftIO board is not just in the language or its ability t
 
 There’s also the MadMachine IDE, which makes SwiftIO good for beginners. The MadMachine software works on Windows and Mac, which makes downloading your swift code as simple as connecting a USB cable and clicking a button. Without it, if you want to program microcontrollers, you’d have to type out a lot of binary and memorize a lot of hard to remember registers and instructions. Then you’d have to use special programming hardware with custom made cables to download your program onto your microcontroller.
 
-This is the comparison between Arduino, MicroPython, and MadMachine.  
-  
-
+This is the comparison between Arduino, MicroPython, and MadMachine.
 
 ![](https://static.wixstatic.com/media/ccab1c_b9bb5de391434dadb287c5a18cb83223~mv2.jpg/v1/fill/w_740,h_313,al_c,q_90,usm_0.66_1.00_0.01/ccab1c_b9bb5de391434dadb287c5a18cb83223~mv2.webp)
 
-This is the PINOUT diagram of SwiftIO. Let’s take a quick tour.  
-  
+This is the PINOUT diagram of SwiftIO. Let’s take a quick tour.
 
 ![](../.gitbook/assets/pinout-diagram-of-swiftio.png)
 
@@ -49,6 +46,4 @@ This is the PINOUT diagram of SwiftIO. Let’s take a quick tour.
 * **14 PWM pins**: output pulse width modulated square waves, which normally applied in motor controlling and buzzer.
 
 SwiftIO board puts all those things together in an easy to use way. If you want to learn more about electronics, you can discover more in the future with us.
-
-
 
