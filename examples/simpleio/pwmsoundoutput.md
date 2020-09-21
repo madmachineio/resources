@@ -1,22 +1,21 @@
-# <span style="color:#EA5823;font-weight:800">PWMSoundOutput</span>
+# PWMSoundOutput
 
-![](../../.gitbook/assets/PWMSoundOutput/PWM.gif)
+![](../../.gitbook/assets/PWM.gif)
 
 This example shows how to use the `PWMOut` to generate notes. It plays three tones repeatedly.
 
-## <span style="color:#EA5823;font-weight:700">What you need</span>
+## What you need
 
-- SwiftIO board
-- Jumper wires
-- Buzzer
-- SwiftIO shield(optional)
+* SwiftIO board
+* Jumper wires
+* Buzzer
+* SwiftIO shield \(optional\)
 
-## <span style="color:#EA5823;font-weight:700">Circuit</span>
+## Circuit
 
-![](../../.gitbook/assets/PWMSoundOutput/PWMSoundOutput.png)
+![](../../.gitbook/assets/PWMSoundOutput%20%281%29.png)
 
-
-## <span style="color:#EA5823;font-weight:700">Code</span>
+## Code
 
 ```swift
 // Produce different notes by changing the frequency of PWM signal.
@@ -38,24 +37,21 @@ while true {
         // Play each note for one second.
         sleep(ms: 1000)
     }
-    
+
 }
 ```
 
-## <span style="color:#EA5823;font-weight:700">Instruction</span>
+## Instruction
 
-The code above uses a Frequency as musical pitches. For example, NOTE_C4 is middle C, whose frequency is 262 Hz. Latter example MidiPlayer we will markdown all this muscial note in a file. This file contains all the pitch values for typical notes. You may find it useful whenever you want to make musical notes.
+The code above uses a Frequency as musical pitches. For example, NOTE\_C4 is middle C, whose frequency is 262 Hz. Latter example MidiPlayer we will markdown all this musical note in a file. This file contains all the pitch values for typical notes. You may find it useful whenever you want to make musical notes.
 
-## <span style="color:#EA5823;font-weight:700">See Also</span>
+## See Also
 
-- [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to vary the output voltage
+* [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to change the time of high voltage during one period to simulate different output. 
 
-## <span style="color:#EA5823;font-weight:700">References</span>
+## References
 
-- [Frequency and Pitch](http://www.vias.org/crowhurstba/crowhurst_basic_audio_vol1_006.html)
-- [Online Tone Generator](https://www.szynalski.com/tone-generator/)
-- [wiki: Pitch (music)](https://en.wikipedia.org/wiki/Pitch_(music))
+* [Frequency and Pitch](http://www.vias.org/crowhurstba/crowhurst_basic_audio_vol1_006.html)
+* [Online Tone Generator](https://www.szynalski.com/tone-generator/)
+* [wiki: Pitch \(music\)](https://en.wikipedia.org/wiki/Pitch_%28music%29)
 
-
----
-Last revision 2020/09/10 by Johnson

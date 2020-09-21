@@ -10,7 +10,7 @@ Let's first come to an easy beginner project - blink the onboard LED. This examp
 
 ## Circuit
 
-![Image developed using Fritzing. For more circuit examples, see the Fritzing project page](../../.gitbook/assets/untitled-sketch_bb.png)
+![](../../.gitbook/assets/image%20%2813%29.png)
 
 For this project, you only need the SwiftIO board.
 
@@ -80,5 +80,5 @@ The `sleep(ms:)` function is a built-in function, which means the delay time, ca
 
 ## Reference
 
-* [wiki: digital signal](https://en.wikipedia.org/wiki/Digital_signal)
+* [wiki: Digital signal](https://en.wikipedia.org/wiki/Digital_signal)
 

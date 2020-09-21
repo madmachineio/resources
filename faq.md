@@ -51,9 +51,9 @@ Now the IDE can run normally.
 
 ## IDE can't find the USB drive
 
-This is due to the security feature of macOS. 
+This is due to the security feature of macOS.
 
-The latest versions of macOS introduce new security control. There are more requirements for application security. 
+The latest versions of macOS introduce new security control. There are more requirements for application security.
 
 While our board needs to manage the files on the USB driver. So you need to enable **Full Disk Access** for IDE.
 
@@ -96,7 +96,7 @@ Thus the board reset over and over again.
 
 You can try these ways:
 
-1 ****connect the board to USB port that can output larger power.‌
+1 _\*\*_connect the board to USB port that can output larger power.‌
 
 2 connect both download port and serial port on the board to USB ports
 

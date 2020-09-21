@@ -14,7 +14,7 @@ Now let's learn how to install a library.
 
 ![](../.gitbook/assets/1.jpg)
 
-3.Unzip the package and move the folder to **Documents** &gt; **MadMachine** &gt; **Library**. 
+3.Unzip the package and move the folder to **Documents** &gt; **MadMachine** &gt; **Library**.
 
 ![](../.gitbook/assets/2.jpg)
 
@@ -50,7 +50,7 @@ Now you are going to know how to apply new libraries in your own project.
 
 ![](../.gitbook/assets/4.jpg)
 
-3.Import the two libraries in **main.swift** file. 
+3.Import the two libraries in **main.swift** file.
 
 ![](../.gitbook/assets/5.jpg)
 

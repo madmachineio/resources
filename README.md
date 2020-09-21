@@ -2,7 +2,7 @@
 
 Welcome to MadMachine community 🎆 !
 
-We are a team focusing on the usage of Swift language on microcontrollers. We have develop a whole environment, including **SwiftIO board**, **Swift framework** and **MadMachine IDE**. 
+We are a team focusing on the usage of Swift language on microcontrollers. We have develop a whole environment, including **SwiftIO board**, **Swift framework** and **MadMachine IDE**.
 
 After months of efforts, we are proud to say the SwiftIO board finally get ready. We believe you will love it once you start.
 
@@ -17,9 +17,7 @@ Some links are below for more info:
 * ![](.gitbook/assets/youtube_social_circle_red.png) [Youtube channel](https://www.youtube.com/channel/UCFsoLnjIb0UXJYSz2X4nAVQ) – learn with us step-by-step
 * ![](.gitbook/assets/twitter_social_icon_circle_color%20%281%29.png)[Twitter](https://twitter.com/madmachineio) – know who we are
 
-This is a brand new platform and there is a lot to explore and create. 
+This is a brand new platform and there is a lot to explore and create.
 
 Hope all of you will enjoy it.
-
-
 

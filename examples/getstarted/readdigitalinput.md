@@ -14,15 +14,15 @@ In this example, let's try to read digital signal using a pushbutton. The input 
 
 ## Circuit
 
-![](../../.gitbook/assets/PWMBrightnessControl/PWMBrightnessControl.png)
+![](../../.gitbook/assets/PWMBrightnessControl.png)
 
-The button has four legs. The two legs on same side are shorted. 
+The button has four legs. The two legs on same side are shorted.
 
-Connect one leg on the left side to 3.3 pin. And connect the leg on right side to digital pin D0.
+Connect one leg on the left side to 3.3 pin. And connect the leg on right side to digital pin D10.
 
 In default mode, the digital pin reads `false`. When you press the button, the two points on the button will be connected. And the value of pin will be `true`.
 
-So please be sure you connected the button in a right way. 
+So please be sure you connected the button in a right way.
 
 ## Code
 
@@ -36,8 +36,8 @@ You can find the example code at the bottom left corner of IDE: ![](../../.gitbo
 // This is first step for your coding process.
 import SwiftIO
 
-// Initialize the pin D0 as a digital input pin.
-let pin = DigitalIn(Id.D0)
+// Initialize the pin D10 as a digital input pin.
+let pin = DigitalIn(Id.D10)
 
 // read the input every second.
 while true {
@@ -52,9 +52,9 @@ while true {
 
 ## Instruction <a id="instruction"></a>
 
-The parameter passed by the object `DigitalIn` must be the ports \(D0-D45\) that can be used for digital input in the enumeration `Id`. The return value is `true` or `false`, representing high level and low level respectively. 
+The parameter passed by the object `DigitalIn` must be the ports \(D0-D45\) that can be used for digital input in the enumeration `Id`. The return value is `true` or `false`, representing high level and low level respectively.
 
-The `print()` function is to print the result directly to the serial port. You can conveniently use a computer to connect to the serial port of the SwiftIO Board to view the results and debug. 
+The `print()` function is to print the result directly to the serial port. You can conveniently use a computer to connect to the serial port of the SwiftIO Board to view the results and debug.
 
 Please note that the SwiftIO Board has two USB ports. The port used to load programs cannot be used as a monitor serial port, so you need to change the line. For details, please see the [Tips](readdigitalinput.md#tips) operations below. Both USB ports can be used as power supply ports for SwiftIO Board.
 
@@ -62,11 +62,6 @@ Please note that the SwiftIO Board has two USB ports. The port used to load prog
 
 * ​[Id](https://swiftioapi.madmachine.io/Enums/Id.html) - Enumerations of all pins on the board.
 * ​[DigitalIn.read\(\)](https://swiftioapi.madmachine.io/Classes/DigitalIn.html#/s:7SwiftIO9DigitalInC4readSbyF) - Detect the state of a digital input pin. The input value is either true \(1\) or false \(0\).
-
-## References <a id="Reference"></a>
-
-- [Potentiometer](https://en.wikipedia.org/wiki/Potentiometer)
-- [Voltage divider](https://en.wikipedia.org/wiki/Voltage_divider)
 
 ## Tips <a id="tips"></a>
 
