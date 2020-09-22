@@ -134,6 +134,7 @@ This problem may be caused by these reasons
 1. Bad quality USB cable, there are so many bad quality USB cables in the market. Some of them can only charge your device without communication feature : \(
 2. Incompatible microSD card
 3. Incompatible USB hub or incompatible USB-C to USB-A adapter
+4. This is a known issue about USB compatibility on Mac. There are already a lot of discussion about it on [reddit](https://www.reddit.com/r/mac/comments/gp5b1z/usb_20_issues_on_new_macbook_pro_13_2020/), [apple](https://discussions.apple.com/thread/251356598).
 
 To solve problem 1 and 2, we offer a high quality USB cable and a Kingston microSD card along with our board. But we still got feedback that the USB drive did not appear. In this situation, there is a temporary solution: use a microUSB card reader to copy the `swiftio.bin`. At the same time, we’ll continue to improve the compatibility of the firmware.
 
