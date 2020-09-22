@@ -16,7 +16,7 @@ You will use PWM to set on-off ratio of output signal to get different voltage. 
 
 ## Circuit
 
-![](../../.gitbook/assets/pwm.png)
+![](../../.gitbook/assets/PWMBrightnessControl.png)
 
 Build the circuit as shown above.
 

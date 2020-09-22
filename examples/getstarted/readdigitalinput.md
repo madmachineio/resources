@@ -14,7 +14,7 @@ In this example, let's try to read digital signal using a pushbutton. The input 
 
 ## Circuit
 
-![](../../.gitbook/assets/PWMBrightnessControl.png)
+![](../../.gitbook/assets/ReadDigitalInput.png)
 
 The button has four legs. The two legs on same side are shorted.
 
