@@ -29,7 +29,7 @@ let speaker = PWMOut(Id.PWM2B)
 // Specify several frequencies to produce different sound.
 let fre = [262, 294, 330]
 
-/// Play recurrently these notes.
+// Play recurrently these notes.
 while true {
     for f in fre {
         // Set the frequency and the duty cycle of output to produce each note.

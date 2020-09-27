@@ -22,7 +22,7 @@ In order to do this, we read the value of the resistor first, by using the analo
 
 ![](../../.gitbook/assets/BlinkAnalogIn.png)
 
-Prepare the jumper wire cables, be aware of the female and male ends. Connect the male ends to the SwiftIO board at ports GND，3.3V and P20/A6 ports.
+Prepare the jumper wire cables, be aware of the female and male ends. Connect the male ends to the SwiftIO board at ports GND, 3.3V and P20/A6 ports.
 
 Connect the P20/A6 wire to the middle pin of the potentiometer. Connect the GND wire to the outer pins of the potentiometer, and the 3.3V wire to the other outer pin of the potentiometer.
 

@@ -6,7 +6,7 @@ In this project, let's try to control the brightness of LED - light gradually on
 
 You will use PWM to set on-off ratio of output signal to get different voltage. The pins marked with “~“ can be used for this.
 
-## What you need 
+## What you need
 
 * SwiftIO board 
 * LED 
@@ -20,7 +20,7 @@ You will use PWM to set on-off ratio of output signal to get different voltage. 
 
 Build the circuit as shown above.
 
-* The anode \(positive leg\) of LED goes to PWM0A through resistor.
+* The anode \(positive leg\) of LED goes to PWM2B through resistor.
 * The cathode \(negative leg\) of LED connects to ground.
 
 ## Code
@@ -34,8 +34,8 @@ You can find the example code at the bottom left corner of IDE: ![](../../.gitbo
 // This is first step for your coding process.
 import SwiftIO
 
-// Initialize the pin PWM0A as output.
-let led = PWMOut(Id.PWM0A)
+// Initialize the pin PWM2B as output.
+let led = PWMOut(Id.PWM2B)
 
 // Initialize a variable to store the value of duty cycle. 
 // It should be a float between 0.0 and 1.0.
@@ -64,7 +64,6 @@ while true {
     // Keep the duty cycle between 0.0 and 1.0.
     value = 0.0
 }
-
 ```
 
 ## Instruction
@@ -73,7 +72,7 @@ while true {
 
 Pulse Width Modulation \(PWM\) can simulate analog results digitally. Digital control is used to create a square wave, a signal that switches between on and off. By changing the ratio of the on-time to the off-time, it will simulate the voltage between fully open \(3.3 volts\) and off \(0 volts\). The duration of the "on-time" is called the pulse width. To obtain a varying analog value, you can change or modulate the pulse width. For example, if you repeat this switching pattern with LEDs fast enough, the result is as if the signal is a stable voltage between 0 and 3.3v that controls the brightness of the LED.
 
-A fixed time period is consists of on and off time. The duration or period is the inverse of the PWM frequency. In other words, when the PWM frequency is about 500 Hz, one period are measured for 2 milliseconds each. 
+A fixed time period is consists of on and off time. The duration or period is the inverse of the PWM frequency. In other words, when the PWM frequency is about 500 Hz, one period are measured for 2 milliseconds each.
 
 The duty cycle is the percentage of on time of output signal during one period. The range of calling `setDutycycle(value)` is 0-1, so `setDutycycle(1)` requests a 100% duty cycle \(always on\), and `setDutycycle(0.5)` is a 50% duty cycle \(half the time\).
 
@@ -85,7 +84,7 @@ You may notice the pin name of PWM are a little strange, with "A" or "B" after t
 
 `var` is keyword to declare variable. Just like its name, its value can always change after it has been assigned. The value is a float number, since it is used as duty cycle to set output.
 
-In the loop `while true`, the first `while` loop is to ensure the value not bigger than 1.0 and brighten the LED. Each time, you will gradually increase the value by 0.01. The brightening process lasts for 2 minutes. To ensure a smooth brightness change, you need to set appropriate value change and sleep time. The second while is similar but to dim the LED. 
+In the loop `while true`, the first `while` loop is to ensure the value not bigger than 1.0 and brighten the LED. Each time, you will gradually increase the value by 0.01. The brightening process lasts for 2 minutes. To ensure a smooth brightness change, you need to set appropriate value change and sleep time. The second while is similar but to dim the LED.
 
 After finished first loop, the value is about 1.01. So `value = 1.0` and `value = 0.0`is to keep the it in the specified range.
 

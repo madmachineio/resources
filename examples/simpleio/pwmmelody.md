@@ -34,7 +34,7 @@ let fre = [
     350,330,330
 ]
 
-/// Allow the speaker to repeat the melody again and again.
+// Allow the speaker to repeat the melody again and again.
 while true {
     for f in fre {
         // Change the frequency and the duty cycle of output to produce each note.
