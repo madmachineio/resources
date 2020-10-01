@@ -50,13 +50,13 @@ When you click the build button or download button, the IDE will use related too
 
 When you click the **build** or **download button** in the IDE, here are what the IDE will do:
 
-* Open a terminal and change directory to the Blink project
-* Execute `path_to/mm-sdk/tools_mac/scripts/dist/mm/mm build --sdk path_to/mm-sdk --module ~/Document/MadMachine/Library`
+1. Open a terminal and change directory to the Blink project
+2. Execute `path_to/mm-sdk/tools_mac/scripts/dist/mm/mm build --sdk path_to/mm-sdk --module ~/Document/MadMachine/Library`
 
 If you were clicking the **download button**, there will be two extra steps:
 
-* Copy `Blink/.build/swiftio.bin` to the USB drive
-* Eject the USB drive
+3. Copy `Blink/.build/swiftio.bin` to the USB drive
+4. Eject the USB drive
 
 The command in the second step is responsible for the whole building process. Two arguments in the command means:
 
