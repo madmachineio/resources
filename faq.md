@@ -96,7 +96,7 @@ Thus the board reset over and over again.
 
 You can try these ways:
 
-1 _\*\*_connect the board to USB port that can output larger power.‌
+1 \_\*\*\_connect the board to USB port that can output larger power.‌
 
 2 connect both download port and serial port on the board to USB ports
 

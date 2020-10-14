@@ -4,7 +4,7 @@
 
 Hi guys! It’s [Andy Liu](https://twitter.com/madmachineio). We started to sell the SwiftIO board in July. Till today \(8-Sep\), we have received nearly 100 orders from different countries. You guys are awesome! You are not only customers but angels for us. I want to express the depth of my gratitude to all of you!
 
-Our original plan was to hold a Kickstarter campaign. So we could raise enough money in a very short time to support this project. Some of you might be familiar with this crowdfunding platform, me too. Actually I had a project named [EVB ](https://www.kickstarter.com/projects/fatcatlab/evb-replace-the-brain-of-your-lego-ev3-with-beagle?ref=discovery&term=evb)on Kickstarter a few years ago. In my experience, these kinds of hardware projects usually encounter problems even if they raise a lot of money. Because there’s such a huge gap between a prototype and a mature product. It’s so hard for a small team to face so many problems at the very beginning, those problems might kill the founding team. Sadly, I’ve seen a lot of cases already 😱 
+Our original plan was to hold a Kickstarter campaign. So we could raise enough money in a very short time to support this project. Some of you might be familiar with this crowdfunding platform, me too. Actually I had a project named [EVB ](https://www.kickstarter.com/projects/fatcatlab/evb-replace-the-brain-of-your-lego-ev3-with-beagle?ref=discovery&term=evb)on Kickstarter a few years ago. In my experience, these kinds of hardware projects usually encounter problems even if they raise a lot of money. Because there’s such a huge gap between a prototype and a mature product. It’s so hard for a small team to face so many problems at the very beginning, those problems might kill the founding team. Sadly, I’ve seen a lot of cases already 😱
 
 Since our project may take years to be perfect, I decided to run our project in a more steady way so we have more chances to incorporate your feedback and improve continuously. It might evolve slower, but nothing could kill us.
 
@@ -15,7 +15,7 @@ At present, the SwiftIO board hardware is stable. But the software still needs i
 
 Here, I’ll give a brief explanation about the techniques we use in our project. After reading this article, you would know the principle of our project and what to do if you encounter some issues before we solve them.
 
-**Again, thanks very much for your support in such an early stage! Hope we could grow together in the long term** 😘 
+**Again, thanks very much for your support in such an early stage! Hope we could grow together in the long term** 😘
 
 ## Background
 
@@ -24,8 +24,6 @@ As you know, for those people who aren’t familiar with Swift, they regard it a
 Before we start, you could have a look at the definition of Clang [here](https://clang.llvm.org), it is described as **a C language family frontend for LLVM**.
 
 Similarly, Swift is **a Swift language frontend for LLVM,** sounds weird? A little.
-
-
 
 ![LLVM Frontend-Backend Compiler Architecture \(Source: Swift, C, LLVM Compiler Optimization\)](https://lh4.googleusercontent.com/hxKm6nvPkuKNWCkAC2Yie269KS2adx_M0RT4C4KosNauuVVEb-tVOJDWXMa36DzBLYfYS9mQ2ehV2iA_tNWJnxJk0E_wrvPChHpH2bd1hN9ifDt9zooV85ezYwi_4AA5UbyB0cmv)
 
@@ -55,8 +53,8 @@ When you click the **build** or **download button** in the IDE, here are what th
 
 If you were clicking the **download button**, there will be two extra steps:
 
-3. Copy `Blink/.build/swiftio.bin` to the USB drive
-4. Eject the USB drive
+1. Copy `Blink/.build/swiftio.bin` to the USB drive
+2. Eject the USB drive
 
 The command in the second step is responsible for the whole building process. Two arguments in the command means:
 
