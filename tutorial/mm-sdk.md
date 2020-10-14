@@ -2,18 +2,18 @@
 
 ## MM SDK
 
-The mm-sdk contains eveything you need to build a MadMachine project, either a library or an executable.
+The mm-sdk contains everything you need to build a MadMachine project, either a library or an executable.
 
-A MadMachine project is structured like a [SPM package](https://swift.org/package-manager). A Python script is used to build the project now and it would be replaced by Swift Package Manager in the futrue.
+A MadMachine project is structured like a [SPM package](https://swift.org/package-manager). A Python script is used to build the project now and it would be replaced by Swift Package Manager in the future.
 
 The latest features would be added to this SDK first and then integrated into the MadMachine IDE.
 
-Download the latest release depending on your operating system.
+[Download](https://github.com/madmachineio/mm-sdk) the latest release depending on your operating system.
 
 ## What is inside the SDK
 
 1. tools\_linux/tools\_mac/tools\_win:
-   * Swift compilier and standard libary for ARM-Cortex M7
+   * Swift compiler and standard library for ARM-Cortex M7
    * ARM-GCC compiler and binutils
    * Compiled Python scripts
 2. scripts:
@@ -67,7 +67,7 @@ cd ~/mm-sdk/Library/DemoLibrary
 
 ### Build an executable
 
-When building a project \(either library or executable\), the Python script would try to find the dependent libraries in the speicified directory.
+When building a project \(either library or executable\), the Python script would try to find the dependent libraries in the specified directory.
 
 If the dependent library is not builded yet, the Python script would build the library first. Use `--rebuild` to force rebuild all dependent libraries.
 
@@ -78,11 +78,11 @@ cd ~/DemoProgram
 
 ### Download an executable
 
-After a successful building, there would be `.build/swiftio.bin` in your project directory. Note that the `.build` directory is hiden by default.
+After a successful building, there would be `.build/swiftio.bin` in your project directory. Note that the `.build` directory is hidden by default.
 
 Follow those steps to download the executable:
 
-1. Insert SD card and confirm USB connection\(Press the **Download** button and wait the onboard RGB turns to **green**\)
+1. Insert SD card and confirm USB connection \(Press the **Download** button and wait the onboard RGB turns to **green**\)
 2. A USB drive would be mounted on your computer
 3. Copy the `swiftio.bin` to the SD card root directory
 4. Eject the USB drive and the program would run automatically
@@ -135,7 +135,7 @@ D:\mm-sdk\tools_win\scripts\dist\mm\mm.exe build --sdk D:\mm-sdk --module D:\mm-
 
 ### Build an executable
 
-When building a project \(either library or executable\), the Python script would try to find the dependent libraries in the speicified directory.
+When building a project \(either library or executable\), the Python script would try to find the dependent libraries in the specified directory.
 
 If the dependent library is not builded yet, the Python script would build the library first. Use `--rebuild` to force rebuild all dependent libraries.
 
@@ -151,7 +151,7 @@ After a successful building, there would be `.build/swiftio.bin` in your project
 
 Follow those steps to download the executable:
 
-1. Insert SD card and confirm USB connection\(Press the **Download** button and wait the onboard RGB turns to **green**\)
+1. Insert SD card and confirm USB connection \(Press the **Download** button and wait the onboard RGB turns to **green**\)
 2. A USB drive would be mounted on your computer
 3. Copy the `swiftio.bin` to the SD card root directory
 4. Eject the USB drive and the program would run automatically

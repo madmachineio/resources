@@ -2,6 +2,10 @@
 
 Get your SwiftIO board? 🤣 Follow us step-by-step to realize your first project.
 
+Here is the a simple instructions manual:
+
+![](.gitbook/assets/212.png)
+
 ## **Step 1: Download and install the MadMachine IDE**
 
 The MadMachine IDE provides you with an easy way to code. It is available on Windows and Mac now.

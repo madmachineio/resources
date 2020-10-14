@@ -32,9 +32,11 @@ This is the comparison between Arduino, MicroPython, and MadMachine.
 
 ![](https://static.wixstatic.com/media/ccab1c_b9bb5de391434dadb287c5a18cb83223~mv2.jpg/v1/fill/w_740,h_313,al_c,q_90,usm_0.66_1.00_0.01/ccab1c_b9bb5de391434dadb287c5a18cb83223~mv2.webp)
 
-This is the PINOUT diagram of SwiftIO. Let’s take a quick tour.
+This is the PINOUT diagram of SwiftIO. Let’s take a quick tour. 
 
 ![](../.gitbook/assets/pinout-diagram-of-swiftio.png)
+
+{% file src="../.gitbook/assets/pinout-diagram-of-swiftio \(1\).png" caption="Download the diagram" %}
 
 * Microcontroller RT1052 with ARM cortex M7 core 600 Mega Hz.
 * **Reset button**: reboot your SwiftIO’s program.

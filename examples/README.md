@@ -10,5 +10,4 @@ After all these, you will certainly be able to create something interesting by y
 
 * [GettingStarted](getstarted/)
 * [SimpleIO](simpleio/)
-* [AdvancedIO](https://github.com/madmachineio/resources/tree/9c1ea9de6091dedfaa60f965048525a467b5c110/examples/advancedio/README.md)
 

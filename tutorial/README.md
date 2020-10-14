@@ -6,6 +6,6 @@ Now it's time to know more about the whole ecosystem – know about SwiftIO boar
 
 * [What is SwiftIO](what-is-swiftio.md)
 * [How to use IDE](how-to-use-ide.md)
-* [Library](libraries.md)
+* [Library](how-to-use-a-libraries.md)
 * [MM SDK](mm-sdk.md#mm-sdk)
 

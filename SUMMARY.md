@@ -6,7 +6,7 @@
 * [Tutorial](tutorial/README.md)
   * [What is SwiftIO](tutorial/what-is-swiftio.md)
   * [How to use IDE](tutorial/how-to-use-ide.md)
-  * [Libraries](tutorial/libraries.md)
+  * [How to use a libraries](tutorial/how-to-use-a-libraries.md)
   * [MM SDK](tutorial/mm-sdk.md)
 * [Built-In Examples](examples/README.md)
   * [GettingStarted](examples/getstarted/README.md)
