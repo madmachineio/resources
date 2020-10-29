@@ -1,6 +1,10 @@
 # How to use a libraries
 
+Each time you deal with some devices, there are so many works to do - refer to its data sheet to get familiar with it, send a lot of data to communicate with it. It's really tiring. However, libraries will let you get rid of all these dirty work. You just need to import it and write a few line of code with the preset methods.
+
 Libraries make your coding process more easily. With different libraries, you can control many modules using some simple methods.
+
+Now you may find there is few available libraries 😔, we will create more as everything gets stable.
 
 ## Install a library
 
@@ -20,9 +24,9 @@ Now let's learn how to install a library.
 
 ## Explore the examples in the library
 
-There will be some examples in the library files downloaded from Github. Let's use it first before learning its usage.
+There will be some examples in the library files downloaded from Github. Let's use it first.
 
-1.Open the IDE. If you have opened it, please make sure close it and open it again. Then create a new project.
+1.Open the IDE. Then create a new project. If you have opened it, please make sure close it and open it again. 
 
 ![](../.gitbook/assets/1%20%281%29.jpg)
 
@@ -46,11 +50,11 @@ Now you are going to know how to apply new libraries in your own project.
 
 ![](../.gitbook/assets/3.jpg)
 
-2.In the file **.mmp**, add the library MadSHT3x in **dependencies**. ‌
+2.In the file `.mmp`, add the library MadSHT3x in **dependencies**. ‌
 
 ![](../.gitbook/assets/4.jpg)
 
-3.Import the two libraries in **main.swift** file.
+3.Import the two libraries in `main.swift` file.
 
 ![](../.gitbook/assets/5.jpg)
 

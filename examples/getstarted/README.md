@@ -1,6 +1,6 @@
 # GettingStarted
 
-👏 Well, this part is to get you know some basic knowledge and operations. 
+Well, in this part, you will get to know some basic concepts about SwiftIO with simple projects - like digital and analog signal. They are quite simple but is widely used.
 
 Four simple projects with just several lines of code will guide you into the SwiftIO world. 
 

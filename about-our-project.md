@@ -66,7 +66,7 @@ Let’s talk about how the command works in detail:
 1. The Python script will find and build all the dependencies in the specified library folder. Then the static libraries will be generated according to the dependencies defined in the `Blink.mmp` \(Actually it’s a TOML file\)
 2. Build your own project to generate a static library `libBlink.a`
 3. Link all the related static libraries together to generate `Blink.elf`
-4. Invoke objcopy to convert Blink.elf to `Blink.bin`
+4. Invoke `objcopy` to convert `Blink.elf` to `Blink.bin`
 5. Append 4 bytes CRC information to `Blink.bin`, then we get `swiftio.bin`
 
 ## What happens after power up or reset?

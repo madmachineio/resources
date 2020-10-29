@@ -2,9 +2,7 @@
 
 After finished last part, you must know how to use input and output pins. 
 
-Now you are ready to go. We are going to get things more exciting. 😎 
-
-Follow these examples based on what you have learned before. 
+Now you are ready to go. You will try more with the LED and buzzer. Usually, in one project, you will use more than one input or output. So follow these examples based on what you have learned before. 
 
 * [ButtoncontrolLED](buttoncontrolled.md) - when the button is pressed, the input value will be changed. If it is detected, turn on the led.
 * [BlinkAnalogIn](blinkanalogin.md) - change the sleep time with the raw value read from analog pin to change the blink frequency.
