@@ -14,6 +14,8 @@ In this example, let's try to read digital signal using a pushbutton. The input 
 
 ## Circuit
 
+![](../../.gitbook/assets/digitalinput.jpg)
+
 The button has four legs. The two legs on same side are shorted as the following image:
 
 ![](../../.gitbook/assets/button%20%281%29.png)
