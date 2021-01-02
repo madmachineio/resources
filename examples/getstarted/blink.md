@@ -2,7 +2,9 @@
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F1c0786da15a6ea5af09f22d777797fdffbda14d9.gif?alt=media)
 
-Let's first come to an easy beginner project - blink the onboard LED. This example shows the simplest thing you can do with just a SwiftIO board to see physical output: it blinks the on-board REG LED.
+Let's first come to an easy beginner project - blink the onboard LED. 
+
+This example shows the simplest thing you can do with just a SwiftIO board to see physical output: it blinks the on-board REG LED.
 
 ## What you need
 
@@ -18,7 +20,7 @@ There is a built-in RGB LED on the board. You can control it using the methods i
 
 _**Note**: the onboard LED will be turned on when you apply a **low** voltage._
 
-Just plug the board to your computer through a USB cable after you finished code.
+Just plug the board to your computer with a USB cable after you finished code.
 
 ## Schematic
 
@@ -64,19 +66,19 @@ Digital signal has only two state, its value is either 1 or 0. For SwiftIO board
 
 `let` is a keyword for Swift language to declare constants. We will often use it to assign names to each port for easy reference in the future. 
 
-`Id` is an enumeration. All types of enumerated Id can be viewed [here](https://swiftioapi.madmachine.io/Enums/Id.html). Its members include all IO ports. You may be confused why RED, GREEN, and BLUE are not marked on pinMap. Because the SwiftIO board is equipped with built-in RGB three-color LEDs by default and connected in series with resistors, the corresponding pins of the LEDs connected to the three ports are shown in the circuit diagram. 
+`Id` is an enumeration. All types of enumerated Id can be viewed [here](https://swiftioapi.madmachine.io/Enums/Id.html). Its members include all IO ports. You may be confused why RED, GREEN, and BLUE are not marked on pinMap. Because the SwiftIO board is equipped with built-in RGB three-color LEDs by default and they are connected in series with resistors, the corresponding pins of the LEDs connected to the three ports are shown in the circuit diagram. 
 
-Setting the `while` loop to `true` means that the loop check will always be true, unless the hardware is powered off or restarted, the loop will not stop after entering. The loop body is the part of the loop code, enclosed by a pair of braces `{}` and needs to be indented for reading. 
+Setting the `while` loop to `true` means that the loop check will always be true, unless the hardware power off or restart, the loop will not stop after entering. What will be executed over and over again is written in the loop, enclosed by a pair of braces `{}`. 
 
-The `.write()` method belongs to the `DigitalOut` object and its incoming values ​​are `true` and `false`, which represent output high level \(3.3V\) and low level \(0V or GND\) respectively. And for these three LED, we need `false` to turn on them.
+The `.write()` method belongs to the `DigitalOut` instance and its incoming values ​​are `true` and `false`, which represent high level output \(3.3V\) and low level \(0V or GND\) respectively. And for these three LED, we need `false` to turn on them.
 
-The `sleep(ms:)` function is a built-in function, which means the delay time, calculated in milliseconds. The external name of the parameter `ms` must be added to pass in the parameter.
+The `sleep(ms:)` function is a built-in function, which means the delay time, calculated in milliseconds. The parameter name `ms` must be added to pass in the parameter.
 
 ## See Also
 
-* [Id](https://swiftioapi.madmachine.io/Enums/Id.html) - Enumerations of all pins on the board.
+* [Id](https://swiftioapi.madmachine.io/Enums/Id.html) - enumerations of all pins on the board.
 * [sleep\(ms:\)](https://swiftioapi.madmachine.io/Functions.html#/s:7SwiftIO5sleep2msySi_tF) - suspend the processor’s work in a given time period \(in millisecond\).
-* [DigitalOut.write\(\)](https://swiftioapi.madmachine.io/Classes/DigitalOut.html#/s:7SwiftIO10DigitalOutC5writeyySbF) - DigitalOut class is used to set a High or Low voltage output to a digital output pin
+* [DigitalOut.write\(\)](https://swiftioapi.madmachine.io/Classes/DigitalOut.html#/s:7SwiftIO10DigitalOutC5writeyySbF) - DigitalOut class is used to set a High or Low voltage output to a digital output pin.
 
 ## Reference
 

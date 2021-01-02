@@ -24,9 +24,9 @@ Let's build the circuit now.
 
 The potentiometer has three legs:
 
-* the first leg on the left goes to analog pin A6
+* the first leg on the left goes to ground
 * the second leg goes to power
-* the third leg goes to ground
+* the third leg goes to goes to analog pin A6
 
 Different potentiometer may vary, so please refer to its manual before building the circuit.
 

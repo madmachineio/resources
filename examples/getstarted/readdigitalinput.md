@@ -4,7 +4,7 @@
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F248974b7412722c96a260a31c8c1dd91cb365749.gif?alt=media)
 
-In this example, let's try to read digital signal using a pushbutton. The input value is true or false. Here you will use serial monitor to show the it.
+In this example, let's try to read digital signal using a pushbutton. The input value is true or false. You could the result in serial monitor.
 
 ## What you need
 
@@ -14,15 +14,15 @@ In this example, let's try to read digital signal using a pushbutton. The input 
 
 ## Circuit
 
-![](../../.gitbook/assets/ReadDigitalInput.png)
+The button has four legs. The two legs on same side are shorted as the following image:
 
-The button has four legs. The two legs on same side are shorted.
+![](../../.gitbook/assets/button%20%281%29.png)
 
-Connect one leg on the left side to 3.3 pin. And connect the leg on right side to digital pin D10.
+Connect one leg on the left side to 3.3V pin. And connect the leg on right side to digital pin D10.
 
-In default mode, the digital pin reads `false`. When you press the button, the two points on the button will be connected. And the value of pin will be `true`.
+In default mode, the digital pin reads `false`. When you press the button, the two points on the button will be shorted. And the value of pin will be `true`.
 
-So please be sure you connected the button in a right way.
+So please be sure to connect the button in a right way.
 
 ## Code
 
