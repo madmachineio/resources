@@ -1,6 +1,6 @@
 # Getting Started
 
-Get your SwiftIO board? Where do we start? Let's start with the hello world project - LED blink. 
+Get your SwiftIO board? Where do I start? Let's start with the hello world project - LED blink. 
 
 Here is a simple instruction manual about the whole process:
 

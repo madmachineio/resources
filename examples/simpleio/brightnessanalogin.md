@@ -2,9 +2,7 @@
 
 ![](../../.gitbook/assets/BrightnessAnalogIn01.gif)
 
-In this example, we use an analog output \(pulse width modulation, PWM\) to adjust the brightness of an LED based on the position of the potentiometer.
-
-PWM is a technology that obtains a very similar behavior from a digital output, which can be turned off and on very quickly, and the ratio between on and off time is different.
+In this example, we use PWM to adjust the brightness of an LED based on the position of the potentiometer.
 
 ## What you need
 
@@ -47,15 +45,9 @@ while true {
 
 ## Instruction
 
-### What is Pulse Width Modulation \(PWM\)?
+### About code
 
-Pulse Width Modulation \(PWM\) is a technique for obtaining analog results digitally. Digital control is used to create a square wave, a signal that switches between on and off. By changing the ratio of the signal on time to the signal off time, this switch mode can simulate the voltage between fully open \(3.3 volts\) and off \(0 volts\). The duration of the "on time" is called the pulse width. To obtain a varying analog value, you can change or modulate the pulse width. For example, if you repeat this switching pattern with LEDs fast enough, the result is as if the signal is a stable voltage between 0 and 3.3v that controls the brightness of the LED.
-
-In the figure below, the red line represents a fixed time period. The duration or period is the inverse of the PWM frequency. In other words, when the PWM frequency is about 500 Hz, the red lines are measured for 2 milliseconds each. The range of calling `setDutycycle(value)` is 0-1, so `setDutycycle(1)` requests a 100% duty cycle \(always on\), and `setDutycycle(0.5)` is a 50% duty cycle \(half the time\).
-
-![](../../.gitbook/assets/Duty_Cycle_Examples.png)
-
-Correspondingly, analogIn's `readRawValue()` is not called this time, but the corresponding return value range of `readPercent()` is 0 to 1.
+To get analog input value, there are three available methods. In this case, you will need `.readPercentage`. It will return a decimal number which represents the ratio of actual voltage and reference voltage \(3.3V\). The value will then be used as duty cycle to set the LED brightness.
 
 ### Experiment more
 
@@ -65,7 +57,7 @@ Once you get the example running, grab your SwiftIO board and shake it back and 
 
 Unlike incandescent light bulbs, LEDs \(and also some other devices\) can only operate under certain voltage. Lowering the voltage on LEDs wouldn't result in a lower brightness, the LED will simply turn off if the voltage isn't high enough.
 
-However, we can use PWM to control the overall power output of the LEDs. Indeed is the LED flashing, but our eyes cannot react quick enough for it. So it efficiently trick our brain into thinking this LED is darker.
+However, we can use PWM to control the overall power output of the LEDs. Actually the LED is flashing, but our eyes cannot react quick enough for it. So it efficiently trick our brain into thinking this LED is darker.
 
 > Side note: most of the mobile phones use the same method to control the brightness of the screen. However, if the frequency of the flashing is too low \(the screen is very dark\), it may be harmful to your eyes.
 

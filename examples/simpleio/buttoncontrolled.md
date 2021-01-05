@@ -2,9 +2,9 @@
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F7a31caa67b4783d87958a9eccb7d36f763b7b287.gif?alt=media)
 
-In this example, we will use a push-button to control the LED.
+In this example, you will use a push-button to control the LED.
 
-The input signal will change as you press the button. Thus, you can set LED status according to different input states.
+The input signal will change as you press the button. Thus, you can set LED states according to different input states.
 
 ## What you need
 
@@ -18,7 +18,7 @@ The input signal will change as you press the button. Thus, you can set LED stat
 
 ## Circuit
 
-![](../../.gitbook/assets/ButtoncontrolLED.png)
+![](../../.gitbook/assets/digitalinput.jpg)
 
 There is an onboard RGB LED. Please apply **low** voltage to light it.
 
@@ -65,9 +65,9 @@ while true {
 
 ## Instruction
 
-`DigitalIn` class is intended to detect the state of a digital input pin. The input value is either `true`\(1\) or `false`\(0\). The `.read()` function reads the value from a digital input pin.
+First, you'll need to check the button state. `.read()` method reads the value from the digital input pin. The return value is a boolean value, either `true`\(1\) or `false`\(0\). Then use if-statement to decide the LED state according to the value. If the value is true, that means the button is pressed, light the LED, otherwise, turn off the LED.
 
-If you have the experience with Arduino, you may notice there's no pull-down resistor on the button. That's because the SwiftIO Board already provides a pull-down function. Reference the `DigitalIn` class for more information.
+If you have the experience with Arduino, you may notice there's no pull-down resistor on the button. That's because the SwiftIO Board already has built-in pull resistors. Reference the [Mode](https://swiftioapi.madmachine.io/Classes/DigitalIn/Mode.html) in `DigitalIn` class for more information.
 
 ## See Also
 
