@@ -82,9 +82,11 @@ The **duty cycle** is the percentage of on time of output signal during one peri
 
 ### About code
 
-You may notice the pin name of PWM are a little strange, with "A" or "B" after the number. Since there are 14 pins for PWM in total, some pins are paired, like PWM3A and PWM3B. Two paired pin can only share the same frequency. So check the `Id` enumeration [here](https://swiftioapi.madmachine.io/Enums/Id.html).
+You may notice the pin name of PWM are a little strange, with "A" or "B" after the number. Since there are 14 pins for PWM in total, some pins are paired, like PWM3A and PWM3B. Two paired pins can only share the same frequency. So check the `Id` enumeration [here](https://swiftioapi.madmachine.io/Enums/Id.html).
 
-To change the brightness of the LED, the duty cycle would change all the time. So you need a variable to store its value. `var` is keyword to declare variable. Just like its name, its value can always change after it has been assigned. The value is a float number between 0 and 1.
+To change the brightness of the LED, the duty cycle would change all the time. So you need a variable to store its value. `var` is keyword to declare variable. Just like its name, its value can always change after it has been assigned. 
+
+The `value` is explicitly declared as a floating-point number type. This is very important for scenarios where the type is easy to be confused, for example, 0.0 could be float or double. And each numeric type has different range of numbers. 
 
 In the loop `while true`, the first `while` loop is to ensure the value not bigger than 1.0 and gradually brighten the LED. `.setDutyCycle` method allows you set the duty cycle. Each time, you will gradually increase the value by 0.01. The brightening process lasts for 2 minutes. To ensure a smooth brightness change, you need to set appropriate value change and sleep time. After finished first loop, the value is about 1.01. So `value = 1.0` is to keep the it in the specified range.  The second while is similar but to dim the LED. 
 
@@ -92,9 +94,12 @@ In the loop `while true`, the first `while` loop is to ensure the value not bigg
 
 * [Id](https://swiftioapi.madmachine.io/Enums/Id.html) - Enumerations of all the pins on the board.
 * ​[PWMOut.setDutyCycle](https://swiftioapi.madmachine.io/Classes/PWMOut.html#/s:7SwiftIO6PWMOutC12setDutycycleyySfF) - Set the duty cycle of a PWM output signal.
+* [Numeric Type Conversion](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html) - An integer type can be initialized with a Double or Float value.
 
 ## References
 
 * ​[wiki: Pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)​
 * ​[wiki: Duty cycle](https://en.wikipedia.org/wiki/Duty_cycle)​
+
+
 

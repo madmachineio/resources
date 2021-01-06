@@ -2,7 +2,7 @@
 
 ![](../../.gitbook/assets/PWM.gif)
 
-This example shows how to use the `PWMOut` to generate notes. It plays three tones repeatedly.
+This example shows how to use the `PWMOut` to generate notes. It plays musical notes repeatedly.
 
 ## What you need
 
@@ -27,7 +27,7 @@ import SwiftIO
 let speaker = PWMOut(Id.PWM2B)
 
 // Specify several frequencies to produce different sound.
-let fre = [262, 294, 330]
+let fre = [262, 294, 330, 349, 392, 440, 494]
 
 // Play recurrently these notes.
 while true {
@@ -37,13 +37,18 @@ while true {
         // Play each note for one second.
         sleep(ms: 1000)
     }
-
 }
 ```
 
 ## Instruction
 
-The code above uses a Frequency as musical pitches. For example, NOTE\_C4 is middle C, whose frequency is 262 Hz. Latter example MidiPlayer we will markdown all this musical note in a file. This file contains all the pitch values for typical notes. You may find it useful whenever you want to make musical notes.
+The PWM signal outputs high and low voltage alternatively. Inside the buzzer, there is a material that could change back and forth as the signal switching between on and off. Thus the buzzer produces the notes. And the frequency will influence the pitch. 
+
+The code above uses frequencies to set musical pitches. For example, NOTE\_C4 is middle C, whose frequency is 262 Hz. There are seven notes from 1 to 7 in the array. 
+
+To produce the sound, the frequency is the important factor. `.set` method allows you to set both frequency and duty cycle on the same time.
+
+`sleep` defines the duration of notes. Each note will last one second.
 
 ## See Also
 

@@ -28,10 +28,10 @@ let speaker = PWMOut(Id.PWM2B)
 
 // Specify several frequencies corresponding to each note of the melody. 
 let fre = [
-    350,350,393,441,
-    441,393,350,330,
-    294,294,330,350,
-    350,330,330
+    330,330,349,392,
+    392,349,330,294,
+    262,262,294,330,
+    330,294,294
 ]
 
 // Allow the speaker to repeat the melody again and again.
@@ -46,7 +46,7 @@ while true {
 
 ## Instruction
 
-The code above uses a Frequency as musical pitches. For example, NOTE\_C4 is middle C, whose frequency is 262 Hz. Latter example MidiPlayer we will markdown all this musical note in a file. This file contains all the pitch values for typical notes. You may find it useful whenever you want to make musical notes.
+The PWM signal outputs high and low voltage alternatively. Inside the buzzer, there is a material that could change back and forth as the signal switching between on and off. Thus the buzzer produces the notes. And the frequency will influence the pitch. 
 
 ## See Also
 
