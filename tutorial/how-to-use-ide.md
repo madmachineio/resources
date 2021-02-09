@@ -1,8 +1,6 @@
 # How to use IDE
 
-Now I will show you a brief introduction to MadMachine IDE. Here you can edit, build the code and download it to your board.
-
-It simplified the whole process, and thus everyone can get started easily.
+Now I will show you a brief introduction to MadMachine IDE. Here you can edit, build the code and download it to your board. It simplified the whole process, and thus everyone can get started easily.
 
 ## Create new project
 
@@ -79,7 +77,7 @@ In each project, there will be two files by default: `main.swift` and `.mmp`.
 
 `main.swift` is where you write main code. 
 
-`.mmp` is the project file and mainly used for library-related stuff here. You could see [here](how-to-use-a-libraries.md#use-library-in-your-project) for more info.
+`.mmp` is the project file and mainly used for library-related stuff here. You could see [here](how-to-use-a-library.md#use-library-in-your-project) for more info.
 
 ![](../.gitbook/assets/xnip2020-10-29_14-49-56.jpg)
 
@@ -113,5 +111,5 @@ When you download the project to board, you need to wait until a little icon ![]
 
 ![](../.gitbook/assets/xnip2020-10-29_15-06-35.jpg)
 
-Well, that's all for the introduction of IDE. Come on! Let's try more projects.
+Well, that's all for the introduction of IDE. Come on! Try the example code and then start to code your project.
 
