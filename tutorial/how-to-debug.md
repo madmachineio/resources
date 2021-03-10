@@ -37,5 +37,5 @@ After successfully connected, the values will be printed out.
 
 If there is something wrong when executing the code, you would notice the code is blocked at a certain step, and the following value will not be printed. Then you could infer if the board crashed or some steps go wrong.
 
-If the code works normally, you could pay attention to the values, if they are out of range, if the calculation formula is wrong by accident, and so on.
+If the code works normally, you could pay attention to the values: maybe they are out of range, or the calculation formula is wrong by accident, and so on.
 
