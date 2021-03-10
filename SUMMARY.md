@@ -8,6 +8,7 @@
   * [How to use IDE](tutorial/how-to-use-ide.md)
   * [How to use MM SDK](tutorial/how-to-use-mm-sdk.md)
   * [How to use a library](tutorial/how-to-use-a-library.md)
+  * [How to debug](tutorial/how-to-debug.md)
 * [Built-In Examples](examples/README.md)
   * [GettingStarted](examples/getstarted/README.md)
     * [Blink](examples/getstarted/blink.md)
