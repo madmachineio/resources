@@ -1,18 +1,16 @@
 # How to use a library
 
-Each time you deal with some devices, there are so many works to do - refer to its data sheet to get familiar with it, send a lot of data to communicate with it. It's really tiring. 
+Each time you deal with some devices, there are so many works to do - refer to its datasheet to get familiar with it, send a lot of data to communicate with it. It's really tiring. 
 
-However, libraries will let you get rid of all these dirty work and make your coding process easier. You just need to import it and write a few line of code with the preset methods. 
+However, libraries will let you get rid of all these dirty works and make your coding process easier. You just need to import it and write a few lines of code with the preset methods. 
 
-Now you may find there is few available libraries😔, we will create more as package management is done.
+Now you may find there are few available libraries😔, we will create more as package management is done.
 
 ## Install a library
 
 Now let's learn how to install a library.
 
 1.First, download the library from Github. ‌ I'll take the library MadSHT3x for example.
-
-![](https://lh4.googleusercontent.com/KJ1PE96giDLhXdQjMLY-a0jfRBlzjo4EgGHpDIjaGCOpK69VJghs9Jf3IcOujULTk2mzToyt-h55_ICv4Iq0rihzmBu-O63m554K4l8-l1zMkOT6GElrI23VAhDd2NMbSvVxYquj)
 
 2.Enter the MadSHT3x. Select **Code** &gt; **Download ZIP**.
 
@@ -26,7 +24,7 @@ Now let's learn how to install a library.
 
 There will be some examples in the library files downloaded from Github. Let's use it first.
 
-1.Open the IDE. Then create a new project. If you have opened the IDE, please make sure close it and open it again. 
+1.Open the IDE. Then create a new project. If you have opened the IDE, please make sure to close it and open it again. 
 
 ![](../.gitbook/assets/1%20%281%29.jpg)
 
