@@ -2,7 +2,7 @@
 
 ![](../../.gitbook/assets/BlinkTimer01.gif)
 
-This example shows how to use the timer and interrupt mechanism on the SwiftIO Board to make the on-board red LED blinking at a constant frequency.
+This example shows how to use the timer and interrupt mechanism on the SwiftIO Board to make the onboard red LED blink at a constant frequency.
 
 ## What you need
 
@@ -50,11 +50,11 @@ The function you choose for interrupt should be able to execute extremely quickl
 
 ###  What is a timer?
 
-Timer is precisely a part of the hardware on the SwiftIO board. It works just like an alarm clock. You set the time interval for the interrupt. If the time is up, the microcontroller will execute the program set for the interrupt. 
+The timer is precisely a part of the hardware on the SwiftIO board. It works just like an alarm clock. You set the time interval for the interrupt. If the time is up, the microcontroller will execute the program set for the interrupt. 
 
 ### What happens in this example?
 
-In this case, the timer is set to be the internal interrupt source, which is done by using `.setInterrupt(ms: )`, a method in the `Timer()` class. The parameter indicates that the timer triggers an interrupt every 1000 ms, or every 1 s.
+In this case, the timer is set to be the internal interrupt source, which is done by using `.setInterrupt(ms: )`, a method in the `Timer()` class. The parameter indicates that the timer triggers an interrupt every 1000 ms or every 1 s.
 
 The `.toggle()` method of DigitalOut class means that the output level of the specific pin will be inverted. In this case, the red LED light will be switch on or off when the interruption happens.
 

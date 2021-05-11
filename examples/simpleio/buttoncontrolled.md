@@ -2,7 +2,7 @@
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F7a31caa67b4783d87958a9eccb7d36f763b7b287.gif?alt=media)
 
-In this example, you will use a push-button to control the LED.
+In this example, you will use a pushbutton to control the LED.
 
 The input signal will change as you press the button. Thus, you can set LED states according to different input states.
 
@@ -20,16 +20,16 @@ The input signal will change as you press the button. Thus, you can set LED stat
 
 ![](../../.gitbook/assets/digitalinput.jpg)
 
-There is an onboard RGB LED. Please apply **low** voltage to light it.
+There is an onboard RGB LED. Please apply a **low** voltage to light it.
 
-The button has four legs. The two legs on same side are interconnected.
+The button has four legs. The two legs on the same side are interconnected.
 
-* Connect the leg on left side to 3.3V pin. 
-* Connect the leg on right side to digital pin D10.
+* Connect the leg on the left side to the 3.3V pin. 
+* Connect the leg on the right side to digital pin D10.
 
-In default mode, the digital pin reads `false`. When you press the button, the two points on the button will be connected. And the value of pin will be `true`.
+In default mode, the digital pin reads `false`. When you press the button, the two points on the button will be connected. And the value of the pin will be `true`.
 
-So please be sure you connected the button in a right way.
+So please be sure you connected the button the right way.
 
 ## Code
 
@@ -67,7 +67,7 @@ while true {
 
 First, you'll need to check the button state. `.read()` method reads the value from the digital input pin. The return value is a boolean value, either `true`\(1\) or `false`\(0\). Then use if-statement to decide the LED state according to the value. If the value is true, that means the button is pressed, light the LED, otherwise, turn off the LED.
 
-If you have the experience with Arduino, you may notice there's no pull-down resistor on the button. That's because the SwiftIO Board already has built-in pull resistors. Reference the [Mode](https://swiftioapi.madmachine.io/Classes/DigitalIn/Mode.html) in `DigitalIn` class for more information.
+If you have experience with Arduino, you may notice there's no pull-down resistor on the button. That's because the SwiftIO Board already has built-in pull resistors. Reference the [Mode](https://swiftioapi.madmachine.io/Classes/DigitalIn/Mode.html) in `DigitalIn` class for more information.
 
 ## See Also
 

@@ -42,11 +42,11 @@ while true {
 
 ## Instruction
 
-The PWM signal outputs high and low voltage alternatively. Inside the buzzer, there is a material that could change back and forth as the signal switching between on and off. Thus the buzzer produces the notes. And the frequency will influence the pitch. 
+The PWM signal outputs high and low voltage alternatively. Inside the buzzer, there is a material that could change back and forth as the signal switches between on and off. Thus the buzzer produces the notes. And the frequency will influence the pitch. 
 
 The code above uses frequencies to set musical pitches. For example, NOTE\_C4 is middle C, whose frequency is 262 Hz. There are seven notes from 1 to 7 in the array. 
 
-To produce the sound, the frequency is the important factor. `.set` method allows you to set both frequency and duty cycle on the same time.
+To produce the sound, frequency is the important factor. `.set` method allows you to set both frequency and duty cycle at the same time.
 
 `sleep` defines the duration of notes. Each note will last one second.
 

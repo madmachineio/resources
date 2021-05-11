@@ -43,11 +43,11 @@ Now the IDE can run normally.
 
 ![](.gitbook/assets/xnip2020-07-24_15-07-20.jpg)
 
-## Can't create new project on Windows
+## Can't create a new project on Windows
 
 **Reason:** The IDE need to copy `MadMachine\Examples` and `MadMachine\Library` to your `Documents` directory when running for the first time.
 
-**Solve:** Please make sure run the IDE as **Administrator** for the first time!
+**Solve:** Please make sure to run the IDE as **Administrator** for the first time!
 
 ## IDE can't find the USB drive
 
@@ -90,13 +90,13 @@ Now you can try to download your project again.
 
 There is a maximum current limit for the USB port of your devices.
 
-While some modules which is connected to the board may require a larger one.
+While some modules which are connected to the board may require a larger one.
 
 Thus the board reset over and over again.
 
 You can try these ways:
 
-1 \_\*\*\_connect the board to USB port that can output larger power.‌
+1 connect the board to the USB port that can output larger power.‌
 
 2 connect both download port and serial port on the board to USB ports
 
@@ -107,9 +107,9 @@ You can try these ways:
 This problem may be caused by these reasons
 
 1. Bad quality USB cable, there are so many bad quality USB cables in the market. Some of them can only charge your device without communication feature : \(
-2. Incompatible microSD card
+2. Incompatible MicroSD card
 3. Incompatible USB hub or incompatible USB-C to USB-A adapter
-4. There is a known issue about USB compatibility on Mac. There are already a lot of discussion about it on [reddit](https://www.reddit.com/r/mac/comments/gp5b1z/usb_20_issues_on_new_macbook_pro_13_2020/), [apple](https://discussions.apple.com/thread/251356598).
+4. There is a known issue with USB compatibility on Mac. There are already a lot of discussions about it on [Reddit](https://www.reddit.com/r/mac/comments/gp5b1z/usb_20_issues_on_new_macbook_pro_13_2020/), [apple](https://discussions.apple.com/thread/251356598).
 
-To solve problem 1 and 2, we offer a high quality USB cable and a Kingston microSD card along with our board. But we still got feedback that the USB drive did not appear. In this situation, there is a temporary solution: use a USB card reader to copy the `swiftio.bin`. At the same time, we’ll continue to improve the compatibility of the firmware.
+To solve problems 1 and 2, we offer a high-quality USB cable and a Kingston microSD card along with our board. But we still got feedback that the USB drive did not appear. In this situation, there is a temporary solution: use a USB card reader to copy the `swiftio.bin`. At the same time, we’ll continue to improve the compatibility of the firmware.
 

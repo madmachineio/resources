@@ -1,12 +1,12 @@
 # Introduction
 
-Welcome to MadMachine community 🎆 !
+Welcome to the MadMachine community 🎆 !
 
-We are a team that focus on the usage of Swift language on microcontrollers. We have develop a whole environment, including **SwiftIO board**, **Swift framework** and **MadMachine IDE**.
+We are a team that focuses on the usage of the Swift language on microcontrollers. We have developed a whole environment, including **SwiftIO board**, **Swift framework**, and **MadMachine IDE**.
 
-After months of efforts, we are proud to say the SwiftIO board is stable enough for most of your projects. We believe you will love it once you start.
+After months of effort, we are proud to say the SwiftIO board is stable enough for most of your projects. We believe you will love it once you start.
 
-The SwiftIO board is a special gift for makers, programming lovers, electronic hobbyists, or all those curious about new tech. This is super easy to learn. And as you go further, you will see the charm of Swift language.
+The SwiftIO board is a special gift for makers, programming lovers, electronic hobbyists, or all those curious about new tech. This is super easy to learn. And as you go further, you will see the charm of the Swift language.
 
 Follow us step-by-step to begin your adventure.
 

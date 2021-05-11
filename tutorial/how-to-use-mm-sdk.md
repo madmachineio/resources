@@ -4,7 +4,7 @@
 
 The mm-sdk contains everything you need to build a MadMachine project, either a library or an executable.
 
-A MadMachine project is structured like a [SPM package](https://swift.org/package-manager). A Python script is used to build the project now and it would be replaced by Swift Package Manager in the future.
+A MadMachine project is structured like an [SPM package](https://swift.org/package-manager). A Python script is used to build the project now and it would be replaced by Swift Package Manager in the future.
 
 The latest features would be added to this SDK first and then integrated into the MadMachine IDE.
 
@@ -69,7 +69,7 @@ cd ~/mm-sdk/Library/DemoLibrary
 
 When building a project \(either library or executable\), the Python script would try to find the dependent libraries in the specified directory.
 
-If the dependent library is not builded yet, the Python script would build the library first. Use `--rebuild` to force rebuild all dependent libraries.
+If the dependent library is not built yet, the Python script would build the library first. Use `--rebuild` to force rebuild all dependent libraries.
 
 ```text
 cd ~/DemoProgram
@@ -82,7 +82,7 @@ After a successful building, there would be `.build/swiftio.bin` in your project
 
 Follow those steps to download the executable:
 
-1. Insert SD card and confirm USB connection \(Press the **Download** button and wait the onboard RGB turns to **green**\)
+1. Insert SD card and confirm USB connection \(Press the **Download** button and wait for the onboard RGB to turn to **green**\)
 2. A USB drive would be mounted on your computer
 3. Copy the `swiftio.bin` to the SD card root directory
 4. Eject the USB drive and the program would run automatically
@@ -137,7 +137,7 @@ D:\mm-sdk\tools_win\scripts\dist\mm\mm.exe build --sdk D:\mm-sdk --module D:\mm-
 
 When building a project \(either library or executable\), the Python script would try to find the dependent libraries in the specified directory.
 
-If the dependent library is not builded yet, the Python script would build the library first. Use `--rebuild` to force rebuild all dependent libraries.
+If the dependent library is not built yet, the Python script would build the library first. Use `--rebuild` to force rebuild all dependent libraries.
 
 ```text
 D:
@@ -151,7 +151,7 @@ After a successful building, there would be `.build/swiftio.bin` in your project
 
 Follow those steps to download the executable:
 
-1. Insert SD card and confirm USB connection \(Press the **Download** button and wait the onboard RGB turns to **green**\)
+1. Insert SD card and confirm USB connection \(Press the **Download** button and wait for the onboard RGB to turn to **green**\)
 2. A USB drive would be mounted on your computer
 3. Copy the `swiftio.bin` to the SD card root directory
 4. Eject the USB drive and the program would run automatically

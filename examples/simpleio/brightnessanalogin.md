@@ -2,7 +2,7 @@
 
 ![](../../.gitbook/assets/BrightnessAnalogIn01.gif)
 
-In this example, we use PWM to adjust the brightness of an LED based on the position of the potentiometer.
+In this example, we use PWM to adjust the brightness of an LED according to the position of the potentiometer.
 
 ## What you need
 
@@ -47,7 +47,7 @@ while true {
 
 ### About code
 
-To get analog input value, there are three available methods. In this case, you will need `.readPercentage`. It will return a decimal number which represents the ratio of actual voltage and reference voltage \(3.3V\). The value will then be used as duty cycle to set the LED brightness.
+To get analog input value, there are three available methods. In this case, you will need `.readPercentage`. It will return a decimal number that represents the ratio of actual voltage and reference voltage \(3.3V\). The value will then be used as duty cycle to set the LED brightness.
 
 ### Experiment more
 
@@ -57,7 +57,7 @@ Once you get the example running, grab your SwiftIO board and shake it back and 
 
 Unlike incandescent light bulbs, LEDs \(and also some other devices\) can only operate under certain voltage. Lowering the voltage on LEDs wouldn't result in a lower brightness, the LED will simply turn off if the voltage isn't high enough.
 
-However, we can use PWM to control the overall power output of the LEDs. Actually the LED is flashing, but our eyes cannot react quick enough for it. So it efficiently trick our brain into thinking this LED is darker.
+However, we can use PWM to control the overall power output of the LEDs. Actually, the LED is flashing, but our eyes cannot react quickly enough for it. So it efficiently tricks our brain into thinking this LED is darker.
 
 > Side note: most of the mobile phones use the same method to control the brightness of the screen. However, if the frequency of the flashing is too low \(the screen is very dark\), it may be harmful to your eyes.
 

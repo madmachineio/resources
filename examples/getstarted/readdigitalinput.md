@@ -4,7 +4,7 @@
 
 ![](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2F248974b7412722c96a260a31c8c1dd91cb365749.gif?alt=media)
 
-In this example, let's try to read digital signal using a pushbutton. When you press or release the button, the input value will change accordingly. The value is true or false. You could see the result in serial monitor.
+In this example, let's try to read digital signals using a pushbutton. When you press or release the button, the input value will change accordingly. The value is true or false. You could see the result in the serial monitor.
 
 ## What you need
 
@@ -16,15 +16,15 @@ In this example, let's try to read digital signal using a pushbutton. When you p
 
 ![](../../.gitbook/assets/digitalinput.jpg)
 
-The button has four legs. The two legs on same side are shorted as the following image:
+The button has four legs. The two legs on the same side are shorted as the following image:
 
 ![](../../.gitbook/assets/button%20%281%29.png)
 
-Connect one leg on the left side to 3.3V pin. And connect the leg on right side to digital pin D10. Usually in circuit diagram, the line connected to power is in red and the line to ground is in black.
+Connect one leg on the left side to the 3.3V pin. And connect the leg on the right side to digital pin D10. Usually, in the circuit diagram, the line connected to power is in red and the line to the ground is in black.
 
-In default mode, as there is no current, the digital pin reads `false`. When you press the button, the two points on the button will be shorted. And the value of pin will be `true`.
+In default mode, as there is no current, the digital pin reads `false`. When you press the button, the two points on the button will be shorted. And the value of the pin will be `true`.
 
-_**Note**: If you connected the two legs on the same side in this circuit, you would notice there will be no change whether you press or release the button. So please be sure to connect the button in a right way._
+_**Note**: If you connected the two legs on the same side in this circuit, you would notice there will be no change whether you press or release the button. So please be sure to connect the button the right way._
 
 ## Code
 
@@ -62,7 +62,7 @@ _**Note**: these digital pins could be used for output and input. When you initi
 
 `print()` function is to print the result directly to the serial port. You can conveniently connect the computer to the serial port of the SwiftIO Board. In the IDE, there is a serial monitor to view the results and debug.
 
-_**Note**: SwiftIO Board has two USB ports. Both USB ports can be used as power supply ports for SwiftIO Board. However, the port used to load programs cannot be used as a serial monitor port, so you need to change the port after download the code. For details, please see the_ [_operations_](readdigitalinput.md#tips) _below._ 
+_**Note**: SwiftIO Board has two USB ports. Both USB ports can be used as power supply ports for SwiftIO Board. However, the port used to load programs cannot be used as a serial monitor port, so you need to change the port after downloading the code. For details, please see the_ [_operations_](readdigitalinput.md#tips) _below._ 
 
 ## See Also <a id="see-also"></a>
 

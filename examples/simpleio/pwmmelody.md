@@ -46,7 +46,7 @@ while true {
 
 ## Instruction
 
-The PWM signal outputs high and low voltage alternatively. Inside the buzzer, there is a material that could change back and forth as the signal switching between on and off. Thus the buzzer produces the notes. And the frequency will influence the pitch. 
+The PWM signal outputs high and low voltage alternatively. Inside the buzzer, there is a material that could change back and forth as the signal switches between on and off. Thus the buzzer produces the notes. And the frequency will influence the pitch. 
 
 ## See Also
 

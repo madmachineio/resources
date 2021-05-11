@@ -8,7 +8,7 @@ In this new example, you are going to read analog input. And you'll use a potent
 
 The potentiometer can provide a certain range of resistance. When you twist the knob, the resistance in the circuit will change, thus the input voltage will change with it.
 
-When SwiftIO board reads from the pin, it will get a number between 0 and 4095. And then change it into a digital number between 0 and 3.3V.
+When the SwiftIO board reads from the pin, it will get a number between 0 and 4095. And then change it into a digital number between 0 and 3.3V.
 
 ## What you need
 
@@ -28,7 +28,7 @@ The potentiometer has three legs:
 * the second leg goes to power
 * the third leg goes to goes to analog pin A6
 
-Different potentiometer may vary, so please refer to its manual before building the circuit.
+Different potentiometers may vary, so please refer to its manual before building the circuit.
 
 ## Code
 
@@ -65,9 +65,9 @@ while true {
 
 ![](../../.gitbook/assets/analog.jpg)
 
-Analog signal is different from the digital signal. Its voltage always changes with time. The value ranges in a certain range, between 0V and 3.3V. So you are able to get 1.5V, 2V...The resolution is used to describe the possible values. The SwiftIO board contains   12-bit resolution, that means there are 4096 \(0-4095\) values in total. 
+Analog signal is different from the digital signal. Its voltage always changes with time. The value ranges in a certain range, between 0V and 3.3V. So you are able to get 1.5V, 2V...The resolution is used to describe the possible values. The SwiftIO board has 12-bit resolution, which means there are 4096 \(0-4095\) values in total. 
 
-Let's see the working process for the analog to digital conversion. When the board reads from the analog pin, it will first get a raw value between 0 and 4095. Then this value will be converted to voltage value proportionally. Their relationship is like this:
+Let's see the working process for analog to digital conversion. When the board reads from the analog pin, it will first get a raw value between 0 and 4095. Then this value will be converted to voltage value proportionally. Their relationship is like this:
 
 ![](../../.gitbook/assets/image%20%2815%29.png)
 
@@ -75,16 +75,16 @@ Let's see the working process for the analog to digital conversion. When the boa
 
 The pin available for AnalogIn is from A0 to A11. Before using the pin, you need to initialize it.
 
-`.readVoltage()` returns directly the voltage value . The return value is a floating point number between 0V-3.3V.
+`.readVoltage()` returns directly the voltage value. The return value is a floating-point number between 0V-3.3V.
 
 `print()` function is to print the result directly to the serial port. You can conveniently connect the computer to the serial port of the SwiftIO Board. In the IDE, there is a serial monitor to view the results and debug.
 
-_**Note**: SwiftIO Board has two USB ports. Both USB ports can be used as power supply ports for SwiftIO Board. However, the port used to load programs cannot be used as a serial monitor port, so you need to change the port after download the code. For details, please see the_ [_operations_](readdigitalinput.md#tips) _below._ 
+_**Note**: SwiftIO Board has two USB ports. Both USB ports can be used as power supply ports for SwiftIO Board. However, the port used to load programs cannot be used as a serial monitor port, so you need to change the port after downloading the code. For details, please see the_ [_operations_](readdigitalinput.md#tips) _below._ 
 
 ## See Also
 
 * [Id](https://swiftioapi.madmachine.io/Enums/Id.html) - Enumerations of all pins on the board
-* [AnalogIn.readVoltage\(\) ](https://swiftioapi.madmachine.io/Classes/AnalogIn.html#/s:7SwiftIO8AnalogInC11readVoltageSfyF)- Read the current voltage from the specified analog pin.
+* [AnalogIn.readVoltage\(\) ](https://swiftioapi.madmachine.io/Classes/AnalogIn.html#/s:7SwiftIO8AnalogInC11readVoltageSfyF)- Read the voltage from the specified analog pin.
 
 ## References
 

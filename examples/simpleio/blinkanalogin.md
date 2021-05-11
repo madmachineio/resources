@@ -22,7 +22,7 @@ In order to do this, you read the value of the resistor first, by using the anal
 
 ![](../../.gitbook/assets/BlinkAnalogIn.png)
 
-Prepare the jumper wire cables, be aware of the female and male ends. Connect the male ends to the SwiftIO board at ports 3.3V, A6 and  GND.
+Prepare the jumper wire cables, be aware of the female and male ends. Connect the male ends to the SwiftIO board at ports 3.3V, A6, and GND.
 
 Connect the A6 wire to the middle pin of the potentiometer. Connect the GND wire to the outer pins of the potentiometer, and the 3.3V wire to the other outer pin of the potentiometer.
 
@@ -56,7 +56,7 @@ while true {
 
 `.readRawValue()` method reads the current raw value from the specified analog pin. Since the analog-to-digital converter on the SwiftIO Board has a resolution of 12-bit, therefore, the corresponding value would be 0-4095.
 
-`.toggle()` method, as the name suggests, inverts the output level on a specific digital pin. For example, if the original output is high voltage, then it will be changed to low voltage.
+`.toggle()` method, as the name suggests, inverts the output level on a specific digital pin. For example, if the original output is a high voltage, then it will be changed to low voltage.
 
 Between each `.toggle()`, a `sleep(ms: )` function with a parameter `value` is used. It makes sure that there's a certain amount of time between each toggle, and the time is under control.
 

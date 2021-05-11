@@ -2,13 +2,13 @@
 
 ![](../../.gitbook/assets/LEDsBrightnessControl.gif)
 
-In this example, you're going to change the brightness of three LED one by one. This is similar to the previous PWM brightness control. 
+In this example, you're going to change the brightness of three LEDs one by one. This is similar to the previous PWM brightness control. 
 
 ## What you need
 
 * SwiftIO board
 * Jumper wires
-* 3x color LEDs and 3x 330 ohm resistors \(or 3 color LED Modules\)
+* 3x color LEDs and 3x 330-ohm resistors \(or 3-color LED Modules\)
 * SwiftIO shield \(optional\)
 
 ## Circuit
@@ -60,9 +60,9 @@ while true {
 
 ## Instruction
 
-`let leds = [red, green, blue]` This is one of the Swift collection types, known as array. Array is an ordered collection of values. You access and modify an array through its methods and properties, or by using subscript syntax, such as `leds.red`, `leds.green`, `leds.blue`.
+`let leds = [red, green, blue]` This is one of the Swift collection types, known as an array. The array is an ordered collection of values. You could access and modify an array through its methods and properties, or by using subscript syntax, such as `leds.red`, `leds.green`, `leds.blue`.
 
-You can iterate over the entire set of values in an array with the for-in loop: `for led in leds`. This is the reason why we want to create the array `leds`. With the for-in loop syntax structure, it's very convenient and concise to iterate each one in it. Or, you might need to write same block of code many times.
+You can iterate over the entire set of values in an array with the for-in loop: `for led in leds`. This is the reason why we want to create the array `leds`. With the for-in loop syntax structure, it's very convenient and concise to iterate each one in it. Or, you might need to write the same block of code many times.
 
 ## See Also
 
