@@ -1,42 +1,42 @@
 # Getting Started
 
-Get your SwiftIO board? Where do I start? Let's start with the hello world project - LED blink. 
+So, you have got your SwiftIO board. Let's start with a hello world project - LED blink. 
 
-Here is a simple instruction manual about the whole process:
+Well, follow us step-by-step. You will know how to run your projects on your SwiftIO board.
+
+Here is a simplified instruction manual about the whole process:
 
 ![](.gitbook/assets/212.png)
 
-Well, please follow us step-by-step. You will know how to run your first project on your SwiftIO board.
-
 ## **Step 1: Download and install the MadMachine IDE**
 
-MadMachine IDE is what you use to write and download the code. It provides you with an easy way to code, and you no longer need to face all the complicated stuff. 
+In the MadMachine IDE,  you write the code and download it to your board. It provides you with an easy way to code, and you no longer need to face all the complicated stuff. 
 
-If you're an experienced programmer, you may edit your code wherever you like, and then just use the IDE to download your code to the board.
+_Note: if you're an experienced programmer, you may edit your code wherever you like and use the_ [_mm-sdk_](tutorial/how-to-use-mm-sdk.md) _to compile your code._
 
-The IDE is now available on Windows and Mac. You'll find the latest software package [here](https://github.com/madmachineio/MadMachineIDERelease/releases). Select the appropriate version according to your operating system. 
+The IDE is now available on Windows and Mac. You'll find the latest software package [here](https://github.com/madmachineio/MadMachineIDE/releases/tag/v0.1.1). Select the appropriate version according to your operating system. 
 
 Double click the downloaded file and follow the installation instructions.
 
-If you meet with any problem, please refer to [FAQ](faq.md).
+If you meet with any problem, please refer to [FAQ](faq.md). 
 
 When you first open up the MadMachine IDE, it appears like this:
 
 ![](.gitbook/assets/ide.jpg)
 
-Now you just begin to play with it, it's empty on the right side. As you try more projects and explore more, it will be filled with all kinds of projects.
+Now it's the first time you open it, so it's empty on the right side. As you create and try more projects, it will be filled with all your projects.
 
-## **Step 2: Coding in the IDE**
+## **Step 2: Code in the IDE**
 
 It's time to start your first project in the IDE. It's pretty simple.
 
-First of all, create a new project.
+First of all, create a new project by clicking **Create a new MadMachine project**.
 
 ![](.gitbook/assets/create.jpg)
 
-We call it "Blink". Just try to choose a descriptive name as you like for the project.
+Then **name** the project. We call it "Blink". Just try to choose a descriptive name as you like for the project. 
 
-Then click **Create**.
+Click **Create**.
 
 ![](.gitbook/assets/blink.jpg)
 

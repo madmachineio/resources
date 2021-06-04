@@ -2,13 +2,11 @@
 
 ## A big thank you!
 
-Hi guys! It’s [Andy Liu](https://twitter.com/madmachineio). We started to sell the SwiftIO board in July. Till today \(8-Sep\), we have received nearly 100 orders from different countries. You guys are awesome! You are not only customers but angels for us. I want to express the depth of my gratitude to all of you!
+Hi guys! It’s [Andy Liu](https://twitter.com/madmachineio). We started to sell the SwiftIO board in July 2020. And we have received hundreds of orders from different countries. You guys are awesome! You are not only customers but angels for us. I want to express the depth of my gratitude to all of you!
 
-Our original plan was to hold a Kickstarter campaign. So we could raise enough money in a very short time to support this project. Some of you might be familiar with this crowdfunding platform, me too. Actually, I had a project named [EVB ](https://www.kickstarter.com/projects/fatcatlab/evb-replace-the-brain-of-your-lego-ev3-with-beagle?ref=discovery&term=evb)on Kickstarter a few years ago. In my experience, these kinds of hardware projects usually encounter problems even if they raise a lot of money. Because there’s such a huge gap between a prototype and a mature product. It’s so hard for a small team to face so many problems at the very beginning, those problems might kill the founding team. Sadly, I’ve seen a lot of cases already 😱
+Our project may take years to be perfect, and we would like to run it in a steady way so we have more chances to incorporate your feedback and improve continuously. It might evolve slowly, but nothing could kill us.
 
-Since our project may take years to be perfect, I decided to run our project in a more steady way so we have more chances to incorporate your feedback and improve continuously. It might evolve slower, but nothing could kill us.
-
-At present, the SwiftIO board hardware is stable. But the software still needs improvement. We have already received some issues about the software:
+At present, the SwiftIO board hardware is stable. But the software still needs improvement. We received some issues about the software:
 
 * The IDE has problems in different OS environments
 * The USB drive may not appear after pressing the DOWNLOAD button
@@ -19,7 +17,7 @@ Here, I’ll give a brief explanation of the techniques we use in our project. A
 
 ## Background
 
-As you know, those who aren’t familiar with Swift regard it as an Apple exclusive-use programming language. But we know that’s wrong. Swift is modern, safe, efficient and especially, cross-platform. That’s why I have the confidence to make this language work in the microcontroller world. \(Some of you might mention Rust, but I have to admit that Rust is too hard for me to get started😭\)
+As you know, those who are unfamiliar with Swift regard it as an Apple exclusive-use programming language. But we know that’s wrong. Swift is modern, safe, efficient and especially, cross-platform. That’s why I have the confidence to make this language work in the microcontroller world. \(Some of you might mention Rust, but I have to admit that Rust is too hard for me to get started😭\)
 
 Before we start, you could have a look at the definition of Clang [here](https://clang.llvm.org), it is described as **a C language family frontend for LLVM**.
 
@@ -89,7 +87,7 @@ In my opinion, Arduino is the most successful attempt to simplify the API of har
 
 ### MicroPython:
 
-As we can see, Python has become so popular in recent years. Compared to C/C++, it is very easy to earn. As an interpreted language, users could see the results immediately without finishing all the code and compiling it. To realize MicroPython, [Damien George](https://micropython.org/) created an efficient interpreter using C. This could run in the extremely limited microcontroller environment. In this way, developers are able to use Python in the embedded world.
+As we can see, Python has become so popular in recent years. Compared to C/C++, it is very easy to earn. As an interpreted language, users could see the results immediately without finishing all the code and compiling it. To realize MicroPython, [Damien George](https://micropython.org/) created an efficient interpreter using C. This could run in an extremely limited microcontroller environment. In this way, developers are able to use Python in the embedded world.
 
 However, Python needs to be interpreted. This leads to low efficiency when running it. So most complicated projects based on MicroPython implement their core algorithm in C, just provide some simple Python API to the users, such as [OpenMV](https://openmv.io/) and [CircuitPython](https://circuitpython.org/).
 
