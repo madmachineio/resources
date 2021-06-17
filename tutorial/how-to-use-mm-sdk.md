@@ -8,7 +8,7 @@ A MadMachine project is structured like an [SPM package](https://swift.org/packa
 
 The latest features would be added to this SDK first and then integrated into the MadMachine IDE.
 
-[Download](https://github.com/madmachineio/mm-sdk) the latest release depending on your operating system.
+[Download](https://github.com/madmachineio/mm-sdk/releases) the latest release depending on your operating system.
 
 ## What is inside the SDK
 
