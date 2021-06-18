@@ -10,15 +10,13 @@ When you deal with the LEDs, sometimes you need to set a high voltage to turn on
 
 ### Before start
 
-
-
-First, let's figure out what this library is used to do. 
+First, let's figure out what this library is used to do.
 
 When you light a LED, you need to identify if it will be **on** with high voltage or low voltage. Then you need to set the corresponding voltage. So you are going to take them apart, and solve them one by one in the library.
 
-Then you will find out why there are different situations to light the LED. 
+Then you will find out why there are different situations to light the LED.
 
-It depends on how the LED is connected to your circuit. There are two ways to connect the LED: 
+It depends on how the LED is connected to your circuit. There are two ways to connect the LED:
 
 * In the first circuit, the LED is connected to the power and a digital pin. Since the current always flows from high to low voltage, if the pin outputs a high voltage, there is no voltage difference between the two ends of the LED, so the LED is off. Only when the pin outputs a **low** voltage, the current could flow from the power to the pin and the LED will be on. This is how the onboard LED works.
 
@@ -30,15 +28,15 @@ It depends on how the LED is connected to your circuit. There are two ways to co
 
 ### Create a new project
 
-Now that you make it clear how to turn on the LED, you could start your library. 
+Now that you make it clear how to turn on the LED, you could start your library.
 
-Open the MadMachine IDE. **Create** a new project. 
+Open the MadMachine IDE. **Create** a new project.
 
 ![](../.gitbook/assets/create.png)
 
-**Name** the project. In the **Project Type** drop-down menu, choose **Library**. 
+**Name** the project. In the **Project Type** drop-down menu, choose **Library**.
 
-_Note: you could notice there are two options: an **executable** is a program that could run on your board; a **library** provides some functionalities and could be imported to other projects._ 
+_Note: you could notice there are two options: an **executable** is a program that could run on your board; a **library** provides some functionalities and could be imported to other projects._
 
 Click **Create**.
 
@@ -96,26 +94,26 @@ Let's come to the code. Open the file `MadLed.swift` in folder `Sources/MadLed`.
 import SwiftIO
 
 final public class MadLed {
-    
+
     private let pin: DigitalOut
     private let ledOnValue: Bool
-    
+
     // Initilize the LED.
     public init(_ pin: DigitalOut, ledOnValue: Bool) {
         self.pin = pin
         self.ledOnValue = ledOnValue
     }
-    
+
     // Turn on the LED.
     public func on() {
         pin.write(ledOnValue)
     }
-    
+
     // Turn off the LED.
     public func off() {
         pin.write(!ledOnValue)
     }
-    
+
     public func toggle() {
         let currentValue = pin.getValue()
         pin.write(!currentValue)
@@ -131,7 +129,7 @@ Let's see how you could use the libraries. We will use the library `MadLed` crea
 
 ### Add dependencies
 
-After you create a project, you will need to add the dependencies to it. 
+After you create a project, you will need to add the dependencies to it.
 
 All our libraries are stored on Github. You could find it [here](https://github.com/madmachineio/MadLed). Click **Code** and you will get a drop-down menu. Click the button to **copy** the URL.
 
@@ -153,5 +151,5 @@ Then you could start to code.
 
 With Swift Package Manager, you don't need to install the libraries manually. It's really convenient.
 
-As you build your project, the file `Package.swift` will be built first, then the IDE will automatically get the libraries from Github. So it will cost a while the first time you build it. 
+As you build your project, the file `Package.swift` will be built first, then the IDE will automatically get the libraries from Github. So it will cost a while the first time you build it.
 
