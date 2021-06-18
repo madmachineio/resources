@@ -26,9 +26,9 @@ SwiftIO board has huge potential to make microcontroller projects easier than ev
 
 This is the pinout diagram of SwiftIO. Let’s take a quick tour. 
 
-![](../.gitbook/assets/pinout-diagram-of-swiftio.png)
+![](../.gitbook/assets/pinout-diagram-of-swiftio%20%281%29.png)
 
-{% file src="../.gitbook/assets/pinout-diagram-of-swiftio \(1\).png" caption="Download the diagram" %}
+{% file src="../.gitbook/assets/pinout-diagram-of-swiftio.png" caption="Download the diagram" %}
 
 * Microcontroller RT1052 with ARM cortex M7 core 600 Mega Hz.
 * **Reset button**: reboot your SwiftIO’s program.

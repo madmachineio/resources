@@ -30,7 +30,7 @@
     * [Mission3\_Push\_Button](examples/maker-kit/mission3_push_button.md)
     * [Mission4\_Potentiometer\_RGB](examples/maker-kit/mission4_potentiometer_rgb.md)
     * [Mission5\_Buzzer](examples/maker-kit/mission5_buzzer.md)
-    * [Mission6\_Seven\_Segment\_Display \(editing\)](examples/maker-kit/mission6_seven_segment_display.md)
+    * [Mission6\_Seven\_Segment\_Display](examples/maker-kit/mission6_seven_segment_display.md)
     * [Mission7\_DC\_Motors \(editing\)](examples/maker-kit/mission7_dc_motors.md)
     * [Mission8\_Servo\_Motor \(editing\)](examples/maker-kit/mission8_servo_motor.md)
     * [Mission9\_LCD \(editing\)](examples/maker-kit/mission9_lcd.md)

@@ -1,6 +1,6 @@
 # PWMSoundOutput
 
-![](../../.gitbook/assets/PWM.gif)
+![](../../.gitbook/assets/PWM%20%281%29.gif)
 
 This example shows how to use the `PWMOut` to generate notes. It plays musical notes repeatedly.
 
@@ -13,7 +13,7 @@ This example shows how to use the `PWMOut` to generate notes. It plays musical n
 
 ## Circuit
 
-![](../../.gitbook/assets/PWMSoundOutput%20%281%29.png)
+![](../../.gitbook/assets/PWMSoundOutput%20%281%29%20%281%29.png)
 
 ## Code
 

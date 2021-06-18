@@ -42,14 +42,40 @@ Click **Create**.
 
 ![](../.gitbook/assets/create2%20%281%29.jpg)
 
-Well, the project is created. Let's look at the file `Package.swift`. This file defines your project name and the dependencies. It is created automaticlly once you create your project. Usually, you'll not do any changes to this file. Here are some quick overviews of this file:
+Well, the project is created. Let's look at the file `Package.swift`. This file defines your project name and the dependencies. It is created automatically once you create your project. Usually, you'll not do any changes to this file. Here are some quick overviews of this file:
 
 * One project is a **package**. You could see its name is `MadLed` in line7. 
 * The package has **products** that could be either executables or libraries. This is a library as shown in line8. It shares the same name `MadLed`.
 * The library could have one or more **targets**. What you import in other projects is the target. Here it has only one target with the same name `MadLed`.
 * Then you will indicate the location of the dependencies. The SwiftIO source code is stored [here](https://github.com/madmachineio/SwiftIO). 
 
-![](../.gitbook/assets/package.jpg)
+```swift
+import PackageDescription
+
+let package = Package(
+    name: "MadLed",
+    products: [
+        // Products define the executables and libraries a package produces, and make them visible to other packages.
+        .library(
+            name: "MadLed",
+            targets: ["MadLed"]),
+    ],
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+        .package(url: "https://github.com/madmachineio/SwiftIO.git", .upToNextMajor(from: "0.0.1")),
+    ],
+    targets: [
+        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+        // Targets can depend on other targets in this package, and on products in packages this package depends on.
+        .target(
+            name: "MadLed",
+            dependencies: ["SwiftIO"]),
+        .testTarget(
+            name: "MadLedTests",
+            dependencies: ["MadLed"]),
+    ]
+)
+```
 
 ### Write code
 
@@ -63,7 +89,37 @@ Let's come to the code. Open the file `MadLed.swift` in folder `Sources/MadLed`.
 * The two properties above don't have a default value, since they will change according to your circuit. Thus you will need an **initializer**. It takes two parameters, which correspond respectively to the properties. Since they share the same name, `self` is added to identify them. `self.pin` refers to the property `pin` above. When you pass values to the parameters, the values will be assigned to the two properties. 
 * After the initializer, you need to create some **methods** to control the LED. Let's have a look at the method to turn on a LED. Since the `ledOnValue` defines the value to turn on a LED, you don't need to care about its value now and directly pass the value to the method `write()`. 
 
-![](../.gitbook/assets/code%20%282%29.jpg)
+```swift
+/// This is an LED library for demonstration
+import SwiftIO
+
+final public class MadLed {
+    
+    private let pin: DigitalOut
+    private let ledOnValue: Bool
+    
+    // Initilize the LED.
+    public init(_ pin: DigitalOut, ledOnValue: Bool) {
+        self.pin = pin
+        self.ledOnValue = ledOnValue
+    }
+    
+    // Turn on the LED.
+    public func on() {
+        pin.write(ledOnValue)
+    }
+    
+    // Turn off the LED.
+    public func off() {
+        pin.write(!ledOnValue)
+    }
+    
+    public func toggle() {
+        let currentValue = pin.getValue()
+        pin.write(!currentValue)
+    }
+}
+```
 
 Well, that's a brief intro about how to created a basic library to control the LED. You could find its code [here](https://github.com/madmachineio/MadLed). Then you could start to use it in your project.
 
@@ -83,7 +139,7 @@ In the file `package.swift`, you indicate the **location** of the library and it
 
 _Note: if the library is on your computer, you could indicate its path._
 
-![](../.gitbook/assets/add.png)
+![](../.gitbook/assets/add%20%281%29.png)
 
 ### Import the targets
 
