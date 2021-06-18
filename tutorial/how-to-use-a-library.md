@@ -10,6 +10,8 @@ When you deal with the LEDs, sometimes you need to set a high voltage to turn on
 
 ### Before start
 
+
+
 First, let's figure out what this library is used to do. 
 
 When you light a LED, you need to identify if it will be **on** with high voltage or low voltage. Then you need to set the corresponding voltage. So you are going to take them apart, and solve them one by one in the library.
