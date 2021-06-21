@@ -1,4 +1,6 @@
-# Mission8\_Servo\_Motor \(editing\)
+# Mission8\_Servo\_Motor
+
+In this mission, you will use another kind of motor, the servo motor. 
 
 ## What you need
 
@@ -12,9 +14,11 @@
 
 ### Build your circuit
 
+Place the shield on top of your SwiftIO board. 
 
+Connect the **potentiometer** module to pin **A0** using a 4-pin cable. 
 
-
+Connect the servo to the pin PWM4A. The servo has three wires: the ground wire is brown, the power wire is red and the signal wire is orange.
 
 ## Example code
 
@@ -45,17 +49,29 @@ while true {
 
 ## What you'll see
 
+As you turn the potentiometer, the servo arm will move to a different angle.
+
 ## Servo motor
 
+The servo motor could adjust its arm's position according to the signal. You could set PWM output to control it. This servo requires a pulse every 20ms. And the duration of each pulse determines the position of the arm:
 
+* If the high voltage lasts for 0.5ms, the arm will be at 0 degrees.
+* If the high voltage lasts for 2.5ms, the arm will be at 180 degrees.
+* If the high voltage lasts for 1.5ms, the arm will be at 90 degrees.
 
+![](../../.gitbook/assets/pwm%20%281%29.png)
 
+_Note: this servo needs the pulse to be in the range of 0.5 to 2.5ms. You may also meet other servos that need the pulse in 1 to 2ms._
 
 ## Code Analysis
 
+Import the two libraries: `SwiftIO` and `SwiftIOBoard`.
 
+Initialize the analog pin A0 for the potentiometer and the PWM pin PWM4A for the motor.
 
-## See also
+In the dead loop, read the input value in percentage, so you get a value between 0 and 1. 
+
+You will use this method `set(period:pulse:)` to set the PWM. The period is measured in microseconds, so it is 20000us. The pulse should be the number between 0.5ms to 2.5ms. So the `value` will be matched into this range by doing some calculations.
 
 
 

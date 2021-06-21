@@ -32,22 +32,23 @@ For the LED module, connect jumper wires to GND and SIG ports. Connect the GND w
 
 ```swift
 // Read the analog input and use it to set the rate of LED blink.
-
 // Import the library to enable the relevant classes and functions.
 import SwiftIO
 
-// Initialize an analog input and a digital output pin the components are connected to
-let sensor = AnalogIn(Id.A6)
-let led = DigitalOut(Id.D10)
+// Import the board library to use the Id of the specific board.
+import SwiftIOBoard
+
+// Initialize an analog input and a digital output pin the components are connected to,
+let sensor = AnalogIn(Id.A0)
+let led = DigitalOut(Id.D0)
 
 // Enable the LED to blink over and over again.
 while true {
     // Read the input voltage in percentage.
     let value = sensor.readRawValue()
-    print(value)
     // Change the current LED state.
     led.toggle()
-    // Keep the led on or off for a certain amount of time determined by the value you get.
+    // Keep the led on or off for a certain period determined by the value you get.
     sleep(ms: value)
 }
 ```

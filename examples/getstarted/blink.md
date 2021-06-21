@@ -35,25 +35,25 @@ The current will always flow from high voltage to low voltage. So if you apply a
 It's time for the code. Let's see how it works. You can find the example code at the bottom left corner of IDE: ![](../../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) &gt; GettingStarted &gt; Blink.
 
 ```swift
-// Import the library to enable everything in it, like relevant classes and methods. 
-// This is the first step for your coding process.
+// Turn on and off the onboard LED continuously.
+// Import the library to enable the relevant classes and functions.
 import SwiftIO
 
-// Declare a constant. You may choose any descriptive name you like. 
-// Initialize the onboard green LED. 
-// The Id of onboard LED should be capitalized.
-let green = DigitalOut(Id.GREEN) 
+// Import the board library to use the Id of the specific board.
+import SwiftIOBoard
 
-// In the dead loop, the code will run over and over again.
+// Initialize the onboard green LED with other parameters set to default.
+let green = DigitalOut(Id.GREEN)
+
+// Blink the LED over and over again.
 while true {
-    // Output 3.3V to turn off the green LED.
+    // Apply a high votage and turn off the LED.
     green.write(true)
-    // Pause for a second. Or, you won't notice LED state change. 
-    // During this period, the board will do nothing but just wait.
+    // Keep the light off for a minute.
     sleep(ms: 1000)
-    
-    // Output 0V to turn on the green LED.
+    // Apply a low voltage and turn on the LED.
     green.write(false)
+    // Keep the light on for a minute.
     sleep(ms: 1000)
 }
 ```
@@ -70,17 +70,19 @@ The digital signal normally has two states, its value is either 1 or 0. For the 
 
 ### About code
 
-`import SwiftIO` refers to this named library [SwiftIO](https://swiftioapi.madmachine.io/). This library includes the basic commands to control input and output. All case programs must first reference it so that you can use everything in it, like classes and functions. Later when you create your own project, don't forget to import this library first.
+`import SwiftIO` refers to this named library [SwiftIO](https://swiftioapi.madmachine.io/). This library includes the basic commands to control input and output. All case programs must first reference it so that you can use everything in it, like classes and functions. 
+
+[SwiftIOBoard](https://github.com/madmachineio/MadBoards/blob/main/Sources/SwiftIOBoard/Id.swift) defined the id of the SwiftIO board. The pins of different boards are different. So this library tells the IDE you are dealing with the SwiftIO board, not any other boards. Then you could use the id in it.
 
 `let` is a keyword for Swift language to declare constants. You will often use it to assign a name to each port for easy reference in the future. This statement is to create an instance for `DigitalOut` class and initialize the specified pin, so the pin would be able to output high or low voltage.
 
-`Id` is an enumeration. All types of enumerated Id can be viewed [here](https://swiftioapi.madmachine.io/Enums/Id.html). It includes all IO ports. 
+`Id` is an enumeration. All types of enumerated ids can be viewed in the library SwiftIOBoard. It includes all IO ports. 
 
 _**Note**: You may be confused why RED, GREEN, and BLUE are not marked on pinMap. Because the SwiftIO board is equipped with a built-in RGB three-color LED by default. When you need to initialize one of them, just use its id  RED, GREEN, or BLUE._
 
 Setting the `while` loop `true` means that the loop check will always run. It will not stop after entering, unless the hardware power off or restart. What will be executed over and over again is written in the loop, enclosed by a pair of curly braces `{}`. 
 
-The `.write()` method belongs to the `DigitalOut` instance and its incoming values ​​are `true` and `false`. They represent high-level output \(3.3V\) and low level \(0V or GND\) respectively. And for these three LED, you need `false` to turn on them.
+The  `.write()`  belongs to the `DigitalOut` instance and its incoming values ​​are `true` and `false`. They represent high-level output \(3.3V\) and low level \(0V or GND\) respectively. And for these three LED, you need `false` to turn on them.
 
 The `sleep(ms:)` function is a built-in function, which means the delay time, calculated in milliseconds. The parameter name `ms` must be added to pass in the parameter.
 

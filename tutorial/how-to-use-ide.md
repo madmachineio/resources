@@ -80,7 +80,7 @@ In each project, there are many files. Don't worry, you just need to know some o
 
 `Package.mmp` is the project file. It is associated with the IDE. You could directly open your project by clicking it.
 
-`Package.swift` stores all the info about your project. You could modify your dependencies in this file. You will see more about it when dealing with [libraries](how-to-use-a-library.md).
+`Package.swift` stores all the info about your project. You could modify your dependencies in this file. You will see more about it when dealing with [libraries](about-library.md).
 
 ![](../.gitbook/assets/explorer.png)
 

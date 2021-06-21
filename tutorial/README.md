@@ -23,5 +23,5 @@ Ok, after a basic understanding of our project, it's time to dive deeper into de
 * [What is SwiftIO](what-is-swiftio.md)
 * [How to use IDE](how-to-use-ide.md)
 * [How to use MM SDK](how-to-use-mm-sdk.md)
-* [How to use a Library](how-to-use-a-library.md)
+* [How to use a Library](about-library.md)
 

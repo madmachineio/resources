@@ -19,12 +19,12 @@ OK, you're ready to code.
 * **Open** the MadMachine IDE. Now it's empty on the right side, as you create and try more projects, it will be filled with all your projects.
 * Click **Create a new MadMachine project**.
 
-![](.gitbook/assets/ide1.png)
+![](.gitbook/assets/create.png)
 
 * **Name** the project. We call it "Blink". You could choose any descriptive name you like for the project. Leave the rest as they are. 
 * Then click **Create**.
 
-![](.gitbook/assets/ide2.png)
+![](.gitbook/assets/xnip2021-06-21_13-15-28.png)
 
 Now it's time to write the code. 
 
@@ -46,7 +46,7 @@ while true {
 
 _Note: there are built-in example codes in the IDE. You could click the button_ ![](.gitbook/assets/xnip2020-07-22_16-04-33.jpg) _on the bottom left corner._
 
-![](.gitbook/assets/xnip2020-10-29_12-55-53.jpg)
+![](.gitbook/assets/xnip2021-06-21_13-17-49.jpg)
 
 _Choose **GettingStarted** &gt; **Blink**. The code will show up in a new window._
 

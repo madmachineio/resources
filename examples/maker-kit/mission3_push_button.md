@@ -87,5 +87,3 @@ The condition has always two results, either true or false. If it is true, state
 
 `read()` - this method allows you to get the value. The return value is either `true` or `false`.
 
-
-

@@ -19,15 +19,17 @@ In this example, you're going to change the brightness of three LEDs one by one.
 
 ```swift
 // Change the LED state every second by setting the interrupt.
-
 // Import the library to enable the relevant classes and functions.
 import SwiftIO
 
+// Import the board library to use the Id of the specific board.
+import SwiftIOBoard
+
 // Initialize the pins the LEDs are connected to and put them in a array.
-let red = PWMOut(Id.PWM2B)      //P10 D10
-let green = PWMOut(Id.PWM3B)    //P12 D12
-let blue = PWMOut(Id.PWM4A)     //P20 D20 A6
-let leds = [red, green, blue]   //Arrays, one of Collection Types
+let red = PWMOut(Id.PWM0A)
+let green = PWMOut(Id.PWM1A)
+let blue = PWMOut(Id.PWM2B)
+let leds = [red, green, blue]
 
 // Declare a variable to store the value of duty cycle.
 var value: Float = 0.0
@@ -37,7 +39,7 @@ while true {
     // Iterate each LED in the array. 
     // This allows the LED to go through the following process one by one.
     for led in leds {
-        // Gradually brighten the LED in two seconds.
+        // Brighten the LED in two seconds.
         while value <= 1.0 {
             led.setDutycycle(value)
             sleep(ms: 20)
@@ -45,7 +47,7 @@ while true {
         }
         // Keep the value of duty cycle between 0.0 and 1.0.
         value = 1.0
-        // Gradually dim the LED in two seconds.
+        // Dimming the LED in two seconds.
         while value >= 0 {
             print(value)
             led.setDutycycle(value)

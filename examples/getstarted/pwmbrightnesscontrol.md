@@ -4,7 +4,7 @@
 
 In this project, let's try to control the brightness of LED - light gradually on and off LED.
 
-You will use PWM to set the on-off ratio of the output signal to simulate different voltage. The pins marked with “~“ can be used for this.
+You will use PWM to set the on-off ratio of the output signal to simulate different voltages. The pins marked with “~“ can be used for this.
 
 ## What you need
 
@@ -29,24 +29,21 @@ You can find the example code at the bottom left corner of IDE: ![](../../.gitbo
 
 ```swift
 // Brighten or dimming the LED by changing the duty cycle of PWM signal.
-
-// Import the library to enable everything in it, like relevant classes and methods. 
-// This is first step for your coding process.
+// Import the library to enable the relevant classes and functions.
 import SwiftIO
 
-// Initialize the pin PWM2B as output.
-let led = PWMOut(Id.PWM2B)
+// Import the board library to use the Id of the specific board.
+import SwiftIOBoard
 
-// Initialize a variable to store the value of duty cycle. 
-// It should be a float between 0.0 and 1.0.
+// Initialize the PWM pin the LED is connected to, with other parameters set to default.
+let led = PWMOut(Id.PWM0A)
+
+// Initialize a variable to store the value of duty cycle.
 var value: Float = 0.0
 
-// In the loop, the code will run over and over again.
-// Change the brightness from on to off and off to on all the time.
+// Change the brightness from on to off and off to on over and over again.
 while true {
-    // Brighten the LED in two seconds. 
-    // Increase the duty cycle from 0.0 to 1.0.
-    // The value should be changed little by little to ensure a smooth brightness change.
+    // Brighten the LED in two seconds.
     while value <= 1.0 {
         led.setDutycycle(value)
         sleep(ms: 20)
@@ -55,7 +52,7 @@ while true {
     // Keep the duty cycle between 0.0 and 1.0.
     value = 1.0
 
-    // Decrease the value from 1.0 to 0.0 to dim the LED.
+    // Dimming the LED in two seconds.
     while value >= 0 {
         led.setDutycycle(value)
         sleep(ms: 20)
@@ -76,7 +73,7 @@ For example, if you repeat this switching pattern with LEDs fast enough, the sig
 
 Now come more concepts. A fixed time **period** consists of on and off time. The duration or period is the inverse of the PWM **frequency**. For example, when the PWM frequency is 500 Hz, one period is 2 milliseconds.
 
-The **duty cycle** is the percentage of on-time of output signal during one period. Its range is 0-1. 1 means the output is always on. 0 means the output is always low. And the signal with 0.5 duty cycle is on for 50% of the time and off for 50% of the time.
+The **duty cycle** is the percentage of on-time of output signal during one period. Its range is 0-1. 1 means the output is always on. 0 means the output is always low. And the signal with a 0.5 duty cycle is on for 50% of the time and off for 50% of the time.
 
 ![https://commons.wikimedia.org/w/index.php?curid=72876123](https://gblobscdn.gitbook.com/assets%2F-MGOJWkptBbZ3bq0TpEw%2Fsync%2Fc53ea8bfa1c0c448d7f35547069200ec05c939ac.png?alt=media)
 

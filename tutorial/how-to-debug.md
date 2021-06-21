@@ -17,7 +17,7 @@ Now you will need to change the USB connection from the download port to the ser
 SwiftIO board has two ports: download port and serial port. They might be quite confusing at the beginning.
 
 * **Download** port allows you to download code to your board. 
-* **Serial** port is for serial communication between your board and computer. Serial communication is commonly used on microcontrollers, however, the computer hardly uses it, so a serial to USB converter is added to the board to allow the data transmission between them. It is an independent part especially for this use.
+* **Serial** port is for serial communication between your board and computer. Serial communication is commonly used on microcontrollers, however, the computer hardly uses it, so a serial to USB converter is added to the board to allow the data transmission between them. It is an independent part reserved for this use.
 
 ![](../.gitbook/assets/port.png)
 

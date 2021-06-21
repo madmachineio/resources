@@ -43,11 +43,10 @@ while true {
     let value = a0.readPercent()
     
     //let value = a0.readPercent()
-    let frequency = Int(1000 + 2000 * value) // calculate the float value into Int type to serve as frequency.
+    let frequency = Int(400 + 2000 * value) // calculate the float value into Int type to serve as frequency.
     buzzer.set(frequency: frequency, dutycycle: 0.5) // Set PWM parameters.
-    sleep(ms: 50) // Set the duration of the notes.
+    sleep(ms: 20) // Set the duration of the notes.
 }
-
 ```
 
 ## What you'll see
@@ -94,6 +93,4 @@ Its frequency is related to the analog value above. While the `value` is too sma
 [`PWMOut`](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - this class allows you to set the PWM output signal. You could set the on-time of the signal to get an average voltage between 0 and 3.3V.
 
 `set(frequency:dutycycle:)` - this method is used to set the frequency and duty cycle of the PWM signal.
-
-
 

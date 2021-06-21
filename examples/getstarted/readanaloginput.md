@@ -37,24 +37,23 @@ You can find the example code at the bottom left corner of IDE: ![](../../.gitbo
 For the code, you will use the `AnalogIn` class.
 
 ```swift
-// Read the input voltage on a specified analog pin. 
-// The value you get will be a float number between 0.0 and 3.3.
-
-// Import the library to enable everything in it, like relevant classes and methods. 
-// This is first step for your coding process.
+// Read the input voltage on a specified analog pin. The value you get will be a decimal between 0.0 and 3.3.
+// Import the library to enable the relevant classes and functions.
 import SwiftIO
 
-// Initialize the pin A6 as a analog input.
-let pin = AnalogIn(Id.A6)
+// Import the board library to use the Id of the specific board.
+import SwiftIOBoard
+
+// Initialize the pin A0 as a analog input pin.
+let pin = AnalogIn(Id.A0)
 
 // Read the input voltage every second.
 while true {
-    // Declare a constant to store the value.
-    // Read the voltage value from the analog pin.
+    // Declare a constant to store the value you read from the analog pin.
     let value = pin.readVoltage()
     // Print the value and you can see it in the serial monitor.
     print(value)
-    // Wait a second to slow the reading frequency.
+    // Wait a second and then continue to read.
     sleep(ms: 1000)
 }
 ```
@@ -65,7 +64,7 @@ while true {
 
 ![](../../.gitbook/assets/analog.jpg)
 
-Analog signal is different from the digital signal. Its voltage always changes with time. The value ranges in a certain range, between 0V and 3.3V. So you are able to get 1.5V, 2V...The resolution is used to describe the possible values. The SwiftIO board has 12-bit resolution, which means there are 4096 \(0-4095\) values in total. 
+Analog signal is different from the digital signal. Its voltage always changes with time. The value ranges in a certain range, between 0V and 3.3V. So you are able to get 1.5V, 2V...The resolution is used to describe the possible values. The SwiftIO board has a 12-bit resolution, which means there are 4096 \(0-4095\) values in total. 
 
 Let's see the working process for analog to digital conversion. When the board reads from the analog pin, it will first get a raw value between 0 and 4095. Then this value will be converted to voltage value proportionally. Their relationship is like this:
 

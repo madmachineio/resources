@@ -71,5 +71,3 @@ In the dead loop `while true`, all code will run over and over again. Here, the 
 
 [`sleep(ms:)`](https://swiftioapi.madmachine.io/Functions.html#/s:7SwiftIO5sleep2msySi_tF) - suspend the microcontroller's work and thus make the current state last for a certain time, measured in milliseconds.
 
-
-

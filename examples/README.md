@@ -8,4 +8,5 @@ After all these, you will certainly be able to create something interesting your
 
 * [GettingStarted](getstarted/)
 * [SimpleIO](simpleio/)
+* [Maker kit](maker-kit/)
 

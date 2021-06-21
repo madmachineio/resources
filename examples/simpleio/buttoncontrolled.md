@@ -37,29 +37,28 @@ Here comes the code. You can find the example code at the bottom left corner of 
 
 ```swift
 // Read the input signal controlled by a button to turn on and off the LED.
-
-// Import the library to enable everything in it, like relevant classes and methods. 
-// This is first step for your coding process.
+// Import the library to enable the relevant classes and functions.
 import SwiftIO
 
-// Declare a constant. You may choose any descriptive name you like. 
-// Initialize the onboard red LED. 
-// The Id of onboard LED should be capitalized.
+// Import the board library to use the Id of the specific board.
+import SwiftIOBoard
+
+// Initialize the red onboard LED.
 let red = DigitalOut(Id.RED)
 
-// Initialize a digital input pin D10 the button is connected to.
-let button = DigitalIn(Id.D10)
+// Initialize a digital input pin D0 the button is connected to.
+let button = DigitalIn(Id.D0)
 
 // Allow the button to control the LED all the time.
 while true {
-    // Check the state of button. 
-    // If it is pressed, the value will be true and then turn off the LED.
+    // Check the state of button. If it is pressed, the value will be true and then turn off the LED.
     // Modify the code according to your button if necessary.
     if button.read() {
         red.write(false)
     } else {
         red.write(true)
     }
+
 }
 ```
 

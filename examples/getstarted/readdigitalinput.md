@@ -31,15 +31,15 @@ _**Note**: If you connected the two legs on the same side in this circuit, you w
 You can find the example code by clicking the bottom left corner of IDE: ![](../../.gitbook/assets/xnip2020-07-22_16-04-33.jpg) &gt; GettingStarted &gt; ReadDigitalInput.
 
 ```swift
-// Read the input voltage on a specified digital pin. 
-// The value you get will be either true or false.
-
-// Import the library to enable everything in it, like relevant classes and methods. 
-// This is first step for your coding process.
+// Read the input voltage on a specified digital pin. The value you get will be either true or false.
+// Import the library to enable the relevant classes and functions.
 import SwiftIO
 
-// Initialize the pin D10 as a digital input pin.
-let pin = DigitalIn(Id.D10)
+// Import the board library to use the Id of the specific board.
+import SwiftIOBoard
+
+// Initialize the pin D0 as a digital input pin.
+let pin = DigitalIn(Id.D0)
 
 // read the input every second.
 while true {
@@ -47,7 +47,7 @@ while true {
     let value = pin.read()
     // Print the value and you can see it in the serial monitor.
     print(value)
-    // Wait a second to slow the reading frequency.
+    // Wait a second and then continue to read.
     sleep(ms: 1000)
 }
 ```

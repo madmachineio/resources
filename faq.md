@@ -41,8 +41,6 @@ When you want to open the IDE, a new window appears:
 
 Now the IDE can run normally.
 
-![](.gitbook/assets/xnip2020-07-24_15-07-20.jpg)
-
 ## Can't create a new project on Windows
 
 **Reason:** The IDE need to copy `MadMachine\Examples` and `MadMachine\Library` to your `Documents` directory when running for the first time.

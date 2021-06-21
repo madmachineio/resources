@@ -2,7 +2,7 @@
 
 ## MM SDK
 
-The mm-sdk contains eveything you need to build a MadMachine project, either a library or an executable.
+The mm-sdk contains everything you need to build a MadMachine project, either a library or an executable.
 
 A MadMachine project is structured the same as a [Swift package](https://swift.org/package-manager).
 
@@ -15,7 +15,7 @@ The latest features would be added to this SDK first and then integrated into th
 1. Boards
    * Board abstraction libraries based on [Zephyr](https://github.com/zephyrproject-rtos/zephyr)
 2. mm
-   * Python script which is used to help building the project
+   * Python script which is used to help to build the project
 3. usr \(This directory is only contained in the [release package](https://github.com/madmachineio/mm-sdk/releases), not in the git repo\)
    * Clang, Swift compilier, SwiftPM tools etc.
    * Standard library and arch related libraries
@@ -126,17 +126,17 @@ cd ~/Documents/DemoProgram
 
 ### Download an executable to the board
 
-After a successful building, there would be `.build/release/swiftio.bin` in your project directory. Note that the `.build` directory is hiden by default.
+After a successful building, there would be `.build/release/swiftio.bin` in your project directory. Note that the `.build` directory is hidden by default.
 
 Follow those steps to download the executable:
 
-1. Insert SD card to the board and connect the it to your computer through an USB cable
-2. Press the **Download** button and wait the onboard RGB LED turns to static **green**\)
+1. Insert SD card to the board and connect it to your computer through a USB cable
+2. Press the **Download** button and wait for the onboard RGB LED to turn to static **green**\)
 3. A USB disk drive should be mounted on your computer
 4. Copy the `swiftio.bin` to the SD card root directory
 5. Eject the USB drive and the program would run automatically
 
-### Download an executable to the board using command\(Only on macOS now\)
+### Download an executable to the board using command \(Only on macOS now\)
 
 After mounting the SD card:
 
@@ -145,7 +145,7 @@ cd ~/Documents/DemoProgram
 ~/mm-sdk/usr/mm/mm download -b SwiftIOBoard
 ```
 
-This command would find the correspond bin file, copy it to the SD card and eject the SD card automatically
+This command would find the corresponding bin file, copy it to the SD card and eject the SD card automatically
 
 ## Usage \(Take Windows 10 for example\)
 
@@ -209,8 +209,8 @@ After a successful building, there would be `.build\release\swiftio.bin` in your
 
 Follow those steps to download the executable:
 
-1. Insert SD card to the board and connect the it to your computer through an USB cable
-2. Press the **Download** button and wait the onboard RGB LED turns to static **green**
+1. Insert SD card to the board and connect it to your computer through a USB cable
+2. Press the **Download** button and wait for the onboard RGB LED to turn to static **green**
 3. A USB disk drive should be mounted on your computer
 4. Copy the `swiftio.bin` to the SD card root directory
 5. Eject the USB drive and the program would run automatically

@@ -2,7 +2,7 @@
 
 ![](../../.gitbook/assets/PWM%20%281%29%20%281%29.gif)
 
-This example shows how to use the `PWMOut` to generate notes. It plays a little melody which you may have heard before.
+This example shows how to use the `PWMOut` to generate notes. It plays a little melody that you may have heard before.
 
 ## What you need
 
@@ -19,12 +19,14 @@ This example shows how to use the `PWMOut` to generate notes. It plays a little 
 
 ```swift
 // Enable the speaker to play a simple melody by changing the frequency of PWM output.
-
 // Import the library to enable the relevant classes and functions.
 import SwiftIO
 
+// Import the board library to use the Id of the specific board.
+import SwiftIOBoard
+
 // Initialize a PWM output pin the speaker is connected to.
-let speaker = PWMOut(Id.PWM2B)
+let speaker = PWMOut(Id.PWM0A)
 
 // Specify several frequencies corresponding to each note of the melody. 
 let fre = [
@@ -50,7 +52,7 @@ The PWM signal outputs high and low voltage alternatively. Inside the buzzer, th
 
 ## See Also
 
-* [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to change the time of high voltage during one period to simulate different output. 
+* [PWMOut](https://swiftioapi.madmachine.io/Classes/PWMOut.html) - The PWMOut class is used to change the time of high voltage during one period to simulate different outputs. 
 
 ## References
 

@@ -24,13 +24,15 @@ In this example, we use PWM to adjust the brightness of an LED according to the 
 
 ```swift
 // Read the analog input value and use it to set the PWM output in order to change the LED brightness.
-
 // Import the library to enable the relevant classes and functions.
 import SwiftIO
 
+// Import the board library to use the Id of the specific board.
+import SwiftIOBoard
+
 // Initialize an analog input and a digital output pin the components are connected to.
-let sensor = AnalogIn(Id.A6)
-let led = PWMOut(Id.PWM2B)
+let sensor = AnalogIn(Id.A0)
+let led = PWMOut(Id.PWM0A)
 
 // Allow the LED brightness control all the time.
 while true {
