@@ -74,8 +74,6 @@ let temp = sht.readCelsius()
 
 To get the temperature, you need the method `readCelsius()` in the file `SHT3x.swift`. It will calculate the temperature into Celsius. 
 
-
-
 ```swift
 lcd.write(x:0, y:0, "Temperature:")
 lcd.write(x: 0, y: 1, temp)

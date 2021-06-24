@@ -80,13 +80,15 @@ The file [`LCD1602.swift`](https://github.com/madmachineio/MadExamples/blob/main
 
 Let's look at the file `main.swift`. 
 
-Import the necessary libraries. Initiliaze the I2C interface. To initialize the LCD, you need to tell the I2C interface and the other parameters have a default value.
+Import the necessary libraries. Initialize the I2C interface. To initialize the LCD, you need to tell the I2C interface and the other parameters have a default value.
 
 ```swift
 lcd.write(x: 0, y: 0, "Hello World!")
 ```
 
 Then you will use the method `write(x:y:_:)` to display the string. It has three parameters. At first, you need to set the **coordinate** of the start point. Here you start from the origin \(0,0\). The third parameter is the content you would like to display. It is a **string**. So you add the content within the double quotation marks.
+
+Since the text would always display on the LCD, you could write it above the loop. Even there is nothing on the loop, you need to add it in your code.
 
 ## See also
 

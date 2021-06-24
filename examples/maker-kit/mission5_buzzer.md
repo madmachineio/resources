@@ -86,7 +86,7 @@ Read the analog value in percentage and store it in the constant `value`.
 
 Then set the PWM signal. You will need `set(frequency:dutycycle:)`. This method has two parameters: frequency and duty cycle.
 
-Its frequency is related to the analog value above. While the `value` is too small to be used as a frequency, so you do some calculation here. The duty cycle doesn't really matter in this project, and you could set it to 0.5 here. And each pitch will last about 50ms.
+Its frequency is related to the analog value above. While the `value` is too small to be used as a frequency, so you do some calculation here. The duty cycle doesn't really matter in this project, and you could set it to 0.5 here. And each pitch will last about 20ms.
 
 ## See also
 

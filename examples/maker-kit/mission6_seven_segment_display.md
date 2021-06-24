@@ -164,7 +164,7 @@ How does it work? There are 7 LEDs in total, so you could use a byte to represen
 
 ![](../../.gitbook/assets/0.png)
 
-You will deal with the bits from the last one, so that bit is reserved for a. To display digit 0, other segments need to be lighted except g. The first bit doesn't match any LED, and you could just leave it as 0. Then you need to tell the computer the type of this data and add `ob` to indicate it's a byte.
+You will deal with the bits from the last one, so that bit is reserved for a. To display digit 0, other segments need to be lighted except g. The first bit doesn't match any LED, and you could just leave it as 0. Then you need to tell the computer the type of this data and add `0b` to indicate it's a byte.
 
 ```swift
 public func print(_ number: Int) {

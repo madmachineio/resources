@@ -56,7 +56,7 @@ while true {
 
 ## What you'll see
 
-You will hear the melody from the buzzer. 
+After you successfully download the code, you will hear the melody from the buzzer. The music will gradually become faster and the pitch will become higher.
 
 ## Background: about musical notes
 
@@ -114,7 +114,12 @@ Initialize the player. It has three parameters:
 player.play(track: Music.twinkle)
 ```
 
-This statement is to play the music. The score is written in the file `Twinkle.swift`. In the struct Music, there is a constant `twinkle` that stores the notes and the note length.
+This statement is to play the music. 
+
+The method `play(track:halfstep)` has two parameters. 
+
+* The `track` is an array of tuples that indicates notes and note length. `Music.twinkle` refers to the score written in the file `Twinkle.swift`. The struct Music has a constant `twinkle` that stores the notes and the note length. So the track is written as `Music.twinkle`. 
+* The `halfStep` has a default value of 0. You will set it later. So you could ignore it here. 
 
 ```swift
 bpm += 40

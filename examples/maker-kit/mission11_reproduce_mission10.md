@@ -61,5 +61,9 @@ After you download the code, the LCD starts to display the temperature. The valu
 
 You will use the library LCD1602 and SHT3x in your code. 
 
-In the previous mission, the two files are included, so you could directly use them. Now, they are in the library `MadDriver`, you just import them into your code. Then the rest of the code is the same.
+In the previous mission, the two files are included in the project, so you could directly use them. 
+
+Now, you will use the online libraries. They are stored in the `MadDriver` that contains all the related hardware libraries. You just import them into your code. The IDE will download them automatically when building your project.
+
+Then the rest of the code is the same.
 
