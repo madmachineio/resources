@@ -23,5 +23,9 @@ Ok, after a basic understanding of our project, it's time to dive deeper into de
 * [What is SwiftIO](what-is-swiftio.md)
 * [How to use IDE](how-to-use-ide.md)
 * [How to use MM SDK](how-to-use-mm-sdk.md)
-* [How to use a Library](about-library.md)
+* [About library](about-library.md)
+* [How to select board in IDE](how-to-select-board-in-ide.md)
+* [How to debug](how-to-debug.md)
+
+
 

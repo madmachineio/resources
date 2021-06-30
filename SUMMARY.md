@@ -8,6 +8,7 @@
   * [How to use IDE](tutorial/how-to-use-ide.md)
   * [How to use MM SDK](tutorial/how-to-use-mm-sdk.md)
   * [About library](tutorial/about-library.md)
+  * [How to select board in IDE](tutorial/how-to-select-board-in-ide.md)
   * [How to debug](tutorial/how-to-debug.md)
 * [Examples](examples/README.md)
   * [GettingStarted](examples/getstarted/README.md)
